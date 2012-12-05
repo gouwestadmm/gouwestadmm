@@ -1,0 +1,202 @@
+@import "bootstrap/bootstrap.less";
+@import "bootstrap/responsive.less";
+@import "base.less";
+
+
+
+/* ==========================================================================
+	____  ____  _    ___          ________  _____ _______       _____  
+  / ____|/ __ \| |  | \ \        / /  ____|/ ____|__   __|/\   |  __ \ 
+ | |  __| |  | | |  | |\ \  /\  / /| |__  | (___    | |  /  \  | |  | |
+ | | |_ | |  | | |  | | \ \/  \/ / |  __|  \___ \   | | / /\ \ | |  | |
+ | |__| | |__| | |__| |  \  /\  /  | |____ ____) |  | |/ ____ \| |__| |
+  \_____|\____/ \____/    \/  \/   |______|_____/   |_/_/    \_\_____/ 
+                                                              
+      |\/|  _. ._ |   _ _|_ o ._   _    ()    |\/|  _   _| o  _. 
+      |  | (_| |  |< (/_ |_ | | | (_|   (_X   |  | (/_ (_| | (_| 
+                                   _|                            
+                          © www.gouwestadmm.nl
+========================================================================== */
+
+
+
+/* ---------------------------------------
+   Typografie
+----------------------------------------*/
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin-top: 40px;
+}
+
+
+.borders{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.half-height{
+	height: 50% - @fluidGridGutterWidth;
+	margin-bottom: @fluidGridGutterWidth * 2;
+	position: relative;
+}
+
+.quarter-height{
+	height: 25% - @fluidGridGutterWidth;
+	margin-bottom: @fluidGridGutterWidth * 2;
+	position: relative;
+}
+
+.three-quarter-height{
+	height: 75% - @fluidGridGutterWidth;
+	margin-bottom: @fluidGridGutterWidth * 2;
+	position: relative;
+}
+
+.rslides, .rslides li{
+	height: 100%;
+}
+
+.vert-block{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.content{
+	padding: 3%;
+	
+	&.bottom{
+	position: absolute;
+	bottom: 0;
+	}
+}
+
+/* ---------------------------------------
+   Navs
+----------------------------------------*/
+
+.brand{
+	max-width: 300px;
+}
+
+/* ==========================================================================
+  Visual effects
+========================================================================== */
+
+.img-overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	#gradient > .radial(rgba(0,0,0,0.01), rgba(0,0,0,0.15));
+}
+
+.highlight{
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1),
+				inset 0 1px 0 0 rgba(255,255,255,0.4),
+				inset 0 -1px 0 0 rgba(0,0,0,0.3);
+	position: relative;
+}
+
+.bottom-gradient{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	#gradient > .vertical(rgba(0,0,0,0.01), rgba(0,0,0,0.4));
+}
+
+/* ==========================================================================
+  Home page slider | default layout
+========================================================================== */
+
+#slider{
+	height: 100%;
+
+	.container{
+		 display: table;
+	    height: 100%;
+	    position: relative;
+	}
+
+	.overlay{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		#gradient > .radial(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+	}
+
+	.dots{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url("http://whiteboard.is/img/dot-pattern.png") repeat;
+	}
+
+	.overlay-block{
+		margin-top: -5%;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+
+		.metro-tiles{
+			height: 65%;
+			box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+			[class*="span"]{
+				height: 100%;
+				position: relative;
+
+				.content{
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			.project-logo{
+				padding-bottom: 10%;
+			}
+		}
+
+	}
+}
+
+
+/* ==========================================================================
+  Home page slider | content
+========================================================================== */
+
+
+.zuidplashof{
+	background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") center center no-repeat;
+	.background-size(cover);
+	.zuidplashof-img{
+		background: url("http://gouwestad.com/zuidplashof/images/slider2.jpg") left center no-repeat;
+		.background-size(cover);
+	}
+	.zuidplashof-img2{
+		background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") left center no-repeat;
+		.background-size(cover);
+	}
+}
+
+
+.mijntypea{
+	background: url("http://www.mijntypea.nl/img/bg-type-a3-a4.jpg") center center no-repeat;
+	.background-size(cover);
+	.mijntypea-img{
+		background: url("http://www.mijntypea.nl/img/slide3bg.jpg") center center no-repeat;
+		.background-size(cover);
+	}
+}
+
+
+/* ==========================================================================
+  Responsive styles | Main site
+========================================================================== */
+
