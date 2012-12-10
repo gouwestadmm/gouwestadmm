@@ -68,17 +68,64 @@
 	    </div><!-- /navbar -->
 	</nav>
 
-<div id="main" style="height: 6500px;">
+<div id="main" style="height: 8500px;">
  		<div class="street-view">
-			<img src="http://360langstrasse.sf.tv/media/street/day/xs/vid-0001.jpg">
+			<img src="img/foto/joenenlex0000.jpg">
 		</div>
-		
-
 </div>
 
 
-<div class="bottom">
-	p
+<div class="parts">
+	<section class="vert">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="vert-content">
+					<h1 id="fittext1" class="title center">De vastgoedwereld is totaal veranderd</h1>
+					<h3 class="center"></h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="intro vert">
+		<div class="container">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="vert-content">
+							<h1 id="fittext1" class="title center">Nieuwbouw verkopen of verhuren is niet meer vanzelfsprekend</h1>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section class="intro vert">
+		<div class="container">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="vert-content">
+							<h1 id="fittext1" class="title center">Producteigenschappen, positionering en klantbenadering zijn nog nooit zo belangrijk geweest.</h1>
+							<h3 class="center">Maar een grote omslag maak je niet vanzelf</h3>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+		<section class="intro vert">
+		<div class="container">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="vert-content">
+							<h1 id="fittext1" class="title center">Verkoop en marketing</h1>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+
 </div>
 
 
@@ -138,16 +185,11 @@
 
 			function animloop(){
 				if ( Math.floor(currentPosition*5000) != Math.floor(targetPosition*5000) ) {
-					currentPosition += (targetPosition - currentPosition) / 25;
+					currentPosition += (targetPosition - currentPosition) / 5;
 					render(currentPosition);
 				}
 			  requestAnimFrame(animloop);
 			}
-
-			
-
-
-
 
 			// rendering
 
@@ -188,7 +230,7 @@
 
 			// video handling
 
-			var imageSeqLoader = new ProgressiveImageSequence( "http://360langstrasse.sf.tv/media/street/day/xs/vid-{index}.jpg" , 1050 , {
+			var imageSeqLoader = new ProgressiveImageSequence( "img/foto/joenenlex{index}.jpg" , 240 , {
 				indexSize: 4,
 				initialStep: 16,
 				onProgress: handleLoadProgress,
@@ -227,8 +269,6 @@
 				}
 			}
 
-
-
 			$('body').append('<div id="loading-bar" style="position:fixed; bottom:0; left:0; background-color: #DF0012; background-color: rgba(223,0,18,0.5); height: 1px;"></div>');
 			
 			function handleLoadProgress() {
@@ -239,8 +279,6 @@
 			function handleLoadComplete() {
 				$('#loading-bar').css({width:'100%',opacity:0});
 			}
-
-
 
 
 			$win.resize( handleResize );
@@ -302,7 +340,7 @@
 
 
 <script>
-  var _gaq=[['_setAccount','UA-26906941-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+  var _gaq=[['_setAccount',''],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
   s.parentNode.insertBefore(g,s)}(document,'script'));

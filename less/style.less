@@ -18,6 +18,8 @@
                           © www.gouwestadmm.nl
 ========================================================================== */
 
+
+
 .street-view > img,
 .street-view > video {
 	width: 100%;
@@ -28,6 +30,33 @@
 	position: absolute;
 	top: 5000px;
 }
+
+.parts{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.vert{
+	height:100%;
+
+		.container{
+			height:100%;
+			.row-fluid{
+				height: 100%;
+				[class*="span"]{
+					display: table;
+					height: 100%;
+					.vert-content{
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+}
+
 
 
 /* ---------------------------------------
