@@ -245,7 +245,11 @@ nav.main{
   }
 }
 
-.rslides_nav{
+
+.flex-direction-nav{
+  list-style: none;
+
+    li{
    height: 1.45em;
    width: 1em;
    font-size: 1.9em;
@@ -263,9 +267,10 @@ nav.main{
 
     font-family: FontAwesome;
 
-    &.next {
-   right: 0;
-   left: auto;
+      &:last-child {
+     right: 0;
+     left: auto;
+    }
   }
 }
 

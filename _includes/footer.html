@@ -15,21 +15,21 @@
     <script src="{{site.url}}/js/main.js"></script>
     <script src="{{site.url}}/js/vendor/bootstrap.min.js"></script>
 
-    <script src="{{site.url}}/js/vendor/responsiveslides.min.js"></script>
-    <link rel="stylesheet" href="{{site.url}}/js/vendor/responsiveslides.css" />
+    <script src="{{site.url}}/js/vendor/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" href="{{site.url}}/js/vendor/jquery.flexslider.css" />
 
         <script>
-    $(function () {
+  // Can also be used with $(document).ready()
+$(document).ready(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    slideshow: false,
+    prevText: "",
+    nextText: "",
+    useCss: true 
+  });
+});
 
-      // Slideshow 1
-      $("#slider1").responsiveSlides({
-        auto: false,
-        nav: true,
-        prevText: "",
-        nextText: "",
-      });
-      
-    });
   </script>
 
 

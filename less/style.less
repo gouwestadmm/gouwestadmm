@@ -28,7 +28,6 @@
 
 .bottom{
 	position: absolute;
-	top: 5000px;
 }
 
 .parts{
@@ -57,7 +56,17 @@
 		}
 }
 
+.eerste{
+	position: fixed;
+	top: 0;
+	margin-top: 45%;
+}
 
+.tweede{
+	position: fixed;
+	top: 0;
+	margin-top: 25%;
+}
 
 /* ---------------------------------------
    Typografie
@@ -69,6 +78,15 @@ html{
 body {
 	height: 100%;
 	margin-top: 40px;
+}
+
+blockquote{
+	p{
+	font-size: 1em;
+	}
+	.cite{
+		font-size: 0.6em;
+	}
 }
 
 
@@ -103,15 +121,28 @@ body {
 	width: 100%;
 	height: 100%;
 	display: table;
+	table-layout: fixed;
 }
 
 .content{
-	padding: 3%;
+	padding: 6%;
+
+	&.top{
+		position: absolute;
+		top: 0;
+	}
+
+	&.top-right{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 	
 	&.bottom{
 	position: absolute;
 	bottom: 0;
 	}
+
 }
 
 /* ---------------------------------------
@@ -135,10 +166,19 @@ body {
 }
 
 .highlight{
-	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1),
-				inset 0 1px 0 0 rgba(255,255,255,0.4),
+	box-shadow: inset 0 0 3px 1px rgba(255,255,255,0.1),
+				inset 0 1px 0 0 rgba(255,255,255,0.3),
 				inset 0 -1px 0 0 rgba(0,0,0,0.3);
 	position: relative;
+}
+
+
+.top-gradient{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	#gradient > .vertical(rgba(0,0,0,0.1), rgba(0,0,0,0.0));
 }
 
 .bottom-gradient{
@@ -149,6 +189,14 @@ body {
 	#gradient > .vertical(rgba(0,0,0,0.01), rgba(0,0,0,0.4));
 }
 
+.text-shadow{
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.all-caps{
+	text-transform: uppercase;
+}
+
 /* ==========================================================================
   Home page slider | default layout
 ========================================================================== */
@@ -156,8 +204,20 @@ body {
 #slider{
 	height: 100%;
 
+	.flex-viewport{
+		height: 100%;
+		ul{
+			height: 100%;
+			li{
+				height: 100%;
+				position: relative;
+			}
+		}
+
+	}
+
 	.container{
-		 display: table;
+		display: table;
 	    height: 100%;
 	    position: relative;
 	}
@@ -167,7 +227,7 @@ body {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		#gradient > .radial(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+		#gradient > .radial(rgba(0,0,0,0.1), rgba(0,0,0,0.6));
 	}
 
 	.dots{
@@ -176,6 +236,7 @@ body {
 		width: 100%;
 		height: 100%;
 		background: url("http://whiteboard.is/img/dot-pattern.png") repeat;
+		.opacity(40);
 	}
 
 	.overlay-block{
@@ -183,6 +244,7 @@ body {
 		display: table-cell;
 		vertical-align: middle;
 		height: 100%;
+		width: 100%;
 
 		.metro-tiles{
 			height: 65%;
@@ -192,9 +254,10 @@ body {
 				height: 100%;
 				position: relative;
 
-				.content{
+				.vert-block-content{
 					display: table-cell;
 					vertical-align: middle;
+					padding: 8%;
 				}
 			}
 			.project-logo{
@@ -206,24 +269,55 @@ body {
 }
 
 
+
+
 /* ==========================================================================
   Home page slider | content
 ========================================================================== */
 
 
+
+/* ==========================================================================
+  Home page slider | Zuidplashof slide
+========================================================================== */
 .zuidplashof{
 	background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") center center no-repeat;
 	.background-size(cover);
 	.zuidplashof-img{
-		background: url("http://gouwestad.com/zuidplashof/images/slider2.jpg") left center no-repeat;
+		background: url("../img/zuidplashof-slide.jpg") center top no-repeat;
 		.background-size(cover);
 	}
 	.zuidplashof-img2{
 		background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") left center no-repeat;
 		.background-size(cover);
 	}
+	.span9 .content{
+		padding-top: 20%;
+		text-align: right;
+		h1{
+			line-height: 1.01em;
+		}
+		h5{
+			line-height: 1em;
+		}
+	}
+	.span3 img{
+		padding-bottom: 5%;
+	}
+
+	blockquote{
+		color: #fff;
+		small{
+			color: #fff;
+		}
+	}
 }
 
+
+
+/* ==========================================================================
+  Home page slider | Mijntype A slide
+========================================================================== */
 
 .mijntypea{
 	background: url("http://www.mijntypea.nl/img/bg-type-a3-a4.jpg") center center no-repeat;
@@ -232,6 +326,41 @@ body {
 		background: url("http://www.mijntypea.nl/img/slide3bg.jpg") center center no-repeat;
 		.background-size(cover);
 	}
+	.mijntypea-img2{
+		background: url("http://www.mijntypea.nl/img/bg-type-a3-a4.jpg") center center no-repeat;
+		.background-size(cover);
+	}
+}
+
+.project-info{
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 40;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+
+	p{
+	color: @textColor;
+	}
+}
+
+.project-info.open{
+	top: 0;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+}
+
+#noordpark{
+	background: rgba(255,255,255,0.95);
 }
 
 
