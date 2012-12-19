@@ -72,18 +72,10 @@
 	"buffers":
 	[
 		{
-			"file": "street.html",
-			"settings":
-			{
-				"buffer_size": 5889,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "less/style.less",
 			"settings":
 			{
-				"buffer_size": 5119,
+				"buffer_size": 7023,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +99,7 @@
 			"file": "_includes/footer.html",
 			"settings":
 			{
-				"buffer_size": 1690,
+				"buffer_size": 1723,
 				"line_ending": "Unix"
 			}
 		},
@@ -126,7 +118,23 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 3039,
+				"buffer_size": 3256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 8470,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/base.less",
+			"settings":
+			{
+				"buffer_size": 6107,
 				"line_ending": "Unix"
 			}
 		}
@@ -187,6 +195,8 @@
 	},
 	"file_history":
 	[
+		"/Users/lexbijl/Sites/gouwestad.com/gouwestadmm/street.html",
+		"/Users/lexbijl/Sites/gouwestad.com/gouwestadmm/_site/index.html",
 		"/Users/lexbijl/Sites/gouwestad.com/gouwestad.com/js/vendor/responsiveslides.min.js",
 		"/Users/lexbijl/Sites/gouwestad.com/gouwestad.com/_config.yml",
 		"/Users/lexbijl/Sites/gouwestad.com/gouwestad.com/js/main.js",
@@ -259,6 +269,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bottom",
 			".controls",
 			"hide",
 			"content",
@@ -295,64 +306,23 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "street.html",
-					"settings":
-					{
-						"buffer_size": 5889,
-						"regions":
-						{
-							"TagLint":
-							{
-								"flags": 52,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										1293,
-										1299
-									]
-								],
-								"scope": "variable.parameter"
-							}
-						},
-						"selection":
-						[
-							[
-								1278,
-								1278
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "less/style.less",
 					"settings":
 					{
-						"buffer_size": 5119,
+						"buffer_size": 7023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1468,
-								1468
+								5229,
+								5229
 							]
 						],
 						"settings":
@@ -361,13 +331,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 210.0,
+						"translation.y": 4994.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "_layouts/street.html",
 					"settings":
 					{
@@ -394,7 +364,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "js/ProgressiveImageSequence.class.js",
 					"settings":
 					{
@@ -421,11 +391,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "_includes/footer.html",
 					"settings":
 					{
-						"buffer_size": 1690,
+						"buffer_size": 1723,
 						"regions":
 						{
 							"TagLint":
@@ -445,8 +415,8 @@
 						"selection":
 						[
 							[
-								965,
-								965
+								1022,
+								1022
 							]
 						],
 						"settings":
@@ -463,7 +433,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "_config.yml",
 					"settings":
 					{
@@ -489,24 +459,94 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 3039,
+						"buffer_size": 3256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2884,
-								2884
+								2583,
+								2583
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 750.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 8470,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										2441,
+										2464
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								2869,
+								2869
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 791.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "less/base.less",
+					"settings":
+					{
+						"buffer_size": 6107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588,
+								588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -575,6 +615,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 368.0,
+	"side_bar_width": 369.0,
 	"status_bar_visible": true
 }
