@@ -75,7 +75,7 @@
 			"file": "less/style.less",
 			"settings":
 			{
-				"buffer_size": 7023,
+				"buffer_size": 8068,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +99,7 @@
 			"file": "_includes/footer.html",
 			"settings":
 			{
-				"buffer_size": 1723,
+				"buffer_size": 1746,
 				"line_ending": "Unix"
 			}
 		},
@@ -126,7 +126,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8470,
+				"buffer_size": 9085,
 				"line_ending": "Unix"
 			}
 		},
@@ -306,7 +306,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -314,15 +314,15 @@
 					"file": "less/style.less",
 					"settings":
 					{
-						"buffer_size": 7023,
+						"buffer_size": 8068,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5229,
-								5229
+								6443,
+								6443
 							]
 						],
 						"settings":
@@ -331,7 +331,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4994.0,
+						"translation.y": 5614.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -395,7 +395,7 @@
 					"file": "_includes/footer.html",
 					"settings":
 					{
-						"buffer_size": 1723,
+						"buffer_size": 1746,
 						"regions":
 						{
 							"TagLint":
@@ -415,8 +415,8 @@
 						"selection":
 						[
 							[
-								1022,
-								1022
+								1746,
+								1746
 							]
 						],
 						"settings":
@@ -481,7 +481,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 750.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -491,7 +491,7 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 8470,
+						"buffer_size": 9085,
 						"regions":
 						{
 							"TagLint":
@@ -501,8 +501,8 @@
 								"regions":
 								[
 									[
-										2441,
-										2464
+										358,
+										381
 									]
 								],
 								"scope": "variable.parameter"
@@ -511,8 +511,8 @@
 						"selection":
 						[
 							[
-								2869,
-								2869
+								6226,
+								6226
 							]
 						],
 						"settings":
@@ -523,7 +523,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 791.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
