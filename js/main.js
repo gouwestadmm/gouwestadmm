@@ -75,6 +75,44 @@ $(document).ready(function() {
 });
 
 
+$('#noordpark-close').click(function(e) {
+   e.preventDefault();
+  $('#noordpark').removeClass("open");
+});
+
+$("#noordpark-info").click(function(e) {
+   e.preventDefault();
+  $('#noordpark').addClass("open");
+});
 
 
+
+
+$(window).scroll(function(){
+    if  ($(window).scrollTop() >= 2000){
+        $('.eerste').hide('slow', function() {
+        // Animation complete.
+        });
+    }
+     else if  ($(window).scrollTop() < 2000){
+        $('.eerste').show('slow', function() {
+        // Animation complete.
+        });
+    }
+
+});
+
+$(window).scroll(function(){
+    if  ($(window).scrollTop() <= 2050){
+        $('.tweede').hide('slow', function() {
+        // Animation complete.
+        });
+    }
+     else if  ($(window).scrollTop() < 2050){
+        $('.tweede').show('slow', function() {
+        // Animation complete.
+        });
+    }
+
+});
 
