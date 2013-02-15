@@ -3,7 +3,6 @@
 @import "base.less";
 
 
-
 /* ==========================================================================
 	____  ____  _    ___          ________  _____ _______       _____  
   / ____|/ __ \| |  | \ \        / /  ____|/ ____|__   __|/\   |  __ \ 
@@ -37,24 +36,27 @@
 	width: 100%;
 }
 
-.vert{
-	height:100%;
-
-		.container{
-			height:100%;
-			.row-fluid{
-				height: 100%;
-				[class*="span"]{
-					display: table;
-					height: 100%;
-					.vert-content{
-						display: table-cell;
-						vertical-align: middle;
-					}
-				}
-			}
-		}
+/* This parent can be any width and height */
+.vert-block {
+  text-align: center;
 }
+ 
+/* The ghost, nudged to maintain perfect centering */
+.vert-block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */ 
+.vert-content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .eerste{
 	position: fixed;
@@ -89,61 +91,17 @@ blockquote{
 	}
 }
 
-
 .borders{
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 }
 
-.half-height{
-	height: 50% - @fluidGridGutterWidth;
-	margin-bottom: @fluidGridGutterWidth * 2;
-	position: relative;
-}
-
-.quarter-height{
-	height: 25% - @fluidGridGutterWidth;
-	margin-bottom: @fluidGridGutterWidth * 2;
-	position: relative;
-}
-
-.three-quarter-height{
-	height: 75% - @fluidGridGutterWidth;
-	margin-bottom: @fluidGridGutterWidth * 2;
-	position: relative;
-}
 
 .rslides, .rslides li{
 	height: 100%;
 }
 
-.vert-block{
-	width: 100%;
-	height: 100%;
-	display: table;
-	table-layout: fixed;
-}
 
-.content{
-	padding: 6%;
-
-	&.top{
-		position: absolute;
-		top: 0;
-	}
-
-	&.top-right{
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	
-	&.bottom{
-	position: absolute;
-	bottom: 0;
-	}
-
-}
 
 /* ---------------------------------------
    Navs
@@ -208,6 +166,7 @@ blockquote{
 		height: 100%;
 		ul{
 			height: 100%;
+			margin-left: 0;
 			li{
 				height: 100%;
 				position: relative;
@@ -217,9 +176,63 @@ blockquote{
 	}
 
 	.container{
-		display: table;
 	    height: 100%;
-	    position: relative;
+	    display: block;
+	}
+
+	/* This parent can be any width and height */
+	.block {
+	  height: 100%;
+	}
+	 
+	/* The ghost, nudged to maintain perfect centering */
+	.block:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+
+	/* The element to be centered, can
+	   also be of any width and height */ 
+	.centered {
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+
+	.row-fluid{
+		height: 100%;
+	}
+
+	.row-fluid [class*="span"]{
+		height: 100%;
+		.half-height{
+			height: 50% - @fluidGridGutterWidth;
+			margin-bottom: @fluidGridGutterWidth * 2;
+			position: relative;
+		}
+
+		.quarter-height{
+			height: 25% - @fluidGridGutterWidth;
+			margin-bottom: @fluidGridGutterWidth * 2;
+			position: relative;
+		}
+
+		.three-quarter-height{
+			height: 75% - @fluidGridGutterWidth;
+			margin-bottom: @fluidGridGutterWidth * 2;
+			position: relative;
+		}
+	}
+
+	.block-table{
+		display: table;
+		height: 100%;
+	}
+	p.centered{
+		display: table-cell;
+		vertical-align: middle;
 	}
 
 	.overlay{
@@ -239,33 +252,33 @@ blockquote{
 		.opacity(40);
 	}
 
-	.overlay-block{
-		margin-top: -5%;
-		display: table-cell;
-		vertical-align: middle;
-		height: 100%;
-		width: 100%;
-
-		.metro-tiles{
-			height: 65%;
-			box-shadow: 0 0 15px rgba(0,0,0,0.5);
-
-			[class*="span"]{
-				height: 100%;
-				position: relative;
-
-				.vert-block-content{
-					display: table-cell;
-					vertical-align: middle;
-					padding: 8%;
-				}
-			}
-			.project-logo{
-				padding-bottom: 10%;
-			}
-		}
-
+	.metro-tiles{
+	  	height: 65%;
+	    margin-left: -5px;
+	    margin-right: -5px;
+	    width: 100%;
 	}
+
+.content{
+	padding: 6%;
+
+	&.top{
+		position: absolute;
+		top: 0;
+	}
+
+	&.top-right{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&.bottom{
+	position: absolute;
+	bottom: 0;
+	}
+
+}
 }
 
 
@@ -283,6 +296,9 @@ blockquote{
 .zuidplashof{
 	background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") center center no-repeat;
 	.background-size(cover);
+	.project-logo{
+		height: 50%;
+	}
 	.zuidplashof-img{
 		background: url("../img/zuidplashof-slide.png") center top no-repeat;
 		.background-size(cover);
@@ -303,6 +319,7 @@ blockquote{
 	}
 	.span3 img{
 		padding-bottom: 5%;
+		margin-top: 20%;
 	}
 
 	blockquote{
@@ -384,7 +401,6 @@ blockquote{
 
 }
 
-
 .project-info{
 	position: absolute;
 	top: -100%;
@@ -420,4 +436,84 @@ blockquote{
 /* ==========================================================================
   Responsive styles | Main site
 ========================================================================== */
+
+
+@media (max-width: 767px) {
+
+	body{
+		margin-top: 0;
+	}
+	//Fix the navbar
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+	}
+
+	//Fix the portfolio tiles on smaller screens
+	.rslides, .rslides li{
+	height: auto !important;
+	min-height: 100%;
+	}
+	.overlay-block{
+		height: auto !important;
+		min-height: 100%;
+		.metro-tiles{
+			.clearfix;
+			height: auto;
+			min-height: 100%;
+			.quarter-height, .half-height, .three-quarter-height{
+				.clearfix;
+				height: auto;
+				min-height: 100%;
+			}
+		}
+	}
+.vert{
+	height: auto;
+	.container{
+		height: auto;
+		.row-fluid{
+			height: auto;
+			[class*="span"]{
+				display: block;
+				height: auto;
+				.vert-content{
+					display: block;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+
+.vert-block{
+	width: 100%;
+	height: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+.content{
+	padding: 16%;
+
+	&.top{
+		position: absolute;
+		top: 0;
+	}
+
+	&.top-right{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	&.bottom{
+	position: absolute;
+	bottom: 0;
+	}
+
+}
+
+}
+
 
