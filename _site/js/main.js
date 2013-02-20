@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 
 function showDashBoard(){
   for(var i = 1; i <= 12; i++) {
@@ -10,7 +10,7 @@ function showDashBoard(){
  
 function fadeDashBoard(){
   for(var i = 1; i <= 12; i++) {
-    $('#slider .metro-tiles .span'+i).addClass('fadeOutback').removeClass('fadeInForward-'+i);
+    $('#slider .metro-tiles .span'+i).addClass('fadeOutback').removeClass('fadeInForward');
   }
 }
 
@@ -19,14 +19,12 @@ $('.more-info').each(function(){
   var $this= $(this),
       page = $this.data('page');
   $this.on('click',function(e){
-     e.preventDefault();
     $('.project-info.'+page).addClass('openpage');
     fadeDashBoard();
   })
 });
 
 $('.close-button').click(function(e){
-    e.preventDefault();
   $(this).parent().addClass('slidePageLeft')
   //this function will detect the end of the animation, and remove the classes added before
   //so that the page will get back to its initial position after it has been closed
@@ -61,8 +59,7 @@ $(window).scroll(function(){
         // Animation complete.
         });
     }
-
 });
 
-
+});
 

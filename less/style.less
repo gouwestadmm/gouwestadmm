@@ -79,7 +79,6 @@ html{
 
 body {
 	height: 100%;
-	padding-top: 85px;
 }
 
 blockquote{
@@ -161,6 +160,8 @@ blockquote{
 
 #slider{
 	height: 100%;
+	margin-bottom: 0;
+	overflow: hidden;
 	perspective: 3300px;
 	-webkit-perspective: 3300px;
 
@@ -265,13 +266,13 @@ blockquote{
 
 	&.top{
 		position: absolute;
-		top: 0;
+		top: 5%;
 	}
 
 	&.top-right{
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 5%;
+		right: 5%;
 	}
 
 	&.bottom{
@@ -284,11 +285,13 @@ blockquote{
 
 	.content-table{
 		display: table;
+		table-layout: fixed;
 		width: 100%;
 		height: 100%;
 		.content-box{
 		display: table-cell;
 		vertical-align: middle;
+		height: 100%;
 		}
 	}
 }
@@ -320,7 +323,7 @@ blockquote{
 		.background-size(cover);
 	}
 	.span9 .content{
-		padding-top: 20%;
+		padding-top: 10%;
 		text-align: right;
 		h1{
 			line-height: 1.01em;
@@ -415,11 +418,8 @@ blockquote{
 
 .project-info{
 	width:100%;
-	height:100%;
-	max-height: 100%;
-	overflow: hidden;
-	color:white;
-	text-align:center;
+	height: auto;
+	min-height: 100%;
 	position:absolute;
 	top:0;
 	right: 0;
@@ -437,6 +437,22 @@ blockquote{
 	-o-transform:rotateY(-90deg) translateZ(5em);
 	-ms-transform:rotateY(-90deg) translateZ(5em);
 	transform:rotateY(-90deg) translateZ(5em);
+
+	.close-button{
+		padding-top: 85px;
+	}
+
+	&.zuidplashof{
+		background: @blue;
+	}
+
+	&.tourmalijn{
+		background: @purple;
+		h1{
+			font-size: 3em;
+			line-height: 1.2em
+		}
+	}
 }
 
 #noordpark{
