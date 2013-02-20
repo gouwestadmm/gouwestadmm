@@ -75,17 +75,16 @@ $(document).ready(function() {
 });
 
 
-$('#noordpark-close').click(function(e) {
-   e.preventDefault();
-  $('#noordpark').removeClass("open");
-});
+
 
 $("#noordpark-info").click(function(e) {
    e.preventDefault();
-  $('#noordpark').addClass("open");
+  $('#noordpark').addClass("openpage");
 });
 
-
+ $('#noordpark-close').click(function(){
+    $('#noordpark').addClass('slidePageLeft')
+  });
 
 
 $(window).scroll(function(){
@@ -99,7 +98,6 @@ $(window).scroll(function(){
         // Animation complete.
         });
     }
-
 });
 
 $(window).scroll(function(){
@@ -115,4 +113,8 @@ $(window).scroll(function(){
     }
 
 });
+
+
+
+
 
