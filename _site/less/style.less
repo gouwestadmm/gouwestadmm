@@ -107,7 +107,18 @@ blockquote{
 ----------------------------------------*/
 
 .brand{
-	max-width: 260px;
+	max-width: 300px;
+}
+
+.navbar-inner{
+	background-image: none;
+	background: #fff;
+}
+
+.navbar .nav > li > a {
+	font-weight: lighter;
+	color: @linkColor;
+	text-shadow: none;
 }
 
 /* ==========================================================================
@@ -125,7 +136,7 @@ blockquote{
 .highlight{
 	box-shadow: inset 0 0 3px 1px rgba(255,255,255,0.1),
 				inset 0 1px 0 0 rgba(255,255,255,0.3),
-				inset 0 -1px 0 0 rgba(0,0,0,0.3);
+				inset 0 -2px 0 0 rgba(0,0,0,0.1);
 	position: relative;
 }
 
@@ -162,6 +173,7 @@ blockquote{
 	height: 100%;
 	margin-bottom: 0;
 	overflow: hidden;
+	background: #fff;
 	perspective: 3300px;
 	-webkit-perspective: 3300px;
 
@@ -173,6 +185,14 @@ blockquote{
 			li{
 				height: 100%;
 				position: relative;
+				.background{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					.background-size(cover);
+				}
 			}
 		}
 
@@ -210,6 +230,7 @@ blockquote{
 
 	.row-fluid [class*="span"]{
 		height: 100%;
+		box-shadow: 0 0 18px rgba(0,0,0,0.18);
 		.half-height{
 			height: 50% - @fluidGridGutterWidth;
 			margin-bottom: @fluidGridGutterWidth * 2;
@@ -229,10 +250,6 @@ blockquote{
 		}
 	}
 
-	.block-table{
-		display: table;
-		height: 100%;
-	}
 	p.centered{
 		display: table-cell;
 		vertical-align: middle;
@@ -243,7 +260,7 @@ blockquote{
 		top: 0;
 		width: 100%;
 		height: 100%;
-		#gradient > .radial(rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+		#gradient > .radial(rgba(4,124,191,0.1), rgba(0,0,0,0.6));
 	}
 
 	.dots{
@@ -304,13 +321,59 @@ blockquote{
 ========================================================================== */
 
 
+/* ==========================================================================
+  Home page slider | Gouwestad slide
+========================================================================== */
+
+.gouwestad{
+	.background{
+		background: url("../img/gouwestad.jpg") no-repeat;
+		opacity: 0.5;
+	}
+	.overlay{
+		opacity: 0.1;
+	}
+	.gouwestad-img{
+		background: url("../img/gouwestadbg.jpg") top center no-repeat;
+		.background-size(cover);
+	}
+	.content{
+		padding: 2%;
+		right: 0;
+	}
+	.more-info{
+		position: absolute;
+		top: 0;
+		right: 3%;
+	}
+	.img2{
+		background: url("http://www.gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/img/kopen.jpg") no-repeat;
+		.background-size(cover);
+	}
+	.yellow{
+		background: #fcaf17;
+	}
+	.project-logo{
+		margin-bottom: 5%;
+	}
+	.btn-primary{
+		background: #fcaf17;
+	}
+}
+
+
 
 /* ==========================================================================
   Home page slider | Zuidplashof slide
 ========================================================================== */
 .zuidplashof{
-	background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") center center no-repeat;
-	.background-size(cover);
+	.background{
+		background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") center center no-repeat;
+		opacity: 0.9;
+	}
+	.overlay{
+		opacity: 0.3;
+	}
 	.project-logo{
 		height: 50%;
 	}
@@ -323,7 +386,7 @@ blockquote{
 		.background-size(cover);
 	}
 	.span9 .content{
-		padding-top: 10%;
+		padding-top: 5%;
 		text-align: right;
 		h1{
 			line-height: 1.01em;
@@ -346,14 +409,17 @@ blockquote{
 }
 
 
-
 /* ==========================================================================
   Home page slider | Mijntype A slide
 ========================================================================== */
 
 .mijntypea{
-	background: url("http://www.mijntypea.nl/img/bg-type-a3-a4.jpg") center center no-repeat;
-	.background-size(cover);
+	.background{
+	background: url("../img/mijntypeabg.jpg") center center no-repeat;
+	}
+	.overlay{
+		opacity: 0;
+	}
 	.mijntypea-img{
 		background: url("http://www.mijntypea.nl/img/slide3bg.jpg") center center no-repeat;
 		.background-size(cover);
@@ -416,6 +482,7 @@ blockquote{
 
 }
 
+
 .project-info{
 	width:100%;
 	height: auto;
@@ -438,8 +505,17 @@ blockquote{
 	-ms-transform:rotateY(-90deg) translateZ(5em);
 	transform:rotateY(-90deg) translateZ(5em);
 
+	.row-fluid [class*="span"]{
+		box-shadow: none !important;
+	}
+
 	.close-button{
-		padding-top: 85px;
+		margin-top: 85px;
+		right: 5%;
+	}
+
+	&.gouwestad{
+		background: #fcaf17;
 	}
 
 	&.zuidplashof{
