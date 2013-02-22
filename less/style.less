@@ -1145,11 +1145,30 @@ blockquote{
 	}
 
 	//Fix the portfolio tiles on smaller screens
-	.rslides, .rslides li{
-	height: auto !important;
-	min-height: 100%;
-	background: none !important;
+	#slider .flex-viewport ul li{
+		.background{
+			background: none !important;
+		}
+		.container{
+
+			.clearfix;
+			padding-left: 0;
+			padding-right: 0;
+			width: auto;
+			.block{
+				display: block;
+			}
+			.block:before{
+				display: none;
+			}
+		}
+		
 	}
+
+	.flex-direction-nav li{
+		top: 8%;
+	}
+
 	.overlay-block{
 		height: auto !important;
 		min-height: 100%;
