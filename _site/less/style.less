@@ -79,7 +79,6 @@ html{
 
 body {
 	height: 100%;
-	margin-top: 40px;
 }
 
 blockquote{
@@ -108,7 +107,18 @@ blockquote{
 ----------------------------------------*/
 
 .brand{
-	max-width: 260px;
+	max-width: 300px;
+}
+
+.navbar-inner{
+	background-image: none;
+	background: #fff;
+}
+
+.navbar .nav > li > a {
+	font-weight: lighter;
+	color: @linkColor;
+	text-shadow: none;
 }
 
 /* ==========================================================================
@@ -126,7 +136,7 @@ blockquote{
 .highlight{
 	box-shadow: inset 0 0 3px 1px rgba(255,255,255,0.1),
 				inset 0 1px 0 0 rgba(255,255,255,0.3),
-				inset 0 -1px 0 0 rgba(0,0,0,0.3);
+				inset 0 -2px 0 0 rgba(0,0,0,0.1);
 	position: relative;
 }
 
@@ -161,6 +171,9 @@ blockquote{
 
 #slider{
 	height: 100%;
+	margin-bottom: 0;
+	overflow: hidden;
+	background: #fff;
 	perspective: 3300px;
 	-webkit-perspective: 3300px;
 
@@ -172,6 +185,14 @@ blockquote{
 			li{
 				height: 100%;
 				position: relative;
+				.background{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					.background-size(cover);
+				}
 			}
 		}
 
@@ -209,6 +230,7 @@ blockquote{
 
 	.row-fluid [class*="span"]{
 		height: 100%;
+		box-shadow: 0 0 18px rgba(0,0,0,0.18);
 		.half-height{
 			height: 50% - @fluidGridGutterWidth;
 			margin-bottom: @fluidGridGutterWidth * 2;
@@ -228,10 +250,6 @@ blockquote{
 		}
 	}
 
-	.block-table{
-		display: table;
-		height: 100%;
-	}
 	p.centered{
 		display: table-cell;
 		vertical-align: middle;
@@ -242,7 +260,7 @@ blockquote{
 		top: 0;
 		width: 100%;
 		height: 100%;
-		#gradient > .radial(rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+		#gradient > .radial(rgba(4,124,191,0.1), rgba(0,0,0,0.6));
 	}
 
 	.dots{
@@ -265,13 +283,13 @@ blockquote{
 
 	&.top{
 		position: absolute;
-		top: 0;
+		top: 5%;
 	}
 
 	&.top-right{
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 5%;
+		right: 5%;
 	}
 
 	&.bottom{
@@ -284,11 +302,13 @@ blockquote{
 
 	.content-table{
 		display: table;
+		table-layout: fixed;
 		width: 100%;
 		height: 100%;
 		.content-box{
 		display: table-cell;
 		vertical-align: middle;
+		height: 100%;
 		}
 	}
 }
@@ -301,13 +321,59 @@ blockquote{
 ========================================================================== */
 
 
+/* ==========================================================================
+  Home page slider | Gouwestad slide
+========================================================================== */
+
+.gouwestad{
+	.background{
+		background: url("../img/gouwestad.jpg") no-repeat;
+		opacity: 0.5;
+	}
+	.overlay{
+		opacity: 0.1;
+	}
+	.gouwestad-img{
+		background: url("../img/gouwestadbg.jpg") top center no-repeat;
+		.background-size(cover);
+	}
+	.content{
+		padding: 2%;
+		right: 0;
+	}
+	.more-info{
+		position: absolute;
+		top: 0;
+		right: 3%;
+	}
+	.img2{
+		background: url("http://www.gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/img/kopen.jpg") no-repeat;
+		.background-size(cover);
+	}
+	.yellow{
+		background: #fcaf17;
+	}
+	.project-logo{
+		margin-bottom: 5%;
+	}
+	.btn-primary{
+		background: #fcaf17;
+	}
+}
+
+
 
 /* ==========================================================================
   Home page slider | Zuidplashof slide
 ========================================================================== */
 .zuidplashof{
-	background: url("http://gouwestad.com/zuidplashof/images/headerimage.jpg") center center no-repeat;
-	.background-size(cover);
+	.background{
+		background: url("../img/zuidplashofbg.jpg") center center no-repeat;
+		opacity: 1;
+	}
+	.overlay{
+		opacity: 0.6;
+	}
 	.project-logo{
 		height: 50%;
 	}
@@ -320,7 +386,7 @@ blockquote{
 		.background-size(cover);
 	}
 	.span9 .content{
-		padding-top: 20%;
+		padding-top: 5%;
 		text-align: right;
 		h1{
 			line-height: 1.01em;
@@ -343,14 +409,17 @@ blockquote{
 }
 
 
-
 /* ==========================================================================
   Home page slider | Mijntype A slide
 ========================================================================== */
 
 .mijntypea{
-	background: url("http://www.mijntypea.nl/img/bg-type-a3-a4.jpg") center center no-repeat;
-	.background-size(cover);
+	.background{
+	background: url("../img/mijntypeabg.jpg") center center no-repeat;
+	}
+	.overlay{
+		opacity: 0;
+	}
 	.mijntypea-img{
 		background: url("http://www.mijntypea.nl/img/slide3bg.jpg") center center no-repeat;
 		.background-size(cover);
@@ -359,6 +428,7 @@ blockquote{
 		background: url("http://www.mijntypea.nl/img/bg-type-a3-a4.jpg") center center no-repeat;
 		.background-size(cover);
 	}
+
 
 	.screen{
 		background: #fff url("../img/mijntypea-screen.png") top left no-repeat;
@@ -373,7 +443,7 @@ blockquote{
   Home page slider | Tourmalijn slide
 ========================================================================== */
 .tourmalijn{
-	background: url("http://www.mijntypea.nl/img/slide3bg.jpg") center center no-repeat;
+	background: url("../img/tourmalijnbg.jpg") center center no-repeat;
 	.background-size(cover);
 	.img{
 		background: url("../img/tourmalijn-toren.png") center center no-repeat;
@@ -413,13 +483,11 @@ blockquote{
 
 }
 
+
 .project-info{
 	width:100%;
-	height:100%;
-	max-height: 100%;
-	overflow: hidden;
-	color:white;
-	text-align:center;
+	height: auto;
+	min-height: 100%;
 	position:absolute;
 	top:0;
 	right: 0;
@@ -437,50 +505,365 @@ blockquote{
 	-o-transform:rotateY(-90deg) translateZ(5em);
 	-ms-transform:rotateY(-90deg) translateZ(5em);
 	transform:rotateY(-90deg) translateZ(5em);
+
+	.row-fluid [class*="span"]{
+		box-shadow: none !important;
+	}
+
+	.close-button{
+		margin-top: 85px;
+		right: 5%;
+	}
+
+	&.gouwestad{
+		background: #fcaf17;
+	}
+
+	&.zuidplashof{
+		background: @blue;
+	}
+
+	&.tourmalijn{
+		background: @purple;
+		h1{
+			font-size: 3em;
+			line-height: 1.2em
+		}
+	}
 }
 
 #noordpark{
 	background: @blue;
 }
 
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.slidePageInFromLeft{
-  animation: slidePageInFromLeft .8s cubic-bezier(.01,1,.22,.99) 1 0.25s normal forwards;
-  }
-.openpage{ 
-  -webkit-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
+.slidePageInFromLeft {
+	-webkit-animation: slidePageInFromLeft .8s cubic-bezier(.01,1,.22,.99) 1 0.25s normal forwards;
+	-moz-animation: slidePageInFromLeft .8s cubic-bezier(.01,1,.22,.99) 1 0.25s normal forwards;
+	-ms-animation: slidePageInFromLeft .8s cubic-bezier(.01,1,.22,.99) 1 0.25s normal forwards;
+	-o-animation: slidePageInFromLeft .8s cubic-bezier(.01,1,.22,.99) 1 0.25s normal forwards;
+	animation: slidePageInFromLeft .8s cubic-bezier(.01,1,.22,.99) 1 0.25s normal forwards;
+}
+
+.openpage {
+	-webkit-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 	-moz-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 	-ms-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 	-o-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 	animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 }
-.slidePageBackLeft{
-  opacity:1; 
-  left:0;
-  animation: slidePageBackLeft .8s ease-out 1 normal forwards;
-}
-.slidePageLeft{
-  opacity:1;
-  transform: rotateY(0) translateZ(0) ; 
-  animation:slidePageLeft .8s ease-out 1 normal forwards;
-}
-.fadeOutback{
-  animation: fadeOutBack 0.3s ease-out 1 normal forwards;
-}
-.fadeInForward-1, .fadeInForward-2, .fadeInForward-3 {
-  opacity:0;
-  transform: translateZ(-5em) scale(0.75);
-  animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
-}
-.fadeInForward-2{
-  animation-delay: .55s;
-}
-.fadeInForward-3{
-  animation-delay: .7s;
+
+.slidePageBackLeft {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	left: 0;
+
+	-webkit-animation: slidePageBackLeft .8s ease-out 1 normal forwards;
+	-moz-animation: slidePageBackLeft .8s ease-out 1 normal forwards;
+	-ms-animation: slidePageBackLeft .8s ease-out 1 normal forwards;
+	-o-animation: slidePageBackLeft .8s ease-out 1 normal forwards;
+	animation: slidePageBackLeft .8s ease-out 1 normal forwards;
 }
 
+.slidePageLeft {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transform: rotateY(0) translateZ(0);
+	-moz-transform: rotateY(0) translateZ(0);
+	-o-transform: rotateY(0) translateZ(0);
+	-ms-transform: rotateY(0) translateZ(0);
+	transform: rotateY(0) translateZ(0);
+
+	-webkit-animation: slidePageLeft .8s ease-out 1 normal forwards;
+	-moz-animation: slidePageLeft .8s ease-out 1 normal forwards;
+	-ms-animation: slidePageLeft .8s ease-out 1 normal forwards;
+	-o-animation: slidePageLeft .8s ease-out 1 normal forwards;
+	animation: slidePageLeft .8s ease-out 1 normal forwards;
+}
+
+.fadeOutback {
+	-webkit-animation: fadeOutBack 0.3s ease-out 1 normal forwards;
+	-moz-animation: fadeOutBack 0.3s ease-out 1 normal forwards;
+	-ms-animation: fadeOutBack 0.3s ease-out 1 normal forwards;
+	-o-animation: fadeOutBack 0.3s ease-out 1 normal forwards;
+	animation: fadeOutBack 0.3s ease-out 1 normal forwards;
+}
+
+.fadeInForward {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+
+	-webkit-transform: translateZ(-5em) scale(0.75);
+	-moz-transform: translateZ(-5em) scale(0.75);
+	-o-transform: translateZ(-5em) scale(0.75);
+	-ms-transform: translateZ(-5em) scale(0.75);
+	transform: translateZ(-5em) scale(0.75);
+
+	-webkit-animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
+	-moz-animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
+	-ms-animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
+	-o-animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
+	animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
+}
+
+
+
+@keyframes "fadeOutBack" {
+ 0% {
+    -webkit-transform: translateX(-2em) scale(1);
+   	-moz-transform: translateX(-2em) scale(1);
+   	-o-transform: translateX(-2em) scale(1);
+   	-ms-transform: translateX(-2em) scale(1);
+   	transform: translateX(-2em) scale(1);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+ }
+ 70% {
+    -webkit-transform: translateZ(-5em) scale(0.6);
+   	-moz-transform: translateZ(-5em) scale(0.6);
+   	-o-transform: translateZ(-5em) scale(0.6);
+   	-ms-transform: translateZ(-5em) scale(0.6);
+   	transform: translateZ(-5em) scale(0.6);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   	filter: alpha(opacity=50);
+   	opacity: 0.5;
+ }
+ 95% {
+    -webkit-transform: translateZ(-5em) scale(0.6);
+   	-moz-transform: translateZ(-5em) scale(0.6);
+   	-o-transform: translateZ(-5em) scale(0.6);
+   	-ms-transform: translateZ(-5em) scale(0.6);
+   	transform: translateZ(-5em) scale(0.6);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   	filter: alpha(opacity=50);
+   	opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: translateZ(-5em) scale(0);
+   	-moz-transform: translateZ(-5em) scale(0);
+   	-o-transform: translateZ(-5em) scale(0);
+   	-ms-transform: translateZ(-5em) scale(0);
+   	transform: translateZ(-5em) scale(0);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   	filter: alpha(opacity=0);
+   	opacity: 0;
+ }
+
+}
+
+@-moz-keyframes fadeOutBack {
+ 0% {
+   -moz-transform: translateX(-2em) scale(1);
+   transform: translateX(-2em) scale(1);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   -moz-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 95% {
+   -moz-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 100% {
+   -moz-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+
+}
+
+@-webkit-keyframes "fadeOutBack" {
+ 0% {
+   -webkit-transform: translateX(-2em) scale(1);
+   transform: translateX(-2em) scale(1);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   -webkit-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 95% {
+   -webkit-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 100% {
+   -webkit-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+
+}
+
+@-ms-keyframes "fadeOutBack" {
+ 0% {
+   -ms-transform: translateX(-2em) scale(1);
+   transform: translateX(-2em) scale(1);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   -ms-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 95% {
+   -ms-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 100% {
+   -ms-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+
+}
+
+@-o-keyframes "fadeOutBack" {
+ 0% {
+   -o-transform: translateX(-2em) scale(1);
+   transform: translateX(-2em) scale(1);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   -o-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 95% {
+   -o-transform: translateZ(-5em) scale(0.6);
+   transform: translateZ(-5em) scale(0.6);
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+ }
+ 100% {
+   -o-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+
+}
+
+@keyframes "fadeInForward" {
+ 0% {
+    -webkit-transform: translateZ(-5em) scale(0);
+   	-moz-transform: translateZ(-5em) scale(0);
+   	-o-transform: translateZ(-5em) scale(0);
+   	-ms-transform: translateZ(-5em) scale(0);
+   	transform: translateZ(-5em) scale(0);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   	filter: alpha(opacity=0);
+   	opacity: 0;
+ }
+ 100% {
+    -webkit-transform: translateZ(0) scale(1);
+   	-moz-transform: translateZ(0) scale(1);
+   	-o-transform: translateZ(0) scale(1);
+   	-ms-transform: translateZ(0) scale(1);
+   	transform: translateZ(0) scale(1);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+ }
+
+}
+
+@-moz-keyframes fadeInForward {
+ 0% {
+   -moz-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -moz-transform: translateZ(0) scale(1);
+   transform: translateZ(0) scale(1);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+
+}
+
+@-webkit-keyframes "fadeInForward" {
+ 0% {
+   -webkit-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: translateZ(0) scale(1);
+   transform: translateZ(0) scale(1);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+
+}
+
+@-ms-keyframes "fadeInForward" {
+ 0% {
+   -ms-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -ms-transform: translateZ(0) scale(1);
+   transform: translateZ(0) scale(1);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+
+}
+
+@-o-keyframes "fadeInForward" {
+ 0% {
+   -o-transform: translateZ(-5em) scale(0);
+   transform: translateZ(-5em) scale(0);
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -o-transform: translateZ(0) scale(1);
+   transform: translateZ(0) scale(1);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+
+}
 
 
 @keyframes "rotatePageInFromRight" {
@@ -595,11 +978,128 @@ blockquote{
 
 }
 
-@keyframes slidePageLeft{
-  0%{right: 0; transform: rotateY(0deg) translateZ(0) ; opacity:1}
-  70%{opacity:1;}
-  100%{opacity:0; right:-150%; transform: rotateY(0deg)}
+@keyframes "slidePageLeft" {
+ 0% {
+    left: 0;
+   	-webkit-transform: rotateY(0deg) translateZ(0);
+   	-moz-transform: rotateY(0deg) translateZ(0);
+   	-o-transform: rotateY(0deg) translateZ(0);
+   	-ms-transform: rotateY(0deg) translateZ(0);
+   	transform: rotateY(0deg) translateZ(0);
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+ }
+ 70% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   	filter: alpha(opacity=0);
+   	opacity: 0;
+   	left: -150%;
+   	-webkit-transform: rotateY(0deg);
+   	-moz-transform: rotateY(0deg);
+   	-o-transform: rotateY(0deg);
+   	-ms-transform: rotateY(0deg);
+   	transform: rotateY(0deg);
+ }
+
 }
+
+@-moz-keyframes slidePageLeft {
+ 0% {
+   left: 0;
+   -moz-transform: rotateY(0deg) translateZ(0);
+   transform: rotateY(0deg) translateZ(0);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   left: -150%;
+   -moz-transform: rotateY(0deg);
+   transform: rotateY(0deg);
+ }
+
+}
+
+@-webkit-keyframes "slidePageLeft" {
+ 0% {
+   left: 0;
+   -webkit-transform: rotateY(0deg) translateZ(0);
+   transform: rotateY(0deg) translateZ(0);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   left: -150%;
+   -webkit-transform: rotateY(0deg);
+   transform: rotateY(0deg);
+ }
+
+}
+
+@-ms-keyframes "slidePageLeft" {
+ 0% {
+   left: 0;
+   -ms-transform: rotateY(0deg) translateZ(0);
+   transform: rotateY(0deg) translateZ(0);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   left: -150%;
+   -ms-transform: rotateY(0deg);
+   transform: rotateY(0deg);
+ }
+
+}
+
+@-o-keyframes "slidePageLeft" {
+ 0% {
+   left: 0;
+   -o-transform: rotateY(0deg) translateZ(0);
+   transform: rotateY(0deg) translateZ(0);
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 70% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   left: -150%;
+   -o-transform: rotateY(0deg);
+   transform: rotateY(0deg);
+ }
+
+}
+
 
 @keyframes slidePageInFromLeft{
   0%{opacity:0; }
@@ -613,7 +1113,6 @@ blockquote{
   70%{opacity:1;}
   100%{opacity:0; left:-150%;}
 }
-
 
 
 /* ==========================================================================

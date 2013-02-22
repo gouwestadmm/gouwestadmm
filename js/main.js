@@ -1,22 +1,38 @@
-  /* Detect Mac/PC - Being used as subpixel-antialiased rendering
-on Mac Webkit.
--------------------------------------------------------------- */
-if (navigator.userAgent.indexOf('Mac OS X') != -1) {
-  document.body.className += " mac";
-} else {
-  document.body.className += " pc";
+$(document).ready(function() {
+
+function showDashBoard(){
+  for(var i = 1; i <= 12; i++) {
+    $('#slider .metro-tiles .span'+i).each(function(){
+        $(this).addClass('fadeInForward').removeClass('fadeOutback');
+    });
+  }
+}
+ 
+function fadeDashBoard(){
+  for(var i = 1; i <= 12; i++) {
+    $('#slider .metro-tiles .span'+i).addClass('fadeOutback').removeClass('fadeInForward');
+  }
 }
 
 
-
-$("#noordpark-info").click(function(e) {
-   e.preventDefault();
-  $('#noordpark').addClass("openpage");
+$('.more-info').each(function(){
+  var $this= $(this),
+      page = $this.data('page');
+  $this.on('click',function(e){
+    $('.project-info.'+page).addClass('openpage');
+    fadeDashBoard();
+  })
 });
 
- $('#noordpark-close').click(function(){
-    $('#noordpark').addClass('slidePageLeft')
-  });
+$('.close-button').click(function(e){
+  $(this).parent().addClass('slidePageLeft')
+  //this function will detect the end of the animation, and remove the classes added before
+  //so that the page will get back to its initial position after it has been closed
+        .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+              $(this).removeClass('slidePageLeft').removeClass('openpage');
+            });
+    showDashBoard();
+});
 
 
 $(window).scroll(function(){
@@ -43,10 +59,7 @@ $(window).scroll(function(){
         // Animation complete.
         });
     }
-
 });
 
-
-
-
+});
 
