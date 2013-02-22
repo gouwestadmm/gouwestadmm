@@ -494,7 +494,7 @@ blockquote{
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity:0;
-	z-index: 100;
+	z-index: -1;
 	-webkit-transform-origin: 100% 0%;
 	-moz-transform-origin: 100% 0%;
 	-o-transform-origin: 100% 0%;
@@ -506,13 +506,19 @@ blockquote{
 	-ms-transform:rotateY(-90deg) translateZ(5em);
 	transform:rotateY(-90deg) translateZ(5em);
 
+
 	.row-fluid [class*="span"]{
 		box-shadow: none !important;
 	}
 
 	.close-button{
-		margin-top: 85px;
-		right: 5%;
+		position: absolute;
+		top: 100px;
+		right: 0;
+		display: block;
+		background: #fff;
+		color: @linkColor;
+		font-size: 1.6em;
 	}
 
 	&.gouwestad{
@@ -549,6 +555,7 @@ blockquote{
 }
 
 .openpage {
+	z-index: 150;
 	-webkit-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 	-moz-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
 	-ms-animation: rotatePageInFromRight 1s cubic-bezier(.66,.04,.36,1.03) 1 normal forwards;
