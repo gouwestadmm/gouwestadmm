@@ -511,6 +511,7 @@ blockquote{
 
 	.row-fluid [class*="span"]{
 		box-shadow: none !important;
+		padding-top: 85px;
 	}
 
 	.close-button{
@@ -1145,6 +1146,10 @@ blockquote{
 	}
 
 	//Fix the portfolio tiles on smaller screens
+	#slider{
+		height: auto;
+		min-height: 100%;
+	}
 	#slider .flex-viewport ul li{
 		.background{
 			background: none !important;
@@ -1165,24 +1170,17 @@ blockquote{
 		
 	}
 
+	.main-img{
+		height: 400px !important;
+	}
+
 	.flex-direction-nav li{
 		top: 8%;
 	}
 
-	.overlay-block{
-		height: auto !important;
-		min-height: 100%;
-		.clearfix;
-		.metro-tiles{
-			.clearfix;
-			height: auto;
-			min-height: 100%;
-			.quarter-height, .half-height, .three-quarter-height{
-				.clearfix;
-				height: auto;
-				min-height: 100%;
-			}
-		}
+	.close-button{
+		bottom: 0;
+		top: auto !important;
 	}
 
 
