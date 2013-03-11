@@ -1113,10 +1113,25 @@ blockquote{
 		max-width: 180px ;
 	}
 
-	//Fix the portfolio tiles on smaller screens
+	//Fix the portfolio tiles on smaller screens. Hoogte is geen 100% maar auto
 	#slider{
 		height: auto;
-		min-height: 100%;
+		.flex-viewport{
+			height: auto;
+			ul{
+				height: auto;
+				li{
+					height: auto;
+					.container{
+						height: auto;
+						.row-fluid{
+							height: auto;
+						}
+					}
+				}
+			}
+			
+		}
 		
 		.metro-tiles{
 		margin: 0;
@@ -1127,20 +1142,6 @@ blockquote{
 		.background{
 			background: none !important;
 		}
-		.container{
-
-			.clearfix;
-			padding-left: 0;
-			padding-right: 0;
-			width: auto;
-			.block{
-				display: block;
-			}
-			.block:before{
-				display: none;
-			}
-		}
-		
 	}
 
 	#slider .row-fluid [class*="span"] {
