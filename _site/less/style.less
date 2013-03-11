@@ -169,13 +169,15 @@ blockquote{
   Home page slider | default layout
 ========================================================================== */
 
+// slider aanpassingen basisstijl voor schermvullende weergave
 #slider{
 	height: 100%;
 	margin-bottom: 0;
 	overflow: hidden;
 	background: #fff;
 	perspective: 3300px;
-	-webkit-perspective: 3300px;
+	-webkit-perspective: 3300px; //Toevoeging voor werking 3d effect in webkit
+
 
 	.flex-viewport{
 		height: 100%;
@@ -185,6 +187,35 @@ blockquote{
 			li{
 				height: 100%;
 				position: relative;
+				.container{
+				height: 100%;
+	    		display: block;
+					.row-fluid{
+					height: 100%;
+					[class*="span"]{
+						height: 100%;
+						box-shadow: 0 0 18px rgba(0,0,0,0.18);
+						.half-height{
+							height: 50% - @fluidGridGutterWidth;
+							margin-bottom: @fluidGridGutterWidth * 2;
+							position: relative;
+						}
+
+						.quarter-height{
+							height: 25% - @fluidGridGutterWidth;
+							margin-bottom: @fluidGridGutterWidth * 2;
+							position: relative;
+						}
+
+						.three-quarter-height{
+							height: 75% - @fluidGridGutterWidth;
+							margin-bottom: @fluidGridGutterWidth * 2;
+							position: relative;
+						}
+					}
+				}
+			}
+
 				.background{
 					position: absolute;
 					top: 0;
@@ -193,17 +224,16 @@ blockquote{
 					height: 100%;
 					.background-size(cover);
 				}
+				.main-img{
+					.background-size(cover);	
+				}
 			}
 		}
 
 	}
 
-	.container{
-	    height: 100%;
-	    display: block;
-	}
 
-	/* This parent can be any width and height */
+	// Vertical centering met block
 	.block {
 	  height: 100%;
 	}
@@ -224,36 +254,6 @@ blockquote{
 	  vertical-align: middle;
 	}
 
-	.row-fluid{
-		height: 100%;
-	}
-
-	.row-fluid [class*="span"]{
-		height: 100%;
-		box-shadow: 0 0 18px rgba(0,0,0,0.18);
-		.half-height{
-			height: 50% - @fluidGridGutterWidth;
-			margin-bottom: @fluidGridGutterWidth * 2;
-			position: relative;
-		}
-
-		.quarter-height{
-			height: 25% - @fluidGridGutterWidth;
-			margin-bottom: @fluidGridGutterWidth * 2;
-			position: relative;
-		}
-
-		.three-quarter-height{
-			height: 75% - @fluidGridGutterWidth;
-			margin-bottom: @fluidGridGutterWidth * 2;
-			position: relative;
-		}
-	}
-
-	p.centered{
-		display: table-cell;
-		vertical-align: middle;
-	}
 
 	.overlay{
 		position: absolute;
@@ -261,15 +261,6 @@ blockquote{
 		width: 100%;
 		height: 100%;
 		#gradient > .radial(rgba(4,124,191,0.1), rgba(0,0,0,0.6));
-	}
-
-	.dots{
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background: url("http://whiteboard.is/img/dot-pattern.png") repeat;
-		.opacity(40);
 	}
 
 	.metro-tiles{
@@ -1178,12 +1169,24 @@ blockquote{
 	#slider .row-fluid [class*="span"] {
     box-shadow: none;
     height: auto;
-    min-height: 300px;
 	}
 
+	// per slider styles
+
 	.main-img{
-		height: 30px !important;
+		min-height: 350px !important;
 	}
+
+	.project-logo{
+		min-height: 100px;
+	}
+
+	.gouwestad{
+		.main-img{
+			min-height: 400px !important;
+		}
+	}
+
 
 	.flex-direction-nav li{
 		top: 8%;
