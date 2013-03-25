@@ -143,6 +143,7 @@ blockquote{
 	font-weight: lighter;
 	color: @linkColor;
 	text-shadow: none;
+	font-size: 0.7em;
 }
 
 /* ==========================================================================
@@ -253,13 +254,7 @@ blockquote{
 	}
 
 
-	.overlay{
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		#gradient > .radial(rgba(4,124,191,0.1), rgba(0,0,0,0.6));
-	}
+
 
 	.metro-tiles{
 	  	height: 65%;
@@ -283,7 +278,13 @@ blockquote{
 }
 
 
-
+.overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	#gradient > .radial(rgba(0,0,0,0.05), rgba(0,0,0,0.4));
+}
 
 /* ==========================================================================
   Home page slider | content
@@ -298,9 +299,6 @@ blockquote{
 	.background{
 		background: url("../img/gouwestad.jpg") no-repeat;
 		opacity: 0.5;
-	}
-	.overlay{
-		opacity: 0.1;
 	}
 	.gouwestad-img{
 		background: url("../img/gouwestadbg.jpg") top center no-repeat;
@@ -492,9 +490,6 @@ blockquote{
 		font-size: 1.6em;
 	}
 
-	&.gouwestad{
-		background: #fcaf17;
-	}
 
 	&.zuidplashof{
 		background: @blue;
@@ -508,6 +503,71 @@ blockquote{
 		}
 	}
 }
+
+// Gouwestad page styles
+.gouwestad{
+	h1{
+		font-weight: 600;
+	}
+	.header{
+		background: #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center fixed;
+		.background-size(cover);
+		padding: 10% 0;
+		position: relative;
+		h1, h4{
+			color: #fff;
+			text-shadow: 0 0 1px rgba(0,0,0,0.1);
+		}
+		.container{
+			position: relative;
+		}
+	}
+	.story{
+		text-shadow: 1px 1px 0 #fff;
+		.row-fluid{
+			max-width: 70%;
+			margin: 0 auto;
+		}
+	}
+	.background2{
+		background: #fcaf17 url("http://www.gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/img/kopen.jpg") no-repeat center center;
+		.background-size(cover);
+		padding: 6% 0;
+	}
+	.elements{
+			background:  #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center;
+			.background-size(cover);
+			color: #fff;
+			text-shadow: none;
+			position: relative;
+			font-family: 'Open-sans', sans-serif;
+			.overlay{
+				#gradient > .radial(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+			}
+			.container{
+				position: relative;
+			}
+			h1{
+				color: #fff;
+			}
+			h4{
+				color: @blue;
+			}
+			p{
+				-moz-columns: 2 3em;
+			}
+			ol li{
+				padding: 1%;
+				margin: 1%;
+				border-bottom: 1px solid rgba(255,255,255,0.3);
+				&:first-child{
+					border-top: 1px solid rgba(255,255,255,0.3);
+				}
+			}
+		}
+}
+
+
 
 #noordpark{
 	background: @blue;
