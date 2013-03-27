@@ -518,6 +518,7 @@ section#slider{
 	.header{
 		background: #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center fixed;
 		.background-size(cover);
+		min-height: 100%;
 		padding: 8% 0;
 		position: relative;
 		color: #fff;
@@ -550,39 +551,54 @@ section#slider{
 			margin: 0 auto;
 		}
 	}
+	.nieuw{
+		background: url("../img/gwstd-ipad.png") no-repeat -300px center;
+		padding: 8% 0;
+	}
 	.background2{
-		background: #fcaf17 url("http://www.gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/img/kopen.jpg") no-repeat center center;
+		background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center;
 		.background-size(cover);
 		padding: 6% 0;
 	}
 	.elements{
-			background:  #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center;
+			background:  #fcaf17 url("../img/gouwestad.jpg") no-repeat top center;
 			.background-size(cover);
-			color: #fff;
 			text-shadow: none;
 			position: relative;
-			font-family: 'Open-sans', sans-serif;
+			padding: 5% 0;
 			.overlay{
-				#gradient > .radial(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+				#gradient > .radial(rgba(255,255,255,0.3), rgba(255,255,255,0.3));
 			}
 			.container{
 				position: relative;
 			}
-			h1{
-				color: #fff;
-			}
-			h4{
-				color: @blue;
-			}
 			p{
 				-moz-columns: 2 3em;
 			}
+			ol{
+				width: 60%;
+				counter-reset: ordered-list;
+				list-style: none;
+			}
 			ol li{
-				padding: 1%;
-				margin: 1%;
-				border-bottom: 1px solid rgba(255,255,255,0.3);
+				padding: 3% 0;
+				margin: 2% 0;
+				margin-left: 2em;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
 				&:first-child{
-					border-top: 1px solid rgba(255,255,255,0.3);
+					border-top: 1px solid rgba(0,0,0,0.1);
+				}
+				&:before{
+				    color: #fcaf17;
+				    content: counter(ordered-list, decimal);
+				    counter-increment: ordered-list;
+				    display: block;
+				    float: left;
+				    font-size: 3em;
+				    font-weight: 400;
+				    margin-left: -1.5em;
+				    margin-right: -2em;
+				    padding: 0.3em 0.4em;
 				}
 			}
 		}
