@@ -131,7 +131,7 @@ blockquote{
 ========================================================================== */
 
 .brand{
-	max-width: 300px;
+	max-width: 250px;
 }
 
 .navbar-inner{
@@ -191,13 +191,16 @@ blockquote{
 ========================================================================== */
 
 // slider aanpassingen basisstijl voor schermvullende weergave
-#slider{
+section#slider{
 	height: 100%;
 	margin-bottom: 0;
 	overflow: hidden;
 	background: #fff;
 	perspective: 3300px;
 	-webkit-perspective: 3300px; //Toevoeging voor werking 3d effect in webkit
+	font-family: 'Open Sans', sans-serif;
+	font-size: 85%;
+	padding: 0;
 
 
 	.flex-viewport{
@@ -454,11 +457,14 @@ blockquote{
 
 .project-info{
 	width:100%;
-	height: auto;
-	min-height: 100%;
+	height: 100%;
+	overflow-y: scroll;
 	position:absolute;
 	top:0;
 	right: 0;
+	background: #fff;
+	color: @textColor;
+	font-family: @baseFontFamily;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity:0;
@@ -477,17 +483,10 @@ blockquote{
 
 	.row-fluid [class*="span"]{
 		box-shadow: none !important;
-		padding-top: 85px;
 	}
 
 	.close-button{
-		position: absolute;
-		top: 100px;
-		right: 0;
-		display: block;
-		background: #fff;
-		color: @linkColor;
-		font-size: 1.6em;
+	
 	}
 
 
@@ -509,14 +508,37 @@ blockquote{
 	h1{
 		font-weight: 600;
 	}
+	header{
+		padding-top: 100px;
+		p{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
 	.header{
 		background: #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center fixed;
 		.background-size(cover);
-		padding: 10% 0;
+		padding: 8% 0;
 		position: relative;
+		color: #fff;
 		h1, h4{
 			color: #fff;
 			text-shadow: 0 0 1px rgba(0,0,0,0.1);
+		}
+		h1{
+			font-size: 4.5em;
+			line-height: 0.7em;
+		}
+		h4{
+			font-family: @baseFontFamily;
+			font-size: 1em;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+		}
+		.overlay{
+			background-color: #fcaf17;
+			background-image: none;
+			.opacity(90);
 		}
 		.container{
 			position: relative;
@@ -525,7 +547,6 @@ blockquote{
 	.story{
 		text-shadow: 1px 1px 0 #fff;
 		.row-fluid{
-			max-width: 70%;
 			margin: 0 auto;
 		}
 	}
