@@ -25,7 +25,7 @@ $('.more-info').each(function(){
 });
 
 $('.close-button').click(function(e){
-  $(this).parent().addClass('slidePageLeft')
+  $(this).parents('.project-info').addClass('slidePageLeft')
   //this function will detect the end of the animation, and remove the classes added before
   //so that the page will get back to its initial position after it has been closed
         .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {

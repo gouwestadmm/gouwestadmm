@@ -57,6 +57,7 @@ html{
 	height: 100%;
 	body {
 		height: 100%;
+		padding-top: 80px;
 	}
 }
 
@@ -509,7 +510,6 @@ section#slider{
 		font-weight: 600;
 	}
 	header{
-		padding-top: 100px;
 		p{
 			max-width: 70%;
 			margin: 0 auto;
@@ -559,9 +559,14 @@ section#slider{
 		background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center;
 		.background-size(cover);
 		padding: 6% 0;
+		position: relative;
+		.overlay{
+			#gradient > .radial(rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+		}
 		h1{
 		font-family: @baseFontFamily;
 		font-weight: 400;
+		color: #fcaf17;
 		}
 	}
 	.elements{
@@ -570,9 +575,6 @@ section#slider{
 			text-shadow: none;
 			position: relative;
 			padding: 5% 0;
-			.overlay{
-				#gradient > .radial(rgba(255,255,255,0.3), rgba(255,255,255,0.3));
-			}
 			.container{
 				position: relative;
 			}
@@ -611,6 +613,7 @@ section#slider{
 
 #noordpark{
 	background: @blue;
+	color: #fff;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1200,8 +1203,9 @@ section#slider{
 
 @media (max-width: 767px) {
 
-	body{
+	html body{
 		margin-top: 0;
+		padding-top: 0px;
 	}
 	//Fix the navbar
 	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
@@ -1216,17 +1220,26 @@ section#slider{
 	//Fix the portfolio tiles on smaller screens. Hoogte is geen 100% maar auto
 	#slider{
 		overflow-y: scroll;
+		.block{
+			height: 100%;
+			&:before{
+				height: 100%;
+				display: none;
+			}
+		}
 		ul{
-			height: auto;
 			li{
 				overflow-y: scroll;
 				}
 			}	
+		.metro-tiles{
+			margin: 0;
+			height: 100% !important;
+			width: 100%;
+			box-shadow: none;
+			}
 		}
 		
-		.metro-tiles{
-		margin: 0;
-		}
 
 	#slider .flex-viewport ul li{
 		.background{
