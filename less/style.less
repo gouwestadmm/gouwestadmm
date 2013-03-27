@@ -511,7 +511,7 @@ section#slider{
 	header{
 		padding-top: 100px;
 		p{
-			max-width: 80%;
+			max-width: 70%;
 			margin: 0 auto;
 		}
 	}
@@ -552,13 +552,17 @@ section#slider{
 		}
 	}
 	.nieuw{
-		background: url("../img/gwstd-ipad.png") no-repeat -300px center;
-		padding: 8% 0;
+		background: url("../img/gwstd-ipad.png") no-repeat -300px center fixed;
+		padding: 10% 0;
 	}
 	.background2{
 		background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center;
 		.background-size(cover);
 		padding: 6% 0;
+		h1{
+		font-family: @baseFontFamily;
+		font-weight: 400;
+		}
 	}
 	.elements{
 			background:  #fcaf17 url("../img/gouwestad.jpg") no-repeat top center;
@@ -572,11 +576,10 @@ section#slider{
 			.container{
 				position: relative;
 			}
-			p{
+			p.double{
 				-moz-columns: 2 3em;
 			}
 			ol{
-				width: 60%;
 				counter-reset: ordered-list;
 				list-style: none;
 			}
@@ -1212,28 +1215,18 @@ section#slider{
 
 	//Fix the portfolio tiles on smaller screens. Hoogte is geen 100% maar auto
 	#slider{
-		height: auto;
-		.flex-viewport{
+		overflow-y: scroll;
+		ul{
 			height: auto;
-			ul{
-				height: auto;
-				li{
-					height: auto;
-					.container{
-						height: auto;
-						.row-fluid{
-							height: auto;
-						}
-					}
+			li{
+				overflow-y: scroll;
 				}
-			}
-			
+			}	
 		}
 		
 		.metro-tiles{
 		margin: 0;
 		}
-	}
 
 	#slider .flex-viewport ul li{
 		.background{
