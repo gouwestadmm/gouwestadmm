@@ -14,7 +14,7 @@
 *~
 *.sass-cache
 *.htaccess
-_config.yml
+*.yml
 
 gitmerge.php
 
