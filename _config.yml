@@ -4,4 +4,4 @@ server:      false
 permalink: 	pretty
 server_port: 4000
 baseurl:    /
-url: http://gouwestadmm.github.com/gouwestadmm/
+url: http://gouwestadmm.github.com/gouwestadmm
