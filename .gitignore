@@ -30,6 +30,7 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+*.yml
 
 # Komodo
 *.komodoproject
