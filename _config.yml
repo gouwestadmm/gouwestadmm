@@ -4,4 +4,8 @@ server:      false
 permalink: 	pretty
 server_port: 4000
 baseurl:    /
+<<<<<<< HEAD
 url: http://localhost:4000
+=======
+url: http://gouwestadmm.github.com/gouwestadmm
+>>>>>>> 8b77f6eb75e994395a51b2cfa7895ba5abd6139b
