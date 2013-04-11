@@ -8955,6 +8955,7 @@ h4 {
 
 h1 {
   font-size: 3.5em;
+  line-height: 1.2em;
   letter-spacing: -0.05em;
 }
 
@@ -9762,8 +9763,8 @@ section#slider .content-table .content-box {
 }
 
 .info-project.gouwestad .header h1 {
+  margin-bottom: -0.05em;
   font-size: 4.5em;
-  line-height: 0.7em;
 }
 
 .info-project.gouwestad .header h4 {
