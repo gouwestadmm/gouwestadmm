@@ -9443,6 +9443,10 @@ blockquote .cite {
   text-transform: uppercase;
 }
 
+.alt {
+  font-family: 'Droid Serif', serif;
+}
+
 /* ==========================================================================
   Navbar
 ========================================================================== */
@@ -9723,8 +9727,16 @@ section#slider .content-table .content-box {
           background-size: cover;
 }
 
+/* ==========================================================================
+  Story elements
+========================================================================== */
+
 .info-project {
   font-family: 'Droid Serif', serif;
+}
+
+.story-width {
+  width: 75%;
 }
 
 .info-project.gouwestad h1 {
@@ -9814,9 +9826,7 @@ section#slider .content-table .content-box {
 }
 
 .info-project.gouwestad .background2 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #fcaf17;
+  font-weight: normal;
 }
 
 .info-project.gouwestad .elements {

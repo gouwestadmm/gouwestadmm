@@ -124,7 +124,9 @@ blockquote{
 	text-transform: uppercase;
 }
 
-
+.alt{
+	font-family: @altFontFamily;
+}
 
 /* ==========================================================================
   Navbar
@@ -371,10 +373,18 @@ section#slider{
 	}
 
 
+/* ==========================================================================
+  Story elements
+========================================================================== */
 
 .info-project{
 	font-family: @altFontFamily;
 }
+
+.story-width{
+	width: 75%;
+}
+
 // Gouwestad page styles
 .info-project.gouwestad{
 	h1{
@@ -438,9 +448,7 @@ section#slider{
 			position: relative;
 		}
 		h1{
-		font-family: @baseFontFamily;
-		font-weight: 400;
-		color: #fcaf17;
+		font-weight: normal;
 		}
 	}
 	.elements{
