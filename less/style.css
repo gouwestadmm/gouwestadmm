@@ -9231,6 +9231,9 @@ nav.main .navbar .navbar-inner {
   body {
     font-size: 120%;
   }
+  p {
+    line-height: 1.55em;
+  }
 }
 
 @media screen and (min-width: 780px) {
