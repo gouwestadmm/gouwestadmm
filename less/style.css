@@ -9229,27 +9229,13 @@ nav.main .navbar .navbar-inner {
 
 @media screen and (min-width: 480px) {
   body {
-    font-size: 102.5%;
-  }
-}
-
-@media screen and (min-width: 680px) {
-  body {
-    font-size: 125%;
-    line-height: 1.55em;
-    letter-spacing: -0.1px;
-  }
-  p {
-    font-weight: 300;
-  }
-  .mac p {
-    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 110%;
   }
 }
 
 @media screen and (min-width: 780px) {
   body {
-    font-size: 110.5%;
+    font-size: 115%;
   }
 }
 
