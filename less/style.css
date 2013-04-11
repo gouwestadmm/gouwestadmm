@@ -9743,11 +9743,6 @@ section#slider .content-table .content-box {
   font-weight: 600;
 }
 
-.info-project.gouwestad header p {
-  max-width: 70%;
-  margin: 0 auto;
-}
-
 .info-project.gouwestad .header {
   position: relative;
   min-height: 100%;
@@ -10493,12 +10488,11 @@ section#slider .content-table .content-box {
   #slider .btn:hover {
     border: 1px solid rgba(255, 255, 255, 0.8);
   }
+  .story-width {
+    width: 100%;
+  }
   .info-project.gouwestad .header h1 {
     font-size: 3em;
-    line-height: 1.2em;
-  }
-  .info-project.gouwestad .story-width {
-    width: 100%;
   }
   .main-img {
     min-height: 350px !important;
