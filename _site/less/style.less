@@ -1,5 +1,4 @@
 @import "bootstrap/bootstrap.less";
-@import "bootstrap/responsive.less";
 @import "base.less";
 
 
@@ -125,7 +124,7 @@ blockquote{
 }
 
 .alt{
-	font-family: @altFontFamily;
+	font-family: @font-family-serif;
 }
 
 /* ==========================================================================
@@ -148,9 +147,8 @@ blockquote{
 
 .navbar .nav > li > a {
 	font-weight: lighter;
-	color: @linkColor;
+	color: @brand-primary;
 	text-shadow: none;
-	font-size: 0.7em;
 }
 
 /* ==========================================================================
@@ -245,23 +243,6 @@ section#slider{
 					[class*="span"]{
 						height: 100%;
 						//box-shadow: 0 0 18px rgba(0,0,0,0.18);
-						.half-height{
-							height: 50% - @fluidGridGutterWidth;
-							margin-bottom: @fluidGridGutterWidth * 2;
-							position: relative;
-						}
-
-						.quarter-height{
-							height: 25% - @fluidGridGutterWidth;
-							margin-bottom: @fluidGridGutterWidth * 2;
-							position: relative;
-						}
-
-						.three-quarter-height{
-							height: 75% - @fluidGridGutterWidth;
-							margin-bottom: @fluidGridGutterWidth * 2;
-							position: relative;
-						}
 					}
 				}
 			}
@@ -378,7 +359,7 @@ section#slider{
 ========================================================================== */
 
 .info-project{
-	font-family: @altFontFamily;
+	font-family: @font-family-serif;
 }
 
 .story-width{
@@ -408,7 +389,6 @@ section#slider{
 			margin-bottom: -0.05em;
 		}
 		h4{
-			font-family: @baseFontFamily;
 			font-size: 1em;
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
@@ -490,7 +470,6 @@ section#slider{
 
 
 #noordpark{
-	background: @blue;
 	color: #fff;
 }
 

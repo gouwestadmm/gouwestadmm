@@ -1,3 +1,4 @@
+@white: #fff;
 
 /* ==========================================================================
 	Base styles
@@ -115,84 +116,7 @@ h6{
   text-transform: uppercase;
 }
 
-/* ==========================================================================
-  Coloring
-  Set background-color & set text color based on the background-color
-========================================================================== */
 
-
-.text-color (@bgcolor) when (lightness(@bgcolor) >= 50%) {
-  color: @grayDark;
-  background: @bgcolor;
-}
-.text-color (@bgcolor) when (lightness(@bgcolor) < 50%) {
-  h1, h2, h3, h4, h5, h6, p, small{
-  color: @white;
-  }
-  background: @bgcolor;
-}
-
-.white{
-  .text-color(@white)
-  }
-
-.black{
-  .text-color(@black)
-}
-
-.gray{
-  .text-color(@gray)
-  }
-
-.graylight{
-  .text-color(@grayLight)
-  }
-
-
-.graylighter{
-  .text-color(@grayLighter)
-  }
-
-.graydark{
-  .text-color(@grayDark)
-  }
-  
-.graydarker{
-  .text-color(@grayDarker)
-  }
-
-.blue{
-  .text-color(@blue)
-  }
-
-.bluedark{
-  .text-color(@blueDark)
-  }
-  
-.green{
-  .text-color(@green)
-  }
-
-.red{
-  .text-color(@red)
-  }
-
-.yellow{
-  .text-color(@yellow)
-}
- 
-.orange{
-  .text-color(@orange)
-  }
-
-
-.pink{
-  .text-color(@pink)
-  }
-
-.purple{
-  .text-color(@purple)
-  } 
 
 
 /* ==========================================================================
@@ -340,13 +264,13 @@ nav.main{
 }
 
 @media screen and (min-width: 900px) {
-  body {
+  body, p {
     font-size: 115%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
+  body, p {
     font-size: 122.5%;
   }
 
@@ -355,12 +279,13 @@ nav.main{
 
 
 @media screen and (min-width: 1500px) {
-  body {
+  body, p {
     font-size: 150%;
   }
 
   .container{
     width: 1320px;
+    max-width: none;
   }
 
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
@@ -371,14 +296,14 @@ nav.main{
 
 
 @media screen and (min-width: 1700px) {
-  body {
+  body, p {
     font-size: 160%;
   }
 }
 
 
 @media (min-width: 1950px) {
-  body {
+  body, p {
     font-size: 180%;
   }
 
