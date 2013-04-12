@@ -289,8 +289,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 23px;
-  line-height: 38px;
+  font-size: 120%;
+  line-height: 1.55em;
   color: #333333;
   background-color: #ffffff;
 }
@@ -337,12 +337,12 @@ img {
 }
 
 p {
-  margin: 0 0 19px;
+  margin: 0 0 0.775em;
 }
 
 .lead {
-  margin-bottom: 38px;
-  font-size: 34.5px;
+  margin-bottom: 1.55em;
+  font-size: 180%;
   font-weight: 200;
   line-height: 1.4;
 }
@@ -425,7 +425,7 @@ h6,
 .h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 1.55em;
 }
 
 h1 small,
@@ -448,82 +448,82 @@ h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 38px;
-  margin-bottom: 19px;
-  line-height: 76px;
+  margin-top: 1.55em;
+  margin-bottom: 0.775em;
+  line-height: 3.1em;
 }
 
 h3 {
-  line-height: 57px;
+  line-height: 2.325em;
 }
 
 h4,
 h5,
 h6 {
-  margin-top: 19px;
-  margin-bottom: 19px;
+  margin-top: 0.775em;
+  margin-bottom: 0.775em;
 }
 
 h1,
 .h1 {
-  font-size: 63.25px;
+  font-size: 330%;
 }
 
 h2,
 .h2 {
-  font-size: 51.75px;
+  font-size: 270%;
 }
 
 h3,
 .h3 {
-  font-size: 40.25px;
+  font-size: 210%;
 }
 
 h4,
 .h4 {
-  font-size: 28.75px;
+  font-size: 150%;
 }
 
 h5,
 .h5 {
-  font-size: 23px;
+  font-size: 120%;
 }
 
 h6,
 .h6 {
-  font-size: 19.55px;
+  font-size: 102%;
 }
 
 h1 small,
 .h1 small {
-  font-size: 40.25px;
+  font-size: 210%;
 }
 
 h2 small,
 .h2 small {
-  font-size: 28.75px;
+  font-size: 150%;
 }
 
 h3 small,
 .h3 small {
-  font-size: 23px;
+  font-size: 120%;
 }
 
 h4 small,
 .h4 small {
-  font-size: 23px;
+  font-size: 120%;
 }
 
 .page-header {
-  padding-bottom: 18px;
-  margin: 76px 0 38px;
+  padding-bottom: -0.22499999999999998em;
+  margin: 3.1em 0 1.55em;
   border-bottom: 1px solid #eeeeee;
 }
 
 ul,
 ol {
   padding: 0;
-  margin: 0 0 19px 25px;
+  margin: 0 0 0.775em 25px;
 }
 
 ul ul,
@@ -534,7 +534,7 @@ ol ul {
 }
 
 li {
-  line-height: 38px;
+  line-height: 1.55em;
 }
 
 .list-unstyled {
@@ -554,12 +554,12 @@ li {
 }
 
 dl {
-  margin-bottom: 38px;
+  margin-bottom: 1.55em;
 }
 
 dt,
 dd {
-  line-height: 38px;
+  line-height: 1.55em;
 }
 
 dt {
@@ -567,7 +567,7 @@ dt {
 }
 
 dd {
-  margin-left: 19px;
+  margin-left: 0.775em;
 }
 
 .dl-horizontal:before,
@@ -605,7 +605,7 @@ dd {
 }
 
 hr {
-  margin: 38px 0;
+  margin: 1.55em 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #fff;
@@ -625,20 +625,20 @@ abbr.initialism {
 
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 38px;
+  margin: 0 0 1.55em;
   border-left: 5px solid #eeeeee;
 }
 
 blockquote p {
   margin-bottom: 0;
-  font-size: 28.75px;
+  font-size: 150%;
   font-weight: 300;
   line-height: 1.25;
 }
 
 blockquote small {
   display: block;
-  line-height: 38px;
+  line-height: 1.55em;
   color: #999999;
 }
 
@@ -676,16 +676,16 @@ blockquote:after {
 
 address {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 1.55em;
   font-style: normal;
-  line-height: 38px;
+  line-height: 1.55em;
 }
 
 code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 21px;
+  font-size: 118%;
   color: #333333;
   border-radius: 4px;
 }
@@ -700,10 +700,10 @@ code {
 
 pre {
   display: block;
-  padding: 18.5px;
-  margin: 0 0 19px;
-  font-size: 22px;
-  line-height: 38px;
+  padding: 0.275em;
+  margin: 0 0 0.775em;
+  font-size: 119%;
+  line-height: 1.55em;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -715,7 +715,7 @@ pre {
 }
 
 pre.prettyprint {
-  margin-bottom: 38px;
+  margin-bottom: 1.55em;
 }
 
 pre code {
@@ -1024,13 +1024,13 @@ th {
 
 .table {
   width: 100%;
-  margin-bottom: 38px;
+  margin-bottom: 1.55em;
 }
 
 .table th,
 .table td {
   padding: 8px;
-  line-height: 38px;
+  line-height: 1.55em;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -1212,9 +1212,9 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 38px;
-  font-size: 34.5px;
-  line-height: 76px;
+  margin-bottom: 1.55em;
+  font-size: 180%;
+  line-height: 3.1em;
   color: #333333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
@@ -1243,10 +1243,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   display: inline-block;
-  min-height: 52px;
+  min-height: 15.55em;
   padding: 6px 9px;
-  font-size: 23px;
-  line-height: 38px;
+  font-size: 120%;
+  line-height: 1.55em;
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
@@ -1315,10 +1315,10 @@ input[type="checkbox"] {
 
 select,
 input[type="file"] {
-  height: 52px;
+  height: 15.55em;
   /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */
 
-  line-height: 52px;
+  line-height: 15.55em;
 }
 
 select[multiple],
@@ -1358,9 +1358,9 @@ textarea::-webkit-input-placeholder {
 .radio,
 .checkbox {
   display: block;
-  min-height: 38px;
+  min-height: 1.55em;
   padding-left: 20px;
-  margin-bottom: 19px;
+  margin-bottom: 0.775em;
 }
 
 .radio label,
@@ -1380,7 +1380,7 @@ textarea::-webkit-input-placeholder {
 
 .radio + .radio,
 .checkbox + .checkbox {
-  margin-top: -9.5px;
+  margin-top: -0.3875em;
 }
 
 .controls > .radio:first-child,
@@ -1421,7 +1421,7 @@ input[type="search"].input-large,
 input[type="tel"].input-large,
 input[type="color"].input-large {
   padding: 11px 14px;
-  font-size: 28.75px;
+  font-size: 150%;
   border-radius: 6px;
 }
 
@@ -1441,9 +1441,9 @@ input[type="url"].input-small,
 input[type="search"].input-small,
 input[type="tel"].input-small,
 input[type="color"].input-small {
-  min-height: 44px;
+  min-height: 7.55em;
   padding: 2px 10px;
-  font-size: 19.55px;
+  font-size: 102%;
   border-radius: 3px;
 }
 
@@ -1463,7 +1463,7 @@ textarea[class*="span"] {
 input[class*="span"],
 select[class*="span"],
 textarea[class*="span"] {
-  height: 52px;
+  height: 15.55em;
 }
 
 input[disabled],
@@ -1555,9 +1555,9 @@ select:focus:invalid:focus {
 }
 
 .form-actions {
-  padding: 37px 20px 38px;
-  margin-top: 38px;
-  margin-bottom: 38px;
+  padding: 0.55em 20px 1.55em;
+  margin-top: 1.55em;
+  margin-bottom: 1.55em;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
 }
@@ -1589,7 +1589,7 @@ select:focus:invalid:focus {
 
 .help-block {
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 0.775em;
 }
 
 .help-inline {
@@ -1640,9 +1640,9 @@ select:focus:invalid:focus {
 
 .input-group-addon {
   padding: 6px 8px;
-  font-size: 23px;
+  font-size: 120%;
   font-weight: normal;
-  line-height: 38px;
+  line-height: 1.55em;
   text-align: center;
   text-shadow: 0 1px 0 #fff;
   background-color: #eeeeee;
@@ -1654,12 +1654,12 @@ select:focus:invalid:focus {
 
 .input-group-addon.input-small {
   padding: 2px 10px;
-  font-size: 19.55px;
+  font-size: 102%;
 }
 
 .input-group-addon.input-large {
   padding: 11px 14px;
-  font-size: 28.75px;
+  font-size: 150%;
 }
 
 .input-group input:first-child,
@@ -1765,7 +1765,7 @@ select:focus:invalid:focus {
 @media screen and (min-width: 768px) {
   .form-horizontal .control-group {
     position: relative;
-    margin-bottom: 38px;
+    margin-bottom: 1.55em;
   }
   .form-horizontal .control-group:before,
   .form-horizontal .control-group:after {
@@ -1806,9 +1806,9 @@ select:focus:invalid:focus {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 23px;
+  font-size: 120%;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 1.55em;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -1850,19 +1850,19 @@ fieldset[disabled] .btn {
 
 .btn-large {
   padding: 11px 14px;
-  font-size: 28.75px;
+  font-size: 150%;
   border-radius: 6px;
 }
 
 .btn-small {
   padding: 2px 10px;
-  font-size: 19.55px;
+  font-size: 102%;
   border-radius: 3px;
 }
 
 .btn-mini {
   padding: 0 6px;
-  font-size: 17.25px;
+  font-size: 90%;
   border-radius: 3px;
 }
 
@@ -2842,7 +2842,7 @@ fieldset[disabled] .btn-link:focus {
 
 .dropdown-menu .divider {
   height: 2px;
-  margin: 18px 0;
+  margin: -0.22499999999999998em 0;
   overflow: hidden;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
@@ -2853,7 +2853,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 38px;
+  line-height: 1.55em;
   color: #333333;
 }
 
@@ -3078,7 +3078,7 @@ a.list-group-item.active .list-group-item-text {
 .panel-heading {
   padding: 10px 15px;
   margin: -15px -15px 15px;
-  font-size: 28.75px;
+  font-size: 150%;
   font-weight: 500;
   background-color: #f5f5f5;
   border-bottom: 1px solid #dddddd;
@@ -3183,7 +3183,7 @@ a.list-group-item.active .list-group-item-text {
   float: right;
   font-size: 20px;
   font-weight: bold;
-  line-height: 38px;
+  line-height: 1.55em;
   color: #000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
@@ -3265,7 +3265,7 @@ button.close {
 
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 38px;
+  line-height: 1.55em;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -3356,7 +3356,7 @@ button.close {
   padding: 3px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 38px;
+  line-height: 1.55em;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -3368,7 +3368,7 @@ button.close {
 
 .nav .divider {
   height: 2px;
-  margin: 18px 0;
+  margin: -0.22499999999999998em 0;
   overflow: hidden;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
@@ -3505,8 +3505,8 @@ button.close {
 }
 
 .navbar .nav > li > a {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 24.225px;
+  padding-bottom: 24.225px;
   line-height: 20px;
   color: #777777;
 }
@@ -3560,7 +3560,7 @@ button.close {
   margin-left: auto;
   font-size: 18px;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 1.55em;
   color: #777777;
   text-align: center;
 }
@@ -3601,7 +3601,7 @@ button.close {
 
 .navbar .nav > .divider {
   height: 2px;
-  margin: 18px 0;
+  margin: -0.22499999999999998em 0;
   overflow: hidden;
   background-color: #e1e1e1;
   border-bottom: 1px solid #fbfbfb;
@@ -3745,8 +3745,8 @@ button.close {
   }
   .navbar-brand {
     float: left;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 24.225px;
+    padding-bottom: 24.225px;
     margin-left: -10px;
   }
   .navbar .nav {
@@ -4036,7 +4036,7 @@ button.close {
 
 .breadcrumb {
   padding: 8px 15px;
-  margin: 0 0 38px;
+  margin: 0 0 1.55em;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -4064,7 +4064,7 @@ button.close {
 
 .pagination {
   display: inline-block;
-  margin: 38px 0;
+  margin: 1.55em 0;
   border-radius: 4px;
 }
 
@@ -4076,7 +4076,7 @@ button.close {
 .pagination > li > span {
   float: left;
   padding: 4px 12px;
-  line-height: 38px;
+  line-height: 1.55em;
   text-decoration: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -4121,7 +4121,7 @@ button.close {
 .pagination-large > li > a,
 .pagination-large > li > span {
   padding: 11px 14px;
-  font-size: 28.75px;
+  font-size: 150%;
 }
 
 .pagination-large > li:first-child > a,
@@ -4155,17 +4155,17 @@ button.close {
 .pagination-small > li > a,
 .pagination-small > li > span {
   padding: 2px 10px;
-  font-size: 19.55px;
+  font-size: 102%;
 }
 
 .pagination-mini > li > a,
 .pagination-mini > li > span {
   padding: 0 6px;
-  font-size: 17.25px;
+  font-size: 90%;
 }
 
 .pager {
-  margin: 38px 0;
+  margin: 1.55em 0;
   text-align: center;
   list-style: none;
 }
@@ -4602,7 +4602,7 @@ button.close {
 
 .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 38px;
+  margin-bottom: 1.55em;
   color: #c09853;
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
@@ -4697,7 +4697,7 @@ button.close {
 .thumbnail,
 .img-thumbnail {
   padding: 4px;
-  line-height: 38px;
+  line-height: 1.55em;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -4910,8 +4910,8 @@ a.list-group-item.active > .badge,
 }
 
 .progress {
-  height: 38px;
-  margin-bottom: 38px;
+  height: 1.55em;
+  margin-bottom: 1.55em;
   overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -5010,7 +5010,7 @@ a.list-group-item.active > .badge,
 }
 
 .accordion {
-  margin-bottom: 38px;
+  margin-bottom: 1.55em;
 }
 
 .accordion-group {
@@ -5224,7 +5224,7 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
-  line-height: 57px;
+  line-height: 2.325em;
   color: inherit;
   background-color: #eeeeee;
 }
@@ -5380,18 +5380,15 @@ section {
 ========================================================================== */
 
 body {
-  font-size: 100%;
+  font-size: 120%;
   font-weight: normal;
   line-height: 1.65em;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
 }
 
 p {
   margin: 0 0 1.5em;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  line-height: 1.70em;
 }
 
 strong {
@@ -5422,36 +5419,17 @@ h2,
 h3,
 h4 {
   margin: 0 auto 0.3em;
-  font-size: 2em;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
   line-height: 1.25;
 }
 
 h1 {
-  font-size: 3.5em;
   line-height: 1.2em;
   letter-spacing: -0.05em;
 }
 
-h2 {
-  font-size: 1.8em;
-}
-
-h3 {
-  font-size: 1.6em;
-}
-
-h4 {
-  font-size: 1.4em;
-}
-
-h5 {
-  font-size: 1.3em;
-}
-
 h6 {
-  font-size: 1.1em;
   text-transform: uppercase;
 }
 
@@ -5554,7 +5532,7 @@ nav.main .navbar .navbar-inner {
 
 @media screen and (min-width: 480px) {
   body {
-    font-size: 23px;
+    font-size: 1em;
   }
   p {
     line-height: 1.55em;
@@ -5604,21 +5582,19 @@ nav.main .navbar .navbar-inner {
 @media screen and (min-width: 900px) {
   body,
   p {
-    font-size: 115%;
+    font-size: 1.1em;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  body,
-  p {
-    font-size: 122.5%;
+  body {
+    font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 1500px) {
-  body,
-  p {
-    font-size: 150%;
+  body {
+    font-size: 1.5em;
   }
   .container {
     width: 1320px;
@@ -5633,16 +5609,14 @@ nav.main .navbar .navbar-inner {
 }
 
 @media screen and (min-width: 1700px) {
-  body,
-  p {
-    font-size: 160%;
+  body {
+    font-size: 1.6em;
   }
 }
 
 @media (min-width: 1950px) {
-  body,
-  p {
-    font-size: 180%;
+  body {
+    font-size: 216%;
   }
   .container {
     width: 1600px;
@@ -5792,7 +5766,6 @@ blockquote .cite {
 }
 
 .navbar .nav > li > a {
-  font-size: 0.7em;
   font-weight: lighter;
   color: #428bca;
   text-shadow: none;
@@ -6087,8 +6060,8 @@ section#slider .content-table .content-box {
 .info-project.gouwestad .header .overlay {
   background-color: #fcaf17;
   background-image: none;
-  opacity: 90;
-  filter: alpha(opacity=9000);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 .info-project.gouwestad .header .container {
