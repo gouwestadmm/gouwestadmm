@@ -6787,6 +6787,11 @@ section#slider .content-table .content-box {
     margin-right: 0;
     margin-left: 0;
   }
+  .navbar-brand {
+    max-width: 200px;
+    margin-top: 4px;
+    margin-left: -10px;
+  }
   #slider {
     overflow: scroll-y;
   }
