@@ -6796,7 +6796,7 @@ section#slider .content-table .content-box {
     font-weight: 700;
   }
   #slider .btn {
-    max-width: 70%;
+    max-width: none;
     padding: 0.8em 0.2em;
     font-weight: 300;
     color: #fff;
