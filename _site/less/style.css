@@ -5610,6 +5610,10 @@ nav.main .navbar .navbar-inner {
 @media screen and (min-width: 1200px) {
   body {
     font-size: 1.2em;
+    line-height: 1.7em;
+  }
+  p {
+    line-height: 1.7em;
   }
 }
 
@@ -5769,15 +5773,26 @@ blockquote .cite {
 }
 
 /* ==========================================================================
+  Colors
+========================================================================== */
+
+.graylighter {
+  text-shadow: none;
+  background: #eeeeee;
+}
+
+/* ==========================================================================
   Navbar
 ========================================================================== */
 
 .brand {
+  float: left;
   max-width: 250px;
 }
 
 .navbar {
   margin-bottom: 0;
+  background: #fff;
 }
 
 .navbar-inner {
@@ -6040,7 +6055,7 @@ section#slider .content-table .content-box {
 }
 
 .story-width {
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -6105,7 +6120,8 @@ section#slider .content-table .content-box {
 .info-project.gouwestad .background2 {
   position: relative;
   padding: 6% 0;
-  background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center;
+  text-align: center;
+  background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -6766,6 +6782,7 @@ section#slider .content-table .content-box {
     margin-left: 0;
   }
   .navbar .brand {
+    float: left;
     max-width: 180px;
     padding: 5px;
   }

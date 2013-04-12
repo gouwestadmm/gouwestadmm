@@ -128,15 +128,26 @@ blockquote{
 }
 
 /* ==========================================================================
+  Colors
+========================================================================== */
+
+.graylighter{
+	background: @grayLighter;
+	text-shadow: none;
+}
+
+/* ==========================================================================
   Navbar
 ========================================================================== */
 
 .brand{
 	max-width: 250px;
+	float: left;
 }
 
 .navbar{
 	margin-bottom: 0;
+	background: #fff;
 }
 
 .navbar-inner{
@@ -363,7 +374,7 @@ section#slider{
 }
 
 .story-width{
-	width: 75%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -413,10 +424,11 @@ section#slider{
 		padding: 10% 0;
 	}
 	.background2{
-		background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center;
+		background: #fcaf17 url("../img/map-waddinxveen.jpg") no-repeat center center fixed; 
 		.background-size(cover);
 		padding: 6% 0;
 		position: relative;
+		text-align: center;
 		.overlay{
 			#gradient > .radial(rgba(255,255,255,0.3), rgba(255,255,255,0.3));
 		}
@@ -1072,6 +1084,7 @@ section#slider{
 	.navbar .brand{
 		max-width: 180px;
 		padding: 5px;
+		float: left;
 	}
 
 	//Fix the portfolio tiles on smaller screens. Hoogte is geen 100% maar auto
