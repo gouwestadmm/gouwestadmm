@@ -5789,7 +5789,11 @@ blockquote .cite {
 ========================================================================== */
 
 .navbar-brand {
-  max-width: 300px;
+  max-width: 250px;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 0;
+  text-align: left;
 }
 
 .navbar {
