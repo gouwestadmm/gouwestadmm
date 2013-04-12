@@ -5580,6 +5580,9 @@ nav.main .navbar .navbar-inner {
     padding-right: 0;
     padding-left: 0;
   }
+  #slider .container .btn-large {
+    font-size: 1em;
+  }
   .project-info .container {
     padding-right: 20px;
     padding-left: 20px;
@@ -5785,9 +5788,8 @@ blockquote .cite {
   Navbar
 ========================================================================== */
 
-.brand {
-  float: left;
-  max-width: 250px;
+.navbar-brand {
+  max-width: 300px;
 }
 
 .navbar {
@@ -6104,12 +6106,10 @@ section#slider .content-table .content-box {
   position: relative;
 }
 
-.info-project.gouwestad .story {
-  text-shadow: 1px 1px 0 #fff;
-}
-
-.info-project.gouwestad .story .row-fluid {
-  margin: 0 auto;
+.info-project.gouwestad .yellow {
+  color: #fff;
+  text-shadow: none;
+  background: #fcaf17;
 }
 
 .info-project.gouwestad .nieuw {
@@ -6781,9 +6781,9 @@ section#slider .content-table .content-box {
     margin-right: 0;
     margin-left: 0;
   }
-  .navbar .brand {
+  .navbar .navbar-brand {
     float: left;
-    max-width: 180px;
+    max-width: 200px;
     padding: 5px;
   }
   #slider {
