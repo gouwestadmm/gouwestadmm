@@ -7239,6 +7239,10 @@ section#slider {
   -webkit-perspective: 3300px;
 }
 
+section#slider .row {
+  padding-top: 20%;
+}
+
 section#slider .flex-viewport {
   height: 100%;
 }
@@ -7320,7 +7324,7 @@ section#slider .content-table .content-box {
 }
 
 .vert-center {
-  position: relative;
+  position: absolute;
   top: 30%;
   float: none !important;
   height: 100% !important;
@@ -7341,8 +7345,7 @@ section#slider .content-table .content-box {
 }
 
 #slider .btn {
-  max-width: 70%;
-  padding: 0.8em 0.2em;
+  padding: 0.8em;
   font-weight: 300;
   color: #fff;
   background: none;
