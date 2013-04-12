@@ -6783,10 +6783,6 @@ section#slider .content-table .content-box {
     margin-right: 0;
     margin-left: 0;
   }
-  .navbar .navbar-brand {
-    max-width: 180px;
-    padding: 5px;
-  }
   #slider {
     overflow: scroll-y;
   }
