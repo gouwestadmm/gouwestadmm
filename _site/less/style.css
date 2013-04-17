@@ -6906,6 +6906,11 @@ nav.main .navbar .navbar-inner {
     padding-right: 20px;
     padding-left: 20px;
   }
+  [class*="col-span-"],
+  [class*="col-small-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .fullwidth-mobile {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -7538,6 +7543,16 @@ section#slider .content-table .content-box {
   counter-increment: ordered-list;
 }
 
+.info-project.tourmalijn {
+  color: #fff;
+  background: #791846;
+}
+
+.info-project.mijntypea {
+  color: #fff;
+  background: #00AEEF;
+}
+
 #noordpark {
   color: #fff;
 }
@@ -8108,6 +8123,38 @@ section#slider .content-table .content-box {
     left: -150%;
     opacity: 0;
   }
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  min-height: 1.5em;
+}
+
+#errors,
+#success {
+  display: none;
+}
+
+address {
+  text-align: right;
+}
+
+.btn {
+  white-space: normal;
 }
 
 /* ==========================================================================
