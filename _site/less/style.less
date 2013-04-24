@@ -546,37 +546,48 @@ section#slider{
 		padding: 8% 0;
 		background: #007EC3;
 		color: #fff;
+		h1{
+			color: #fff;
+		}
 	}
 	h1{
 		color: #007EC3;
 		font-size: 2.8em;
 		text-align: center;
 	}
-	ol{
-				counter-reset: ordered-list;
-				list-style: none;
-			}
-			ol li{
-				padding: 3% 0;
-				margin: 2% 0;
-				margin-left: 2em;
-				border-bottom: 1px solid rgba(0,0,0,0.1);
-				&:first-child{
-					border-top: 1px solid rgba(0,0,0,0.1);
+		.ons-verhaal{
+		background: url("/img/mijntypea-screen2.png") no-repeat center center fixed;
+		.background-size(cover);
+		color: #fff;
+		position: relative;
+	}
+
+		ol{
+					counter-reset: ordered-list;
+					list-style: none;
 				}
-				&:before{
-				    color: #007EC3;
-				    content: counter(ordered-list, decimal);
-				    counter-increment: ordered-list;
-				    display: block;
-				    float: left;
-				    font-size: 3em;
-				    font-weight: 400;
-				    margin-left: -1.5em;
-				    margin-right: -2em;
-				    padding: 0.3em 0.4em;
+				ol li{
+					padding: 3% 0;
+					margin: 2% 0;
+					margin-left: 2em;
+					border-bottom: 1px solid rgba(0,0,0,0.1);
+					&:first-child{
+						border-top: 1px solid rgba(0,0,0,0.1);
+					}
+					&:before{
+					    color: #007EC3;
+					    content: counter(ordered-list, decimal);
+					    counter-increment: ordered-list;
+					    display: block;
+					    float: left;
+					    font-size: 3em;
+					    font-weight: 400;
+					    margin-left: -1.5em;
+					    margin-right: -2em;
+					    padding: 0.3em 0.4em;
+					}
 				}
-			}
+		
 }
 
 
