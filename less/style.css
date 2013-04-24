@@ -7608,6 +7608,21 @@ section#slider .content-table .content-box {
   text-align: center;
 }
 
+#over-ons .quote {
+  font-family: 'Droid Serif', serif;
+  font-size: 4.2em;
+  font-weight: 500;
+}
+
+#over-ons .quote-author {
+  font-size: 1em;
+  text-align: right;
+}
+
+#over-ons .quote-author small {
+  font-size: 0.75em;
+}
+
 #over-ons .ons-verhaal {
   position: relative;
   color: #fff;
