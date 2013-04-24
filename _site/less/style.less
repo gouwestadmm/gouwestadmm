@@ -380,7 +380,7 @@ section#slider{
 }
 
 .story-width{
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -536,6 +536,50 @@ section#slider{
 		padding: 3% 0;
 	}
 }
+
+
+
+//over ons styles
+
+#over-ons{
+	header{
+		padding: 8% 0;
+		background: #007EC3;
+		color: #fff;
+	}
+	h1{
+		color: #007EC3;
+		font-size: 2.8em;
+		text-align: center;
+	}
+	ol{
+				counter-reset: ordered-list;
+				list-style: none;
+			}
+			ol li{
+				padding: 3% 0;
+				margin: 2% 0;
+				margin-left: 2em;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+				&:first-child{
+					border-top: 1px solid rgba(0,0,0,0.1);
+				}
+				&:before{
+				    color: #007EC3;
+				    content: counter(ordered-list, decimal);
+				    counter-increment: ordered-list;
+				    display: block;
+				    float: left;
+				    font-size: 3em;
+				    font-weight: 400;
+				    margin-left: -1.5em;
+				    margin-right: -2em;
+				    padding: 0.3em 0.4em;
+				}
+			}
+}
+
+
 
 
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
