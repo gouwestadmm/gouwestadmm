@@ -7627,6 +7627,7 @@ section#slider .content-table .content-box {
   padding: 3% 0;
   margin: 2% 0;
   margin-left: 2em;
+  white-space: nowrap;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
