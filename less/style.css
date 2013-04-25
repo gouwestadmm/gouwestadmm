@@ -7674,6 +7674,15 @@ section#slider .content-table .content-box {
   counter-increment: ordered-list;
 }
 
+#over-ons .anders {
+  color: #fff;
+  background: url("/img/anders.jpg") no-repeat right top fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
 select,
 textarea,
 input[type="text"],
