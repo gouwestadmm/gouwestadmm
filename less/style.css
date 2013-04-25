@@ -7608,17 +7608,29 @@ section#slider .content-table .content-box {
   text-align: center;
 }
 
+#over-ons .poster i {
+  font-size: 2.5em;
+  color: #007EC3;
+  text-align: center;
+}
+
 #over-ons .quote {
   background: #007EC3;
 }
 
 #over-ons .quote-author {
+  margin-top: 2em;
   font-size: 1em;
-  text-align: right;
+  color: #fff;
+  text-align: center;
 }
 
 #over-ons .quote-author small {
   font-size: 0.75em;
+}
+
+#over-ons .quote-author small a {
+  color: #fff;
 }
 
 #over-ons .ons-verhaal {
@@ -7627,6 +7639,10 @@ section#slider .content-table .content-box {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+
+#over-ons .goed-genoeg {
+  background: #f8f8f8;
 }
 
 #over-ons ol {
