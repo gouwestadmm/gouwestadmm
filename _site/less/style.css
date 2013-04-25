@@ -6802,6 +6802,10 @@ h6 {
   text-align: center;
 }
 
+.center-always {
+  text-align: center;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
