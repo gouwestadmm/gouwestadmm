@@ -7609,9 +7609,7 @@ section#slider .content-table .content-box {
 }
 
 #over-ons .quote {
-  font-family: 'Droid Serif', serif;
-  font-size: 4.2em;
-  font-weight: 500;
+  background: #007EC3;
 }
 
 #over-ons .quote-author {
@@ -7625,8 +7623,6 @@ section#slider .content-table .content-box {
 
 #over-ons .ons-verhaal {
   position: relative;
-  color: #fff;
-  background: url("/img/mijntypea-screen2.png") no-repeat center center fixed;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
