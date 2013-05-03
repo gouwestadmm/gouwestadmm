@@ -16,14 +16,6 @@
                           © www.gouwestadmm.nl
 ========================================================================== */
 
-
-
-.street-view > img,
-.street-view > video {
-	width: 100%;
-	height: 100%;
-}
-
 .bottom{
 	position: absolute;
 }
@@ -132,7 +124,7 @@ blockquote{
 ========================================================================== */
 
 .graylighter{
-	background: @grayLighter;
+	background: #eee;
 	text-shadow: none;
 }
 
@@ -145,12 +137,15 @@ blockquote{
 	padding: 0;
 	margin-left: 0;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	text-align: left;
 }
 
 .navbar{
 	margin-bottom: 0;
 	background: #fff;
+	font-family: @font-family-sans-serif;
+	font-size: 0.8em;
 }
 
 .navbar-inner{
@@ -163,6 +158,16 @@ blockquote{
 	font-weight: lighter;
 	color: @brand-primary;
 	text-shadow: none;
+}
+
+
+//Mobile nac
+.navbar.visible-phone{
+	text-align: center;
+	ul li a{
+		font-size: 2em;
+		line-height: 1.7em;
+	}
 }
 
 /* ==========================================================================
@@ -367,6 +372,11 @@ section#slider{
 	.tourmalijn{
 		background: url("../img/tourmalijnbg.jpg") left center no-repeat;
 		.background-size(cover);
+		}
+
+	.anders{
+		background: url("../img/anders.jpg") left center no-repeat;
+		.background-size(cover)
 		}
 	}
 
@@ -614,7 +624,7 @@ section#slider{
 					}
 				}
 		.anders{
-			background: url("/img/anders.jpg") no-repeat right top fixed;
+			background: url("/img/anders.jpg") no-repeat right top;
 			.background-size(cover);
 			color: #fff;
 		}
@@ -639,6 +649,20 @@ address{
 	white-space: normal;
 }
 
+
+
+//contact pagina
+
+header.contact{
+	padding: 8% 0;
+	background: @brand-primary;
+	text-align: center;
+	color: #fff;
+}
+
+input[class*="span"], select[class*="span"], textarea[class*="span"] {
+    height: auto;
+}
 
 
 /* ==========================================================================

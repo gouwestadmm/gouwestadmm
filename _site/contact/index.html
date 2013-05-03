@@ -57,6 +57,7 @@
       <div class="nav-collapse collapse navbar-responsive-collapse">
          <ul class="nav pull-right">
 	          <li><a href="http://localhost:4000">werk</a></li>
+            <li><a href="http://localhost:4000/overons">over ons</a></li>
 	          <li><a href="http://localhost:4000/contact.php">contact</a></li>
 	        </ul>
       </div><!-- /.nav-collapse -->
@@ -72,18 +73,73 @@
       </button>
       <a class="navbar-brand" href="/"><img src="http://localhost:4000/img/logo-mobile.png"/></a>
       <div class="nav-collapse collapse navbar-responsive-collapse">
-         <ul class="nav pull-right">
+         <ul class="nav">
             <li><a href="http://localhost:4000">werk</a></li>
+            <li><a href="http://localhost:4000/overons">over ons</a></li>
             <li><a href="http://localhost:4000/contact.php">contact</a></li>
           </ul>
       </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
   </div>
 
+<header class="contact">
+  <div class="container">
+    <div class="row story-width">
+      <div class="col col-lg-12">
+        <p><em>werk met ons</em></p>
+        <h1>Merk, design en technologie vallen samen.</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
 <section>
   <div class="container">
+    <div class="row story-width">
+      <div class="col col-lg-12">
+        <p>Wij werken graag met bedrijven en mensen die op zoek zijn naar meer dan alleen een ontwerpbureau. Natuurlijk hebben wij goed design, zowel on- als offline, 
+        heel hoog in het vaandel staan en vinden het belangrijk dat klanten dit waarderen, maar wij doen graag meer. Met een frisse blik naar het bedrijf
+        of product kijken, meedenken in een strategie en van daaruit werken aan een merk.</p>
+      </div>
+    </div>
+    <div class="row story-width">
+      <div class="col col-lg-6">
+      </div>
+      <div class="col col-lg-6">
+
+        <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.
+            Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
+            kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="graylighter">
+  <div class="container">
     <div class="row">
-      <div class="col-span-8">
+      <div class="col col-lg-8 col-offset-4">
+        <form>
+            <div class="controls row">
+                <input id="name" name="name" type="text" class="col col-lg-4" placeholder="Name"> 
+                <input id="email" name="email" type="email" class="col col-lg-4" placeholder="Email address">
+            </div>
+            <div class="controls row">
+                <textarea id="message" name="message" class="col col-lg-8" placeholder="Your Message" rows="5"></textarea>
+            </div>
+            <div class="row">
+              <div class="controls col col-lg-8 center">
+                  <button id="contact-submit" type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-span-6">
 			<?php
                    //init variables
                    $cf = array();
@@ -154,7 +210,9 @@
             </form>
             <?php unset($_SESSION['cf_returndata']); ?>
         </div>
+      </div>
 
+      <div class="row">
         <div class="col-span-4">
             <legend>Contact gegevens</legend>
             <address>
