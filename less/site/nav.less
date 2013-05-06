@@ -1,0 +1,139 @@
+/* ==========================================================================
+  Navbar
+========================================================================== */
+
+.navbar-brand{
+	max-width: 250px;
+	padding: 0;
+	margin-left: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.navbar{
+	margin-bottom: 0;
+	background: #fff;
+	font-family: @font-family-sans-serif;
+	font-size: 0.8em;
+}
+
+.navbar-inner{
+	background-image: none;
+	background: #fff;
+	padding: 0;
+}
+
+.navbar .nav > li > a {
+	color: @brand-primary;
+	text-shadow: none;
+    font-family: droid serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 2em;
+    text-shadow: none;
+    &:hover{
+    	background: none;
+
+   	}
+}
+
+//nav btn styling
+.navbtn {
+    font-size: 1.5em;
+    padding-top: 0.3em;
+    position: relative;
+    &:hover{
+    	text-decoration: none;
+    }
+    i{
+    	position: absolute;
+    	top: 0.5em;
+    	height: 100%;
+    	width: 100%;
+    }
+    //Verander menu icon naar kruis
+    &.closing{
+    	.icon-reorder{
+    		.opacity(0);
+    		transition: all 0.1s ease 0s;
+    	}
+    	.icon-remove-sign{
+    		.opacity(1);
+    		-webkit-transition: all 0.2s ease 0.1s;
+    		-moz-transition: all 0.2s ease 0.1s;
+    		-o-transition: all 0.2s ease 0.1s;
+    		-ms-transition: all 0.2s ease 0.1s;
+    		transition: all 0.2s ease 0.1s;
+    	}
+    }
+    //Remove sign standaard onzichtbaar
+    .icon-remove-sign{
+    		.opacity(0);
+	    	-webkit-transition: all 0.3s;
+	    	-moz-transition: all 0.3s;
+	    	-o-transition: all 0.3s;
+	    	-ms-transition: all 0.3s;
+	    	transition: all 0.3s;
+   	}
+}
+
+// Full screen navigatie
+.full-nav{
+	background:	rgba(0,130,198,0.95);
+	background-attachment: fixed;
+    height: 100%;
+    top: -100%;
+    margin-top: 60px;
+    padding-top: 3em;
+    overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+    z-index: 800;
+    text-align: center;
+    color: #fff;
+    //Animation
+    transition: all 0.3s ease 0s;
+
+    .row{
+    	max-width: 65%;
+    	margin: 0 auto;
+    }
+    h1, h2, h3, h4, h5, h6, p{
+    	color: #fff;
+    }
+    ul li a{
+    	color: #fff;
+    	&:hover{
+    		background: none;
+    		transform: scale(1.05);
+    		transition: all 0.3s ease 0s;
+    	}
+    	p{
+			font-size: 0.6em;
+		    font-weight: 100;
+		    letter-spacing: 0.1em;
+		    line-height: 1em;
+		    margin-bottom: 0.5em;
+		    text-transform: uppercase;
+    	}
+    	h3{
+    		line-height: 1em;
+    		margin-bottom: 1.5em;
+    	}
+    }
+
+    &.visible{
+    	top: 0;
+    }
+}
+
+
+//Mobile nac
+.navbar.visible-phone{
+	text-align: center;
+	ul li a{
+		font-size: 2em;
+		line-height: 1.7em;
+	}
+}

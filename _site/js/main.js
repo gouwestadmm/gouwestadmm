@@ -1,28 +1,13 @@
 $(document).ready(function() {
 
-function showDashBoard(){
-  for(var i = 1; i <= 12; i++) {
-    $('#slider .metro-tiles .span'+i).each(function(){
-        $(this).addClass('fadeInForward').removeClass('fadeOutback');
-    });
-  }
-}
- 
-function fadeDashBoard(){
-  for(var i = 1; i <= 12; i++) {
-    $('#slider .metro-tiles .span'+i).addClass('fadeOutback').removeClass('fadeInForward');
-  }
-}
-
-
-$('.more-info').each(function(){
-  var $this= $(this),
-      page = $this.data('page');
-  $this.on('click',function(e){
-    $('.project-info.'+page).addClass('openpage');
-    fadeDashBoard();
-  })
+// Show the nav fullscreen
+$("#nav-btn").click(function (e) {
+   e.preventDefault();
+  $("#full-nav").toggleClass("visible");
+  $("#nav-btn").toggleClass("closing");
 });
+
+
 
 $('.close-button').click(function(e){
   $(this).parents('.project-info').addClass('slidePageLeft')

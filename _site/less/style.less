@@ -16,6 +16,7 @@
                           © www.gouwestadmm.nl
 ========================================================================== */
 
+@import "site/nav.less";	// Navbar
 @import "site/type.less"; 	// Typografie stijlen
 @import "site/btn.less"; 	// BTN stijlen
 @import "site/home.less";	// Homepage stijlen
@@ -104,55 +105,7 @@ blockquote{
 	border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-/* ==========================================================================
-  Navbar
-========================================================================== */
 
-.navbar-brand{
-	max-width: 250px;
-	padding: 0;
-	margin-left: 0;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: left;
-}
-
-.navbar{
-	margin-bottom: 0;
-	background: #fff;
-	font-family: @font-family-sans-serif;
-	font-size: 0.8em;
-}
-
-.navbar-inner{
-	background-image: none;
-	background: #fff;
-	padding: 0;
-}
-
-.navbar .nav > li > a {
-	color: @brand-primary;
-	text-shadow: none;
-    font-family: droid serif;
-    font-weight: 300;
-    letter-spacing: 0.02em;
-    line-height: 2em;
-    text-shadow: none;
-    &:hover{
-    	background: none;
-
-   	}
-}
-
-
-//Mobile nac
-.navbar.visible-phone{
-	text-align: center;
-	ul li a{
-		font-size: 2em;
-		line-height: 1.7em;
-	}
-}
 
 
 /* ==========================================================================

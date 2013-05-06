@@ -46,39 +46,75 @@
 
 <div class="navbar navbar-fixed-top hidden-phone">
     <div class="container">
-      <button data-target=".navbar-responsive-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <a class="navbar-brand" href="/"><img src="http://localhost:4000/img/logo.png"/></a>
-      <div class="nav-collapse collapse navbar-responsive-collapse">
-         <ul class="nav pull-right">
-	          <li><a href="http://localhost:4000">werk</a></li>
-            <li><a href="http://localhost:4000/overons">over ons</a></li>
-	          <li><a href="http://localhost:4000/contact.php">contact</a></li>
-	        </ul>
-      </div><!-- /.nav-collapse -->
+      <a data-placement="top" data-toggle="tooltip" href="#" data-original-title="Tooltip on top" class="pull-right navbtn" id="nav-btn">
+        <i class="icon-reorder"></i>
+        <i class="icon-remove-sign"></i>
+      </a>
     </div><!-- /.container -->
-  </div>
+</div>
 
-  <div class="navbar visible-phone">
-    <div class="container">
-      <button data-target=".navbar-responsive-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"><img src="http://localhost:4000/img/logo-mobile.png"/></a>
-      <div class="nav-collapse collapse navbar-responsive-collapse">
-         <ul class="nav">
-            <li><a href="http://localhost:4000">werk</a></li>
-            <li><a href="http://localhost:4000/overons">over ons</a></li>
-            <li><a href="http://localhost:4000/contact.php">contact</a></li>
-          </ul>
-      </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
+<div class="full-nav" id="full-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-4  col-sg-4">
+        <p>over ons</p>
+      </div>
+       <div class="col col-lg-4 col-sg-4">
+        <p>met ons werken?</p>
+      </div>
+       <div class="col col-lg-4 col-sg-4">
+        <p>contact</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="page-header">
+        <h4>Ons recente werk:</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-lg-12">
+        <ul class="nav">
+          <li>
+            <a href="http://localhost:4000">
+              <p>responsive webdesign</p>
+              <h3>Gouwestad makelaardij</h3>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:4000">
+              <p>een digitale verhuurcampagne</p>
+              <h3>Zuidplashof</h3>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:4000">
+              <p>retro in een nieuw jasje</p>
+              <h3>Tourmalijn</h3>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:4000">
+              <p>U bedenkt, wij bouwen</p>
+              <h3>Mijn Type A</h3>
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="http://localhost:4000">
+              <p>wat wij doen...</p>
+              <h3>over ons bedrijf</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+</div>
+
+
 
 <div class="page-container">
 
@@ -226,14 +262,6 @@ $(document).ready(function() {
   </script>
 
   <script src="http://localhost:4000/js/vendor/Chart.min.js"></script>
-
-
-<script type="text/javascript">
-    $("[rel=tooltip]").tooltip({
-      placement: "bottom"
-    });
-</script>
-
 
 <script>
   var _gaq=[['_setAccount','UA-12094116-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
