@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contact
 title: Gouwestad Marketing & Media
 tagline: Ontwikkelen betekent vooruitgang
 body-id: contact
@@ -10,8 +10,7 @@ body-id: contact
   <div class="container">
     <div class="row story-width">
       <div class="col col-lg-12">
-        <p><em>werk met ons aan</em></p>
-        <h1>Merk, design en technologie.</h1>
+        <h1>Werken aan merk, design of campagne</h1>
       </div>
     </div>
   </div>
@@ -27,10 +26,8 @@ body-id: contact
       </div>
     </div>
     <div class="row story-width">
-      <div class="col col-lg-6">
-      </div>
-      <div class="col col-lg-6">
-
+      <div class="col col-lg-12">
+        <h5>Nauw samenwerken</h5>
         <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
             Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
             kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
@@ -136,7 +133,7 @@ body-id: contact
               Telefoon: (416) 340-8666
               <br>
               Email:
-              <a href="mailto:us@teehanlax.com">info@gouwestadmm.nl</a>
+              <a href="mailto:us@teehanlax.com">info@gouwestad.com</a>
               <br>
               Twitter:
               <a href="http://www.twitter.com/gouwestadmm">@gouwestadmm</a>

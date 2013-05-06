@@ -76,7 +76,17 @@ html{
 	height: 100%;
 	position: relative;
 	margin-bottom: 10em;
+	z-index: 10;
+	background: #fff;
 }
+
+
+section, header{
+	z-index: 10;
+	position: relative;
+	background: #fff;
+}
+
 
 /* ==========================================================================
   Typografie
@@ -137,9 +147,17 @@ blockquote{
 }
 
 .navbar .nav > li > a {
-	font-weight: lighter;
 	color: @brand-primary;
 	text-shadow: none;
+    font-family: droid serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 2em;
+    text-shadow: none;
+    &:hover{
+    	background: none;
+
+   	}
 }
 
 
@@ -482,11 +500,17 @@ section#slider{
 .info-project.tourmalijn{
 	background: #791846;
 	color: #fff;
+	h1{
+		color: #fff;
+	}
 }
 
 .info-project.mijntypea{
 	background: #00AEEF;
 	color: #fff;
+	h1{
+		color: #fff;
+	}
 }
 
 
@@ -494,7 +518,11 @@ section#slider{
 	color: #fff;
 }
 
-
+header, #slider{
+	h1{
+		color: #fff;
+	}
+}
 //Zuidplashof story styles
 
 #zuidplashof-story{
@@ -689,13 +717,6 @@ address{
     max-width: none;
     }
   }
-
-
-section, header{
-	z-index: 10;
-	position: relative;
-	background: #fff;
-}
 
 
  footer{

@@ -1,9 +1,9 @@
+<?php session_start(); ?> <!-- This is needed for the form to work -->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
 
     <head>
         <meta charset="utf-8">
@@ -30,18 +30,20 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="http://localhost:4000/less/style.css">
 
+  
+    <script src="http://localhost:4000/js/vendor/Chart.js"></script>
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   <script src="http://localhost:4000/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
-</head>
 
-<body id="contact">
+</head>
 
 
 <div class="navbar navbar-fixed-top hidden-phone">
@@ -80,15 +82,12 @@
     </div><!-- /.container -->
   </div>
 
-<div class="page-container">
-
 <header class="contact">
   <div class="header"></div>
   <div class="container">
     <div class="row story-width">
       <div class="col col-lg-12">
-        <p><em>werk met ons aan</em></p>
-        <h1>Merk, design en technologie.</h1>
+        <h1>Werken aan merk, design of campagne</h1>
       </div>
     </div>
   </div>
@@ -104,10 +103,8 @@
       </div>
     </div>
     <div class="row story-width">
-      <div class="col col-lg-6">
-      </div>
-      <div class="col col-lg-6">
-
+      <div class="col col-lg-12">
+        <h5>Nauw samenwerken</h5>
         <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
             Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
             kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
@@ -213,7 +210,7 @@
               Telefoon: (416) 340-8666
               <br>
               Email:
-              <a href="mailto:us@teehanlax.com">info@gouwestadmm.nl</a>
+              <a href="mailto:us@teehanlax.com">info@gouwestad.com</a>
               <br>
               Twitter:
               <a href="http://www.twitter.com/gouwestadmm">@gouwestadmm</a>
@@ -258,8 +255,6 @@
 </script>
 
 
-
-</div>
 
 <footer>
   <section class="graylighter">

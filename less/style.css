@@ -3582,7 +3582,7 @@ button.close {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #d5d5d5;
+  background-color: #273546;
 }
 .navbar-nav > .disabled > a,
 .navbar-nav > .disabled > a:hover,
@@ -3669,7 +3669,7 @@ button.close {
 .navbar-nav li.dropdown.open > .dropdown-toggle,
 .navbar-nav li.dropdown.active > .dropdown-toggle,
 .navbar-nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #d5d5d5;
+  background-color: #273546;
   color: #555555;
 }
 .navbar-nav li.dropdown > .dropdown-toggle .caret {
@@ -5479,6 +5479,14 @@ html body {
   height: 100%;
   position: relative;
   margin-bottom: 10em;
+  z-index: 10;
+  background: #fff;
+}
+section,
+header {
+  z-index: 10;
+  position: relative;
+  background: #fff;
 }
 /* ==========================================================================
   Typografie
@@ -5527,9 +5535,15 @@ blockquote .cite {
   padding: 0;
 }
 .navbar .nav > li > a {
-  font-weight: lighter;
   color: #428bca;
+  font-family: droid serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 2em;
   text-shadow: none;
+}
+.navbar .nav > li > a:hover {
+  background: none;
 }
 .navbar.visible-phone {
   text-align: center;
@@ -5879,11 +5893,21 @@ section#slider .content-table .content-box {
   background: #791846;
   color: #fff;
 }
+.info-project.tourmalijn h1 {
+  color: #fff;
+}
 .info-project.mijntypea {
   background: #00AEEF;
   color: #fff;
 }
+.info-project.mijntypea h1 {
+  color: #fff;
+}
 #noordpark {
+  color: #fff;
+}
+header h1,
+#slider h1 {
   color: #fff;
 }
 #zuidplashof-story .navbar {
@@ -6087,12 +6111,6 @@ address.color-alt {
 }
 #map_canvas img {
   max-width: none;
-}
-section,
-header {
-  z-index: 10;
-  position: relative;
-  background: #fff;
 }
 footer {
   position: fixed;
