@@ -5554,12 +5554,13 @@ nav.main .navbar .navbar-inner {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.navbar.visible-phone {
-  text-align: center;
-}
-.navbar.visible-phone ul li a {
-  font-size: 2em;
-  line-height: 1.7em;
+@media (max-width: 767px) {
+  .navbar-brand {
+    float: left;
+  }
+  .navbtn {
+    float: right;
+  }
 }
 /* ==========================================================================
   btn styles
