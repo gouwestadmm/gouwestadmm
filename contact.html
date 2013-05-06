@@ -8,8 +8,8 @@ tagline: Ontwikkelen betekent vooruitgang
   <div class="container">
     <div class="row story-width">
       <div class="col col-lg-12">
-        <p><em>werk met ons</em></p>
-        <h1>Merk, design en technologie vallen samen.</h1>
+        <p><em>werk met ons aan</em></p>
+        <h1>Merk, design en technologie.</h1>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@ tagline: Ontwikkelen betekent vooruitgang
       </div>
       <div class="col col-lg-6">
 
-        <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.
+        <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
             Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
             kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
         </p>
@@ -41,22 +41,10 @@ tagline: Ontwikkelen betekent vooruitgang
 
 <section class="graylighter">
   <div class="container">
-    <div class="row">
-      <div class="col col-lg-8 col-offset-4">
-        <form>
-            <div class="controls row">
-                <input id="name" name="name" type="text" class="col col-lg-4" placeholder="Name"> 
-                <input id="email" name="email" type="email" class="col col-lg-4" placeholder="Email address">
-            </div>
-            <div class="controls row">
-                <textarea id="message" name="message" class="col col-lg-8" placeholder="Your Message" rows="5"></textarea>
-            </div>
-            <div class="row">
-              <div class="controls col col-lg-8 center">
-                  <button id="contact-submit" type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </div>
-        </form>
+    <div class="row story-width">
+      <div class="col col-lg-12">
+        <h3>Interesse om met ons te werken?</h3>
+        <p>Vertel dan met onderstaand formulier iets over je product / bedrijf of project en wij nemen zo snel mogelijk contact met je op.</p>
       </div>
     </div>
 
@@ -97,65 +85,94 @@ tagline: Ontwikkelen betekent vooruitgang
                 <p>Bedankt voor uw bericht. U hoort z.s.m. van ons.</p>
             </div>
 
+            <div class="row">
+              <div class="col col-lg-8 col-offset-2"
+                <form method="post" action="process.php" class="form-horizontal">
+                    <div class="controls row">
+                      <div class="col col-lg-6">
+                         <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam" required autofocus />
+                      </div>
+                      <div class="col col-lg-6">
+                        <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="voorbeeld@gmail.com" required />
+                      </div>
+                    </div>
+                    <div class="controls row">
+                      <div class="col col-lg-12">
+                        <textarea id="message" name="message" placeholder="Uw bericht moet minimaal 20 tekens bevatten" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
+                      </div>
+                    </div>
+                  <div class="row">
+                    <div class="controls col col-lg-12 center">
+                        <button id="contact-submit" type="submit" class="btn btn-primary">versturen</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
 
-            <form method="post" action="process.php" class="form-horizontal">
-                <legend>Contact formulier</legend>
-                <fieldset>
-                    <div class="control-group">
-                        <label for="name" class="control-label">Uw naam: <span class="required">*</span></label>
-                        <div class="controls">
-                            <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam" required autofocus />
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label for="email" class="control-label">Emailadres: <span class="required">*</span></label>
-                        <div class="controls">
-                            <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="voorbeeld@gmail.com" required />
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label for="telephone" class="control-label">Telefoon: </label>
-                        <div class="controls">
-                            <input type="tel" id="telephone" name="telephone" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" />
-                        </div>
-                    </div>
-                    <div class="control-group">                
-                        <label for="message" class="control-label">Bericht: <span class="required">*</span></label>
-                        <div class="controls">
-                            <textarea id="message" name="message" placeholder="Uw bericht moet minimaal 20 tekens bevatten" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
-                        </div>
-                    </div>
-                <span id="loading"></span>
-                <input type="submit" value="Verstuur" id="submit-button" class="btn btn-large" />
-                <p id="req-field-desc"><span class="required">*</span> Vereist veld</p>
-                </fieldset>
-            </form>
             <?php unset($_SESSION['cf_returndata']); ?>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="row">
-        <div class="col-span-4">
-            <legend>Contact gegevens</legend>
+  <section>
+    <div class="container">
+      <div class="row story-width center">
+        <h5>andere vragen?</h5>
+      </div>
+      <div class="row story-width">
+        <div class="col col-lg-6">
             <address>
               <strong>Gouwestad Marketing & Media</strong><br>
               Noordkade 64, gebouw C 4e verd.<br>
               2741 EZ Waddinxveen<br>
-              <abbr title="Telefoon">P:</abbr> 0182 - 63 95 85
             </address>
         </div>
+         <div class="col col-lg-6">
+            <address class="color-alt">
+              Telefoon: (416) 340-8666
+              <br>
+              Email:
+              <a href="mailto:us@teehanlax.com">info@gouwestadmm.nl</a>
+              <br>
+              Twitter:
+              <a href="http://www.twitter.com/gouwestadmm">@gouwestadmm</a>
+              </address>
+          </div>
       </div>
     </div>
 </section>
 
-<!--
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-span-12">
-        <p>Een ding dat bij ons altijd is blijven liggen is onze eigen website. Niet alleen omdat we er te weinig tijd voor hebben, maar ook omdat we daar nog kritischer op waren dan welk ander project dan ook. Eigenlijk was het nooit goed genoeg en dus deden we het maar niet. Maarja, een bureau met een website die er niet uitziet... en dus besloten we om van onze website niet langer de meest bijzondere website van de wereld te willen maken, met super revolutionaire technieken en speciale effecten. We wilden een plek waar we simpelweg konden vertellen wat wij doen. Een minimalistische site die draait om lezen. Dat is het geworden, alleen nu nog wat schrijven.
-        </p>
-      </div>
-    </div>
+<section class="maps">
+  <div id="map">
+    <div id="map_canvas"></div>
   </div>
-</section>-->
+</section>
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&callback=initialize"></script>
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(52.143428, 4.771864); // Change these values, to those appropriate for your location
+
+
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+        
+        var marker = new google.maps.Marker({
+        position: latlng, 
+        map: map,
+        title:"Noordpark" // You can give this any title you want
+    });     
+  }
+
+</script>

@@ -643,12 +643,18 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 address{
 	text-align: right;
+	&.color-alt{
+		text-align: left;
+		color: @gray-light;
+	}
 }
 
 .btn{
 	white-space: normal;
+	font-family: @font-family-sans-serif;
+	font-size: 0.9em;
+	padding: 0.5em 0.7em;
 }
-
 
 
 //contact pagina
@@ -663,6 +669,22 @@ header.contact{
 input[class*="span"], select[class*="span"], textarea[class*="span"] {
     height: auto;
 }
+
+.controls{
+	margin: 1em 0;
+}
+
+#map{
+    height: auto;
+    min-height: 500px;
+  }
+    #map_canvas{
+      height: auto;
+      min-height: 500px;
+      img {
+    max-width: none;
+    }
+  }
 
 
 /* ==========================================================================
