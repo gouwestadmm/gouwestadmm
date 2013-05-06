@@ -5328,10 +5328,6 @@ nav.main .navbar .navbar-inner {
   body {
     padding: 0;
   }
-  body .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   [class*="col-span-"],
   [class*="col-small-"] {
     padding-left: 0;
