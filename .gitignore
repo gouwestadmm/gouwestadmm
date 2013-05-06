@@ -31,7 +31,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 *.yml
-config.yml
+_config.yml
 
 # Komodo
 *.komodoproject
