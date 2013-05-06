@@ -5504,6 +5504,8 @@ nav.main .navbar .navbar-inner {
   background-attachment: fixed;
   height: 100%;
   top: -100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
   margin-top: 60px;
   padding-top: 3em;
   overflow-y: scroll;
@@ -5549,6 +5551,8 @@ nav.main .navbar .navbar-inner {
 }
 .full-nav.visible {
   top: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .navbar.visible-phone {
   text-align: center;
