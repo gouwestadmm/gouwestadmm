@@ -15,8 +15,8 @@ build:
 	@echo "\033[36mBuilding Bootstrap...\033[39m"
 	@echo "${HR}"
 	
-	@printf "Compiling LESS with Recess..."
-	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@printf "Compiling LESS ..."
+	@lessc ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@echo "               ${CHECK}"
 	@printf "Prepping documentation assets..."
 	@cp fonts/* docs/assets/fonts/

@@ -21,18 +21,16 @@
   Elementen voor positionering
 ========================================================================== */
 
-// Verticaal volledig schermvullend
+// Verticaal volledig schermvullend op homepage, verder block weergave tbv footer
 html{
-	height: 100%;
+	display: block;
+	&.homepage{
+		display: inline;
+		height: 100%;
+	}
 	body {
 		height: 100%;
 	}
-}
-
-
-.borders{
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
 }
 
 
@@ -74,7 +72,11 @@ html{
 	}
 }
 
-
+.page-container{
+	height: 100%;
+	position: relative;
+	margin-bottom: 10em;
+}
 
 /* ==========================================================================
   Typografie
@@ -163,6 +165,7 @@ blockquote{
 	border-top: 1px solid #fff;
 	font-size: 80%;
 	padding: 1em;
+	z-index: 10;
 	p{
 		margin: 0;
 		line-height: 1.2em;
@@ -687,10 +690,6 @@ address{
     }
   }
 
-.last{
-	z-index: 5;
-	margin-bottom: 11.5em;
-}
 
 section, header{
 	z-index: 10;
@@ -705,6 +704,7 @@ section, header{
  	display: block;
  	z-index: 1;
  	width: 100%;
+ 	min-height: 10em;
  	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) inset;
  	.footer-bg{
  		position: absolute;
@@ -716,6 +716,14 @@ section, header{
 	 	&.gouwestadmakelaardij{
 	 		background: url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") right center;
 	 		.opacity(0.05);
+	 	}
+	 }
+	 .copy{
+	 	padding: 0.5em 0;
+	 	font-size: 0.8em;
+	 	p{
+	 		margin: 0;
+	 		color: @gray-light;
 	 	}
 	 }
  	.btn-group {
