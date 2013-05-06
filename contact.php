@@ -85,7 +85,7 @@ body-id: contact
             </div>
 
             <div class="row">
-              <div class="col col-lg-8 col-offset-2"
+              <div class="col col-lg-8 col-offset-2">
                 <form method="post" action="process.php" class="form-horizontal">
                     <div class="controls row">
                       <div class="col col-lg-6">
@@ -130,7 +130,7 @@ body-id: contact
         </div>
          <div class="col col-lg-6">
             <address class="color-alt">
-              Telefoon: (416) 340-8666
+              Telefoon: (0182) 63 95 85
               <br>
               Email:
               <a href="mailto:us@teehanlax.com">info@gouwestad.com</a>

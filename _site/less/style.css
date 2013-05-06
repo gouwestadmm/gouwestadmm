@@ -5479,12 +5479,12 @@ html body {
   height: 100%;
   position: relative;
   margin-bottom: 10em;
-  z-index: 10;
+  z-index: 50;
   background: #fff;
 }
 section,
 header {
-  z-index: 10;
+  z-index: 100;
   position: relative;
   background: #fff;
 }
@@ -5819,7 +5819,7 @@ section#slider .content-table .content-box {
   text-shadow: none;
 }
 .info-project.gouwestad .nieuw {
-  background: url("../img/gwstd-ipad.png") no-repeat -300px center fixed;
+  background: #ffffff url("../img/gwstd-ipad.png") no-repeat -300px center fixed;
   padding: 10% 0;
 }
 .info-project.gouwestad .background2 {
@@ -6139,6 +6139,7 @@ footer .footer-bg.gouwestadmakelaardij {
 footer .copy {
   padding: 0.5em 0;
   font-size: 0.8em;
+  text-align: center;
 }
 footer .copy p {
   margin: 0;
@@ -6202,6 +6203,13 @@ footer .btn.icon i {
   }
   .story-width {
     width: 100%;
+  }
+  footer {
+    position: relative;
+    min-height: none;
+  }
+  .btn-group {
+    font-size: 0.8em;
   }
   .info-project.gouwestad .header h1 {
     font-size: 3em;

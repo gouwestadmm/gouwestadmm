@@ -31,6 +31,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 *.yml
+config.yml
 
 # Komodo
 *.komodoproject
@@ -47,5 +48,3 @@ wp-config.php
 wp-content/uploads/*
 cgi-bin
 ontwikkelen
-wp-content/plugins/wp-property/cache/
-xmlscript

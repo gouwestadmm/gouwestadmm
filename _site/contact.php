@@ -28,10 +28,10 @@
 
     
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="http://localhost:4000/less/style.css">
+  <link rel="stylesheet" href="http://gouwestad.com/less/style.css">
 
   
-    <script src="http://localhost:4000/js/vendor/Chart.js"></script>
+    <script src="http://gouwestad.com/js/vendor/Chart.js"></script>
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -40,10 +40,12 @@
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-  <script src="http://localhost:4000/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+  <script src="http://gouwestad.com/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
 
 </head>
+
+<body id="contact">
 
 
 <div class="navbar navbar-fixed-top hidden-phone">
@@ -53,12 +55,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="http://localhost:4000/img/logo.png"/></a>
+      <a class="navbar-brand" href="/"><img src="http://gouwestad.com/img/logo.png"/></a>
       <div class="nav-collapse collapse navbar-responsive-collapse">
          <ul class="nav pull-right">
-	          <li><a href="http://localhost:4000">werk</a></li>
-            <li><a href="http://localhost:4000/overons">over ons</a></li>
-	          <li><a href="http://localhost:4000/contact.php">contact</a></li>
+	          <li><a href="http://gouwestad.com">werk</a></li>
+            <li><a href="http://gouwestad.com/overons">over ons</a></li>
+	          <li><a href="http://gouwestad.com/contact.php">contact</a></li>
 	        </ul>
       </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
@@ -71,12 +73,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="http://localhost:4000/img/logo-mobile.png"/></a>
+      <a class="navbar-brand" href="/"><img src="http://gouwestad.com/img/logo-mobile.png"/></a>
       <div class="nav-collapse collapse navbar-responsive-collapse">
          <ul class="nav">
-            <li><a href="http://localhost:4000">werk</a></li>
-            <li><a href="http://localhost:4000/overons">over ons</a></li>
-            <li><a href="http://localhost:4000/contact.php">contact</a></li>
+            <li><a href="http://gouwestad.com">werk</a></li>
+            <li><a href="http://gouwestad.com/overons">over ons</a></li>
+            <li><a href="http://gouwestad.com/contact.php">contact</a></li>
           </ul>
       </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
@@ -162,7 +164,7 @@
             </div>
 
             <div class="row">
-              <div class="col col-lg-8 col-offset-2"
+              <div class="col col-lg-8 col-offset-2">
                 <form method="post" action="process.php" class="form-horizontal">
                     <div class="controls row">
                       <div class="col col-lg-6">
@@ -207,7 +209,7 @@
         </div>
          <div class="col col-lg-6">
             <address class="color-alt">
-              Telefoon: (416) 340-8666
+              Telefoon: (0182) 63 95 85
               <br>
               Email:
               <a href="mailto:us@teehanlax.com">info@gouwestad.com</a>
@@ -256,39 +258,16 @@
 
 
 
-<footer>
-  <section class="graylighter">
-    <div class="footer-bg gouwestadmakelaardij"></div>
-      <div class="container">
-        <div class="row center">
-          <div class="col-lg-12">
-            <a href="http://localhost:4000/werk/gouwestadmakelaardij" class="btn-group">
-              <div class="btn icon"><i class="icon-eye-open"></i></div>
-              <div class="btn btn-primary"> <em>the making of</em> gouwestadmakelaardij.nl</div>
-            </a>
-          </div>
-        </div>
-      </div>
-  </section>
-  <div class="container copy">
-    <div class="row">
-      <div class="span-lg-12 center">
-        <p><small>2013 Gouwestad Marketing & Media</small></p>
-      </div>
-    </div>
-  </div>
-</footer>
-
 
 
   <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="http://localhost:4000/js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
+  <script>window.jQuery || document.write('<script src="http://gouwestad.com/js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
 
-    <script src="http://localhost:4000/js/main.js"></script>
-    <script src="http://localhost:4000/js/vendor/bootstrap.min.js"></script>
+    <script src="http://gouwestad.com/js/main.js"></script>
+    <script src="http://gouwestad.com/js/vendor/bootstrap.min.js"></script>
 
     <script src="http://flexslider.woothemes.com/js/jquery.flexslider.js"></script>
-    <link rel="stylesheet" href="http://localhost:4000/js/vendor/jquery.flexslider.css" />
+    <link rel="stylesheet" href="http://gouwestad.com/js/vendor/jquery.flexslider.css" />
 
         <script>
   // Can also be used with $(document).ready()
@@ -306,7 +285,7 @@ $(document).ready(function() {
 
   </script>
 
-  <script src="http://localhost:4000/js/vendor/Chart.min.js"></script>
+  <script src="http://gouwestad.com/js/vendor/Chart.min.js"></script>
 
 
 <script type="text/javascript">
