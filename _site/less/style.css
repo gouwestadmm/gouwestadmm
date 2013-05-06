@@ -5430,6 +5430,15 @@ nav.main .navbar .navbar-inner {
                           © www.gouwestadmm.nl
 ========================================================================== */
 /* ==========================================================================
+  btn styles
+========================================================================== */
+.btn {
+  white-space: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  padding: 0.5em 1.2em;
+}
+/* ==========================================================================
   Home page styles | default layout
 ========================================================================== */
 section#slider {
@@ -5542,6 +5551,23 @@ section#slider .flex-viewport ul li .main-img {
   background: url("../img/anders.jpg") left center no-repeat;
 }
 /* ==========================================================================
+  Homepage Footer is anders dan andere pagina's
+========================================================================== */
+.bottom {
+  background: #fefefe;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #fff;
+  font-size: 80%;
+  padding: 1em;
+  z-index: 100;
+}
+.bottom p {
+  margin: 0;
+  line-height: 1.2em;
+}
+/* ==========================================================================
   Elementen voor positionering
 ========================================================================== */
 html {
@@ -5646,23 +5672,6 @@ blockquote .cite {
 .navbar.visible-phone ul li a {
   font-size: 2em;
   line-height: 1.7em;
-}
-/* ==========================================================================
-  Footer
-========================================================================== */
-.bottom {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  border-top: 1px solid #fff;
-  font-size: 80%;
-  padding: 1em;
-  z-index: 10;
-}
-.bottom p {
-  margin: 0;
-  line-height: 1.2em;
 }
 /* ==========================================================================
   Visual effects over images
@@ -5991,12 +6000,6 @@ address {
 address.color-alt {
   text-align: left;
   color: #566d87;
-}
-.btn {
-  white-space: normal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.9em;
-  padding: 0.5em 0.7em;
 }
 #contact header.contact {
   padding: 8% 0;
