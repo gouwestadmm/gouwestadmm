@@ -5437,6 +5437,17 @@ nav.main .navbar .navbar-inner {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
   padding: 0.5em 1.2em;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.02);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn i {
+  padding-right: 0.5em;
 }
 /* ==========================================================================
   Home page styles | default layout
