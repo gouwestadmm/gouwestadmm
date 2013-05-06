@@ -16,28 +16,6 @@
                           © www.gouwestadmm.nl
 ========================================================================== */
 
-.bottom{
-	position: absolute;
-}
-
-.parts{
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.eerste{
-	position: fixed;
-	top: 0;
-	margin-top: 45%;
-}
-
-.tweede{
-	position: fixed;
-	top: 0;
-	margin-top: 25%;
-}
 
 /* ==========================================================================
   Elementen voor positionering
@@ -661,19 +639,40 @@ address{
 
 //contact pagina
 
-header.contact{
-	padding: 8% 0;
-	background: @brand-primary;
-	text-align: center;
-	color: #fff;
-}
+#contact{
+	header.contact{
+		padding: 8% 0;
+		background: @brand-primary;
+		text-align: center;
+		color: #fff;
+	}
+	.header{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url("/img/zuidplashof-story-header.jpg") center center no-repeat fixed;
+		.background-size(cover);
+		.opacity(0.3);
+	}
 
-input[class*="span"], select[class*="span"], textarea[class*="span"] {
-    height: auto;
+	input[class*="span"], select[class*="span"], textarea[class*="span"] {
+	    height: auto;
+	}
+
+	select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+		padding: 0.5em 1em;
+		border: 1px solid @gray-lighter;
+		box-shadow: none;
+	}
 }
 
 .controls{
 	margin: 1em 0;
+}
+
+.maps{
+	padding: 0;
 }
 
 #map{
@@ -687,6 +686,53 @@ input[class*="span"], select[class*="span"], textarea[class*="span"] {
     max-width: none;
     }
   }
+
+.last{
+	z-index: 5;
+	margin-bottom: 11.5em;
+}
+
+section, header{
+	z-index: 10;
+	position: relative;
+	background: #fff;
+}
+
+
+ footer{
+ 	position: fixed;
+ 	bottom: 0;
+ 	display: block;
+ 	z-index: 1;
+ 	width: 100%;
+ 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) inset;
+ 	.footer-bg{
+ 		position: absolute;
+ 		top: 0;
+ 		width: 100%;
+ 		height: 100%;
+ 		.background-size(cover);
+ 		// hier de achtergronden toevoegen
+	 	&.gouwestadmakelaardij{
+	 		background: url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") right center;
+	 		.opacity(0.05);
+	 	}
+	 }
+ 	.btn-group {
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+	}
+	.btn{
+		font-weight: 300;
+	}
+ 	.btn.icon{
+ 		background: #fff;
+ 		i{
+ 			color: @brand-primary;
+ 		}
+ 	}
+ }
+
 
 
 /* ==========================================================================
