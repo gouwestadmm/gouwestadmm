@@ -5430,6 +5430,65 @@ nav.main .navbar .navbar-inner {
                           © www.gouwestadmm.nl
 ========================================================================== */
 /* ==========================================================================
+  Home page styles | default layout
+========================================================================== */
+section#slider {
+  height: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 85%;
+  padding: 0;
+}
+section#slider .row {
+  padding-top: 20%;
+}
+section#slider .flex-viewport {
+  height: 100%;
+}
+section#slider .flex-viewport ul {
+  height: 100%;
+  margin-left: 0;
+}
+section#slider .flex-viewport ul li {
+  height: 100%;
+  position: relative;
+}
+section#slider .flex-viewport ul li .container {
+  height: 100%;
+  display: block;
+}
+section#slider .flex-viewport ul li .container .row-fluid {
+  height: 100%;
+}
+section#slider .flex-viewport ul li .container .row-fluid [class*="span"] {
+  height: 100%;
+}
+section#slider .flex-viewport ul li .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section#slider .flex-viewport ul li .main-img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.vert-center {
+  top: 30%;
+  height: 100% !important;
+  position: absolute;
+  float: none !important;
+}
+/* ==========================================================================
   Elementen voor positionering
 ========================================================================== */
 html {
@@ -5457,23 +5516,6 @@ html body {
 .centered {
   display: inline-block;
   vertical-align: middle;
-}
-.content {
-  padding: 5%;
-}
-.content.top {
-  position: absolute;
-  top: 5%;
-}
-.content.top-right {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-}
-.content.bottom {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
 }
 .page-container {
   height: 100%;
@@ -5616,78 +5658,6 @@ blockquote .cite {
 }
 .text-shadow {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-}
-/* ==========================================================================
-  Home page slider | default layout
-========================================================================== */
-section#slider {
-  height: 100%;
-  margin-bottom: 0;
-  overflow: hidden;
-  background: #fff;
-  perspective: 3300px;
-  -webkit-perspective: 3300px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 85%;
-  padding: 0;
-}
-section#slider .row {
-  padding-top: 20%;
-}
-section#slider .flex-viewport {
-  height: 100%;
-}
-section#slider .flex-viewport ul {
-  height: 100%;
-  margin-left: 0;
-}
-section#slider .flex-viewport ul li {
-  height: 100%;
-  position: relative;
-}
-section#slider .flex-viewport ul li .container {
-  height: 100%;
-  display: block;
-}
-section#slider .flex-viewport ul li .container .row-fluid {
-  height: 100%;
-}
-section#slider .flex-viewport ul li .container .row-fluid [class*="span"] {
-  height: 100%;
-}
-section#slider .flex-viewport ul li .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-section#slider .flex-viewport ul li .main-img {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-section#slider .metro-tiles {
-  height: 65%;
-  margin-left: -5px;
-  margin-right: -5px;
-  width: 100%;
-}
-section#slider .content-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  height: 100%;
-}
-section#slider .content-table .content-box {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
 }
 .overlay {
   position: absolute;
