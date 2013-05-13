@@ -6255,12 +6255,13 @@ footer .btn.icon i {
     max-width: 200px;
     margin-top: 0;
     margin-left: -10px;
+    padding: 5px;
   }
   #slider {
     overflow: scroll-y;
   }
   #slider .vert-center {
-    top: 10%;
+    top: 20%;
     text-align: center;
   }
   #slider h1 {
