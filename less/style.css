@@ -5496,7 +5496,7 @@ nav.main .navbar .navbar-inner {
   transition: all 0.3s;
 }
 .full-nav {
-  background: rgba(0, 130, 198, 0.95);
+  background: #D7E4F2;
   background-attachment: fixed;
   height: 100%;
   top: -100%;
@@ -5509,8 +5509,10 @@ nav.main .navbar .navbar-inner {
   width: 100%;
   z-index: 800;
   text-align: center;
-  color: #fff;
+  color: #0082C6;
+  transform: scale(1);
   transition: all 0.3s ease 0s;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
 }
 .full-nav .row {
   max-width: 65%;
@@ -5523,27 +5525,40 @@ nav.main .navbar .navbar-inner {
 .full-nav h5,
 .full-nav h6,
 .full-nav p {
-  color: #fff;
+  color: #0082C6;
 }
 .full-nav ul li a {
-  color: #fff;
+  color: #0082C6;
 }
 .full-nav ul li a:hover {
   background: none;
   transform: scale(1.05);
   transition: all 0.3s ease 0s;
 }
+.full-nav ul li a:focus {
+  text-decoration: none;
+}
+.full-nav ul li a [class^="icon-"]:before,
+.full-nav ul li a [class*=" icon-"]:before {
+  text-decoration: none;
+}
 .full-nav ul li a p {
-  font-size: 0.6em;
-  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
   letter-spacing: 0.1em;
   line-height: 1em;
-  margin-bottom: 0.5em;
   text-transform: uppercase;
 }
-.full-nav ul li a h3 {
+.full-nav ul li a p:after {
+  font-family: "fontAwesome";
+  content: " ";
+  display: block;
+  padding: 1.5em 0 3em;
+}
+.full-nav ul li a h2 {
   line-height: 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.3em;
 }
 .full-nav.visible {
   top: 0;

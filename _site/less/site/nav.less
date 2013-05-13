@@ -80,7 +80,7 @@
 
 // Full screen navigatie
 .full-nav{
-	background:	rgba(0,130,198,0.95);
+	background:	#D7E4F2;
 	background-attachment: fixed;
     height: 100%;
     top: -100%;
@@ -92,35 +92,48 @@
     width: 100%;
     z-index: 800;
     text-align: center;
-    color: #fff;
+    color: #0082C6;
     //Animation
+    transform: scale(1);
     transition: all 0.3s ease 0s;
-
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.1);
     .row{
     	max-width: 65%;
     	margin: 0 auto;
     }
     h1, h2, h3, h4, h5, h6, p{
-    	color: #fff;
+    	color: #0082C6;
     }
     ul li a{
-    	color: #fff;
+    	color: #0082C6;
     	&:hover{
     		background: none;
     		transform: scale(1.05);
     		transition: all 0.3s ease 0s;
     	}
+        &:focus{
+            text-decoration: none;
+        }
+        [class^="icon-"]:before, [class*=" icon-"]:before {
+            text-decoration: none;
+        }
     	p{
-			font-size: 0.6em;
-		    font-weight: 100;
+            font-family: @font-family-sans-serif;
+			font-size: 0.8em;
+		    font-weight: 300;
 		    letter-spacing: 0.1em;
 		    line-height: 1em;
-		    margin-bottom: 0.5em;
 		    text-transform: uppercase;
+            &:after{
+                font-family: "fontAwesome";
+                content: " ";
+                display: block;
+                padding: 1.5em 0 3em;
+            }
     	}
-    	h3{
+    	h2{
     		line-height: 1em;
-    		margin-bottom: 1.5em;
+    		margin-bottom: 0.3em;
     	}
     }
 
@@ -129,7 +142,6 @@
     	.opacity(1);
     }
 }
-
 
 //navbar responisve list-style-position: 
 
