@@ -5578,7 +5578,7 @@ nav.main .navbar .navbar-inner {
   .full-nav .row {
     max-width: 90%;
   }
-  .full-nav .fast-links {
+  .full-nav .fast-links ul li {
     margin-bottom: 0.6em;
     border-bottom: 1px dashed;
   }
