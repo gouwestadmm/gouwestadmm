@@ -204,7 +204,7 @@
                 <form method="post" action="process.php" class="form-horizontal">
                     <div class="controls row">
                       <div class="col col-lg-6">
-                         <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam" required autofocus />
+                         <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam"/>
                       </div>
                       <div class="col col-lg-6">
                         <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="voorbeeld@gmail.com" required />
