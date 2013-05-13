@@ -5859,6 +5859,9 @@ blockquote .cite {
 .info-project.gouwestad h1 {
   font-weight: 600;
 }
+.info-project.gouwestad header {
+  background: #fcaf17;
+}
 .info-project.gouwestad .header {
   background: #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center fixed;
   -webkit-background-size: cover;
