@@ -6305,7 +6305,7 @@ footer .btn.icon i {
   }
 }
 .info-project.zuidplashof header {
-  background: url("/img/zuidplashof-story-header.jpg") center center no-repeat fixed;
+  background: url("../img/zuidplashof-story-header.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
