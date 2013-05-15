@@ -46,9 +46,7 @@ body-id: contact
         <p>Vertel dan met onderstaand formulier iets over je product / bedrijf of project en wij nemen zo snel mogelijk contact met je op.</p>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-span-6">
+    <div class="row story-width">
 			<?php
                    //init variables
                    $cf = array();
@@ -83,10 +81,11 @@ body-id: contact
                       <a class="close" data-dismiss="alert">×</a>
                 <p>Bedankt voor uw bericht. U hoort z.s.m. van ons.</p>
             </div>
+    </div>
 
             <div class="row">
               <div class="col col-lg-8 col-offset-2">
-                <form method="post" action="process.php" class="form-horizontal">
+                <form method="post" action="process.php">
                     <div class="controls row">
                       <div class="col col-lg-6">
                          <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam"/>
@@ -111,14 +110,15 @@ body-id: contact
 
             <?php unset($_SESSION['cf_returndata']); ?>
         </div>
-      </div>
-    </div>
+
   </section>
 
   <section>
     <div class="container">
       <div class="row story-width center">
-        <h5>andere vragen?</h5>
+        <div class="col col-lg-12">
+          <h5>andere vragen?</h5>
+        </div>
       </div>
       <div class="row story-width">
         <div class="col col-lg-6">

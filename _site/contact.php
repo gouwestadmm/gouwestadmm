@@ -28,10 +28,10 @@
 
     
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="http://gouwestadmm.github.com/gouwestadmm/less/style.css">
+  <link rel="stylesheet" href="http://gouwestad.com/less/style.css">
 
   
-    <script src="http://gouwestadmm.github.com/gouwestadmm/js/vendor/Chart.js"></script>
+    <script src="http://gouwestad.com/js/vendor/Chart.js"></script>
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -40,7 +40,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-  <script src="http://gouwestadmm.github.com/gouwestadmm/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+  <script src="http://gouwestad.com/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
 
 </head>
@@ -50,7 +50,7 @@
 
 <div class="navbar navbar-fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="http://gouwestadmm.github.com/gouwestadmm"><img src="http://gouwestadmm.github.com/gouwestadmm/img/logo.png"/></a>
+      <a class="navbar-brand" href="http://gouwestad.com"><img src="http://gouwestad.com/img/logo.png"/></a>
       <a data-placement="top" data-toggle="tooltip" href="#" data-original-title="Tooltip on top" class="pull-right navbtn" id="nav-btn">
         <i class="icon-reorder"></i>
         <i class="icon-remove-sign"></i>
@@ -62,13 +62,13 @@
   <div class="container">
     <div class="row fast-links">
       <div class="col col-lg-4">
-        <a href="http://gouwestadmm.github.com/gouwestadmm">homepage</a>
+        <a href="http://gouwestad.com">homepage</a>
       </div>
       <div class="col col-lg-4">
-        <a href="http://gouwestadmm.github.com/gouwestadmm/overons">meer over ons</a>
+        <a href="http://gouwestad.com/overons">meer over ons</a>
       </div>
        <div class="col col-lg-4">
-        <a href="http://gouwestadmm.github.com/gouwestadmm/contact.php">met ons werken?</a>
+        <a href="http://gouwestad.com/contact.php">met ons werken?</a>
       </div>
     </div>
 
@@ -82,32 +82,32 @@
       <div class="col col-lg-12">
         <ul class="nav">
           <li>
-            <a href="http://gouwestadmm.github.com/gouwestadmm/werk/gouwestadmakelaardij">
+            <a href="http://gouwestad.com/werk/gouwestadmakelaardij">
               <h2>Gouwestad makelaardij</h2>
               <p>responsive webdesign</p>
             </a>
           </li>
-          <!--<li>
-            <a href="http://gouwestadmm.github.com/gouwestadmm/werk/zuidplashof">
+          <li>
+            <a href="http://gouwestad.com/werk/zuidplashof">
               <h2>Zuidplashof</h2>
               <p>een digitale verhuurcampagne</p>
             </a>
-          </li>-->
+          </li>
           <li>
-            <a href="http://gouwestadmm.github.com/gouwestadmm/werk/tourmalijn">
+            <a href="http://gouwestad.com/werk/tourmalijn">
               <h2>Tourmalijn</h2>
               <p>retro in een nieuw jasje</p>
             </a>
           </li>
           <li>
-            <a href="http://gouwestadmm.github.com/gouwestadmm/werk/mijntypea">
+            <a href="http://gouwestad.com/werk/mijntypea">
               <h2>Mijn Type A</h2>
               <p>U bedenkt, wij bouwen</p>
             </a>
           </li>
           <hr>
           <li>
-            <a href="http://gouwestadmm.github.com/gouwestadmm/overons">
+            <a href="http://gouwestad.com/overons">
               <h2>over ons bedrijf</h2>
               <p>wat wij doen...</p>
             </a>
@@ -161,9 +161,7 @@
         <p>Vertel dan met onderstaand formulier iets over je product / bedrijf of project en wij nemen zo snel mogelijk contact met je op.</p>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-span-6">
+    <div class="row story-width">
 			<?php
                    //init variables
                    $cf = array();
@@ -198,10 +196,11 @@
                       <a class="close" data-dismiss="alert">×</a>
                 <p>Bedankt voor uw bericht. U hoort z.s.m. van ons.</p>
             </div>
+    </div>
 
             <div class="row">
               <div class="col col-lg-8 col-offset-2">
-                <form method="post" action="process.php" class="form-horizontal">
+                <form method="post" action="process.php">
                     <div class="controls row">
                       <div class="col col-lg-6">
                          <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam"/>
@@ -226,14 +225,15 @@
 
             <?php unset($_SESSION['cf_returndata']); ?>
         </div>
-      </div>
-    </div>
+
   </section>
 
   <section>
     <div class="container">
       <div class="row story-width center">
-        <h5>andere vragen?</h5>
+        <div class="col col-lg-12">
+          <h5>andere vragen?</h5>
+        </div>
       </div>
       <div class="row story-width">
         <div class="col col-lg-6">
@@ -296,13 +296,13 @@
 
 
   <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="http://gouwestadmm.github.com/gouwestadmm/js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
+  <script>window.jQuery || document.write('<script src="http://gouwestad.com/js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
 
-    <script src="http://gouwestadmm.github.com/gouwestadmm/js/main.js"></script>
-    <script src="http://gouwestadmm.github.com/gouwestadmm/js/vendor/bootstrap.min.js"></script>
+    <script src="http://gouwestad.com/js/main.js"></script>
+    <script src="http://gouwestad.com/js/vendor/bootstrap.min.js"></script>
 
-    <script src="http://gouwestadmm.github.com/gouwestadmm/js/vendor/jquery.flexslider-min.js"></script>
-    <link rel="stylesheet" href="http://gouwestadmm.github.com/gouwestadmm/js/vendor/jquery.flexslider.css" />
+    <script src="http://gouwestad.com/js/vendor/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" href="http://gouwestad.com/js/vendor/jquery.flexslider.css" />
 
         <script>
   // Can also be used with $(document).ready()
