@@ -6004,35 +6004,6 @@ header h1,
 #slider h1 {
   color: #fff;
 }
-#zuidplashof-story .navbar {
-  display: none;
-}
-.info-project.zuidplashof header {
-  background: url("/img/zuidplashof-story-header.jpg") center center no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 7em 0;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-}
-.info-project.zuidplashof header h1 {
-  font-size: 5.5em;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  margin: 0 auto 0.1em;
-}
-.info-project.zuidplashof header h4 {
-  letter-spacing: 0.05em;
-}
-.info-project.zuidplashof header p {
-  margin: 0 0 0.1em;
-}
-.info-project.zuidplashof .intro-padding {
-  padding: 3% 0;
-}
 #over-ons header {
   padding: 8% 0;
   background: #007EC3;
@@ -6332,4 +6303,42 @@ footer .btn.icon i {
     position: absolute;
     bottom: 0;
   }
+}
+.info-project.zuidplashof header {
+  background: url("/img/zuidplashof-story-header.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 7em 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.info-project.zuidplashof header h1 {
+  font-size: 5.5em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 auto 0.1em;
+}
+.info-project.zuidplashof header h4 {
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.info-project.zuidplashof header p {
+  margin: 0 0 0.1em;
+}
+.info-project.zuidplashof .intro-padding {
+  padding: 3% 0;
+}
+.info-project.zuidplashof .img-one {
+  background: url("../img/zuidplashof-main.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 6em;
+}
+.info-project.zuidplashof .img-one h1 {
+  color: #fff;
 }
