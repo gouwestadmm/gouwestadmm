@@ -50,7 +50,7 @@
 
 <div class="navbar navbar-fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/"><img src="http://gouwestad.com/img/logo.png"/></a>
+      <a class="navbar-brand" href="http://gouwestad.com"><img src="http://gouwestad.com/img/logo.png"/></a>
       <a data-placement="top" data-toggle="tooltip" href="#" data-original-title="Tooltip on top" class="pull-right navbtn" id="nav-btn">
         <i class="icon-reorder"></i>
         <i class="icon-remove-sign"></i>
