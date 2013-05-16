@@ -1,0 +1,50 @@
+//Overschrijven van Bootstrap varaibelen voor eenvoudig updaten
+
+
+// Grays
+// -------------------------
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              #273546;
+@gray:                   #464A53;
+@gray-light:             #566D87;
+@gray-lighter:           #D7E4F2; 
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         #428bca;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #fff;
+@text-color:            @gray;
+
+// Links
+// -------------------------
+
+@link-color:            @brand-primary;
+@link-hover-color:      darken(@link-color, 15%);
+
+// Typography
+// -------------------------
+
+@font-family-sans-serif:  'Open Sans', sans-serif;
+@font-family-serif:       'Droid Serif', serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-serif;
+
+@font-size-base:          1.15em;
+@font-size-large:         (@font-size-base * 1.25); // ~18px
+@font-size-small:         (@font-size-base * 0.85); // ~12px
+@font-size-mini:          (@font-size-base * 0.75); // ~11px
+
+@line-height-base:        1.55em;
+
+@headings-font-family:    @font-family-sans-serif; // empty to use BS default, @font-family-base
+@headings-font-weight:    600;
