@@ -1,23 +1,70 @@
-	<nav class="main">
-		<div class="navbar navbar-fixed-top">
-	      <div class="navbar-inner">
-	        <div class="container">
-	          <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </a>
-	          <a class="brand saffier-logo" href="#"><img src="img/logo.png"/></a>
-	          <div class="nav-collapse collapse navbar-responsive-collapse">
-	            <ul class="nav pull-right">
-	              <li class="dropdown"><a href="#">werk</a></li>
-				  <li><a href="/huurders">over ons</a></li>
-	              <li><a href="#">blog</a></li>
-	              <li><a href="#">contact</a></li>
-	            </ul>
-	
-	          </div><!-- /.nav-collapse -->
-	        </div>
-	      </div><!-- /navbar-inner -->
-	    </div><!-- /navbar -->
-	</nav>
+<div class="navbar navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{{ site.url }}"><img src="{{ site.url }}/img/logo.png"/></a>
+      <a data-placement="top" data-toggle="tooltip" href="#" data-original-title="Tooltip on top" class="pull-right navbtn" id="nav-btn">
+        <i class="icon-reorder"></i>
+        <i class="icon-remove-sign"></i>
+      </a>
+    </div><!-- /.container -->
+</div>
+
+<div class="full-nav" id="full-nav">
+  <div class="container">
+    <div class="row fast-links">
+      <div class="col col-lg-4">
+        <a href="{{ site.url }}">homepage</a>
+      </div>
+      <div class="col col-lg-4">
+        <a href="{{ site.url }}/overons">meer over ons</a>
+      </div>
+       <div class="col col-lg-4">
+        <a href="{{ site.url }}/contact.php">met ons werken?</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="page-header">
+        <h4>Ons recente werk:</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-lg-12">
+        <ul class="nav">
+          <li>
+            <a href="{{ site.url }}/werk/gouwestadmakelaardij">
+              <h2>Gouwestad makelaardij</h2>
+              <p>responsive webdesign</p>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.url }}/werk/zuidplashof">
+              <h2>Zuidplashof</h2>
+              <p>een digitale verhuurcampagne</p>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.url }}/werk/tourmalijn">
+              <h2>Tourmalijn</h2>
+              <p>retro in een nieuw jasje</p>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.url }}/werk/mijntypea">
+              <h2>Mijn Type A</h2>
+              <p>U bedenkt, wij bouwen</p>
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="{{ site.url }}/overons">
+              <h2>over ons bedrijf</h2>
+              <p>wat wij doen...</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
