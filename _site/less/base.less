@@ -1,3 +1,4 @@
+@white: #fff;
 
 /* ==========================================================================
 	Base styles
@@ -5,9 +6,8 @@
 ========================================================================== */
 
 section{
-   padding: 0;
+   padding: 3em 0;
    }
-
 
     .margin-top{
     margin-top: 40px;
@@ -25,16 +25,19 @@ section{
   Typography
 ========================================================================== */
 
-body {
-  font-size: 100%;
+html{
+   font-size: 100%;
+}
+
+body{
+  font-size: @font-size-base;
   font-weight: normal;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  line-height: 1.65em;
 }
 
 p {
   margin: 0 0 1.5em;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -61,31 +64,37 @@ em {
   Headings
 ========================================================================== */
 h1, h2, h3, h4{
-  font-size: 2em;
+
   line-height: 1.25;
-  font-weight: 300;
   -webkit-font-smoothing: antialiased;
    margin: 0 auto 0.3em;
+   color: @gray-dark;
+}
+
+h1{
+  font-size: 3.5em;
+  line-height: 1.2em;
+  letter-spacing: -0.05em;
 }
 
 h2{
-  font-size: 1.8em;
+  font-size: 2.8em;
 }
 
 h3{
-  font-size: 1.6em;
+  font-size: 2.4em;
 }
 
 h4{
-  font-size: 1.4em;
+  font-size: 2em;
 }
 
 h5{
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 h6{
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-transform: uppercase;
 }
 
@@ -103,88 +112,16 @@ h6{
    display: block;
 }
 
+// mobile centering class
+.center-always{
+  text-align: center;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
 
-/* ==========================================================================
-  Coloring
-  Set background-color & set text color based on the background-color
-========================================================================== */
 
-
-.text-color (@bgcolor) when (lightness(@bgcolor) >= 50%) {
-  color: @grayDark;
-  background: @bgcolor;
-}
-.text-color (@bgcolor) when (lightness(@bgcolor) < 50%) {
-  h1, h2, h3, h4, h5, h6, p, small{
-  color: @white;
-  }
-  background: @bgcolor;
-}
-
-.white{
-  .text-color(@white)
-  }
-
-.black{
-  .text-color(@black)
-}
-
-.gray{
-  .text-color(@gray)
-  }
-
-.graylight{
-  .text-color(@grayLight)
-  }
-
-
-.graylighter{
-  .text-color(@grayLighter)
-  }
-
-.graydark{
-  .text-color(@grayDark)
-  }
-  
-.graydarker{
-  .text-color(@grayDarker)
-  }
-
-.blue{
-  .text-color(@blue)
-  }
-
-.bluedark{
-  .text-color(@blueDark)
-  }
-  
-.green{
-  .text-color(@green)
-  }
-
-.red{
-  .text-color(@red)
-  }
-
-.yellow{
-  .text-color(@yellow)
-}
- 
-.orange{
-  .text-color(@orange)
-  }
-
-
-.pink{
-  .text-color(@pink)
-  }
-
-.purple{
-  .text-color(@purple)
-  } 
 
 
 /* ==========================================================================
@@ -276,50 +213,30 @@ nav.main{
 
 
 @media screen and (min-width: 480px) {
-  body { font-size: 102.5%; }
-}
 
-
-@media screen and (min-width: 680px) {
-  body {
-    font-size: 105%;
-  }
-
-  p{
-    font-weight: 300;
-  }
-
-  .mac p{
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
+    p{
+      line-height: 1.55em;
+    }
 }
 
 
 @media screen and (min-width: 780px) {
-  body {font-size: 110.5%;}
+  body {
+    font-size: 125%;
+  }
 
-    h1{
-    font-size: 2.500em;
-   }
-
-   h2{
-    font-size: 2.2em;
-   }
-
-   h3{
-    font-size: 1.9em;
-   }
 }
-
 
 @media (max-width: 767px) {
 //remove the Bootstrap body padding on small devices & add to container
   body{
    padding: 0;
-   .container{
-    padding-left: 20px;
-    padding-right: 20px;
-   }
+
+  }
+
+  [class*="col-span-"], [class*="col-small-"] {
+    padding-left: 0;
+    padding-right: 0;
   }
 
 //Special class to remove margin on container & row on mobile
@@ -328,12 +245,40 @@ nav.main{
     padding-right: 0 !important;
   }
 
+  #slider .container{
+    padding-left: 0;
+    padding-right: 0;
+    .btn-large{
+      font-size: 1em;
+    }
+  }
+
+  .project-info .container{
+     padding-left: 20px;
+    padding-right: 20px;
+  }
+  .center{
+    text-align: left;
+  }
+
+  //type
+  h1{
+    font-size: 2.4em;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+  h3{
+    font-size: 1.7em;
+  }
+
 //smaller table font-sizes to fit screens
   table{
     font-size: 80%;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 979px) {
    .block{
@@ -342,29 +287,25 @@ nav.main{
 }
 
 
-@media screen and (min-width: 900px) {
-  body {
-    font-size: 115%;
-  }
-}
-
-
 @media screen and (min-width: 1200px) {
-  body {
-    font-size: 122.5%;
+  body{
+    font-size: 1.4em;
+    line-height: 1.7em;
   }
-
-
+  p{
+    line-height: 1.7em;
+  }
 }
 
 
 @media screen and (min-width: 1500px) {
-  body {
-    font-size: 130%;
+  body{
+    font-size: 145%;
   }
 
   .container{
     width: 1320px;
+    max-width: none;
   }
 
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
@@ -373,17 +314,16 @@ nav.main{
 
 }
 
-
 @media screen and (min-width: 1700px) {
   body {
-    font-size: 140%;
+    font-size: 155%;
   }
 }
 
 
 @media (min-width: 1950px) {
   body {
-    font-size: 160%;
+    font-size: 170%;
   }
 
   .container{
