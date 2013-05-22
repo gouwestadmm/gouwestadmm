@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /drezzd/
+Disallow: /fietsreparatiedienst.nl/
+Disallow: /forum/
+Disallow: /gittest/
+Disallow: /gouwestadmakelaardij/
+Disallow: /gouwestadmm/
+Disallow: /kids/
+Disallow: /lex/
+Disallow: /makelaardij/
+Disallow: /metronomous/
+Disallow: /mijntypea/
+Disallow: /mvinkinstallaties.nl/
+Disallow: /noordpark/
+Disallow: /type-test/
+
