@@ -5351,14 +5351,55 @@ h6,
   width: 100%;
   z-index: 800;
   text-align: center;
-  color: #0082C6;
+  color: #428bca;
+  text-shadow: none;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
 }
 .full-nav .row {
-  max-width: 65%;
+  max-width: 75%;
   margin: 0 auto;
+}
+.full-nav .fast-links {
+  margin-bottom: 2em;
+}
+.full-nav .fast-links .btn {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  text-shadow: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.04);
+}
+.full-nav .fast-links .btn:hover {
+  color: #245682;
+}
+.full-nav .fast-links .btn:before {
+  font-family: "fontAwesome";
+  font-size: 1.5em;
+  float: left;
+  background: #002E46;
+  margin: -0.32em -0.8em;
+  padding: 0.32em 0.5em;
+  color: #fff;
+}
+.full-nav .fast-links .btn.home:before {
+  content: '';
+}
+.full-nav .fast-links .btn.us:before {
+  content: '';
+}
+.full-nav .fast-links .btn.contact:before {
+  content: '';
 }
 .full-nav h1,
 .full-nav h2,
@@ -5367,14 +5408,21 @@ h6,
 .full-nav h5,
 .full-nav h6,
 .full-nav p {
-  color: #0082C6;
+  color: #428bca;
 }
 .full-nav ul li a {
-  color: #0082C6;
+  color: #428bca;
 }
 .full-nav ul li a:hover {
   background: none;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transform: scale(1.05);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .full-nav ul li a:focus {
@@ -5421,8 +5469,7 @@ h6,
     max-width: 90%;
   }
   .full-nav .fast-links a {
-    margin-bottom: 0.6em;
-    border-bottom: 1px dashed;
+    margin-bottom: 0.8em;
   }
 }
 /* ==========================================================================
