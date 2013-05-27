@@ -9,10 +9,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Gouwestad Marketing & Media | Ontwikkelen betekent vooruitgang</title>
-        
+        <title>Werk met ons | Contact - Gouwestad Marketing & Media | Werken aan merk, design en campagne</title>
+        <meta name="description" content="Contactgegevens van Gouwestad Marketing & Media en waarom je met ons zou willen werken">
         <meta name="viewport" content="width=device-width">
 
+        <meta property="og:title" content="Werk met ons | Contact - Gouwestad Marketing & Media" />
+        <meta property="og:image" content="http://gouwestad.com/img/og-img-gouwestad.jpg" />
+        <meta property="og:description" content=" Contactgegevens van Gouwestad Marketing & Media en waarom je met ons zou willen werken" />
 
 <!--_____  ____  _    ___          ________  _____ _______       _____  
   / ____|/ __ \| |  | \ \        / /  ____|/ ____|__   __|/\   |  __ \ 
@@ -42,6 +45,17 @@
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   <script src="http://gouwestad.com/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+
+  <link href="https://plus.google.com/103720111266257387664" rel="publisher" />
+
+  <!-- Google + -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+      po.src = "https://apis.google.com/js/plusone.js?publisherid=103720111266257387664";
+      var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
 
 
 </head>
@@ -132,24 +146,35 @@
   </div>
 </header>
 
+
 <section>
   <div class="container">
     <div class="row story-width">
-      <div class="col col-lg-12">
-        <p>Wij werken graag met bedrijven en mensen die op zoek zijn naar meer dan alleen een ontwerpbureau. Natuurlijk hebben wij goed design, zowel on- als offline, 
-        heel hoog in het vaandel staan en vinden het belangrijk dat klanten dit waarderen, maar wij doen graag meer. Met een frisse blik naar het bedrijf
-        of product kijken, meedenken in een strategie en van daaruit werken aan een merk.</p>
-      </div>
-    </div>
-    <div class="row story-width">
-      <div class="col col-lg-12">
-        <h5>Nauw samenwerken</h5>
-        <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
-            Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
-            kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
-        </p>
-      </div>
-    </div>
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <h3 class="accordion-heading center">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Wat bieden wij?
+            </a>
+          </h3>
+          <div id="collapseOne" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <div class="col col-lg-12">
+                  <p>Wij werken graag met bedrijven en mensen die op zoek zijn naar meer dan alleen een ontwerpbureau. Natuurlijk hebben wij goed design, zowel on- als offline, 
+                  heel hoog in het vaandel staan en vinden het belangrijk dat klanten dit waarderen, maar wij doen graag meer. Met een frisse blik naar het bedrijf
+                  of product kijken, meedenken in een strategie en van daaruit werken aan een merk.</p>
+                  <br>
+                  <h5>Nauw samenwerken</h5>
+                  <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
+                      Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
+                      kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
   </div>
 </section>
 
@@ -327,6 +352,24 @@ $(document).ready(function() {
   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
   s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+
+<!-- Google +1 btn asynchronous -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!--[if lt IE 7 ]>
   <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>

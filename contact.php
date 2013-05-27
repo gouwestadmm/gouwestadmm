@@ -1,7 +1,9 @@
 ---
 layout: contact
-title: Gouwestad Marketing & Media
-tagline: Ontwikkelen betekent vooruitgang
+title: Werk met ons | Contact - Gouwestad Marketing & Media
+tagline: Werken aan merk, design en campagne
+description: Contactgegevens van Gouwestad Marketing & Media en waarom je met ons zou willen werken
+keywords: contact, contactgegevens, werk met met ons
 body-id: contact
 ---
 
@@ -16,24 +18,35 @@ body-id: contact
   </div>
 </header>
 
+
 <section>
   <div class="container">
     <div class="row story-width">
-      <div class="col col-lg-12">
-        <p>Wij werken graag met bedrijven en mensen die op zoek zijn naar meer dan alleen een ontwerpbureau. Natuurlijk hebben wij goed design, zowel on- als offline, 
-        heel hoog in het vaandel staan en vinden het belangrijk dat klanten dit waarderen, maar wij doen graag meer. Met een frisse blik naar het bedrijf
-        of product kijken, meedenken in een strategie en van daaruit werken aan een merk.</p>
-      </div>
-    </div>
-    <div class="row story-width">
-      <div class="col col-lg-12">
-        <h5>Nauw samenwerken</h5>
-        <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
-            Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
-            kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
-        </p>
-      </div>
-    </div>
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <h3 class="accordion-heading center">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Wat bieden wij?
+            </a>
+          </h3>
+          <div id="collapseOne" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <div class="col col-lg-12">
+                  <p>Wij werken graag met bedrijven en mensen die op zoek zijn naar meer dan alleen een ontwerpbureau. Natuurlijk hebben wij goed design, zowel on- als offline, 
+                  heel hoog in het vaandel staan en vinden het belangrijk dat klanten dit waarderen, maar wij doen graag meer. Met een frisse blik naar het bedrijf
+                  of product kijken, meedenken in een strategie en van daaruit werken aan een merk.</p>
+                  <br>
+                  <h5>Nauw samenwerken</h5>
+                  <p>Wij zijn het liefst betrokken bij langer lopende marketingtrajecten, waarbij er ruimte is om goed te kijken naar product, doelgroep en campagnemethodiek.<br>
+                      Wij proberen niet alleen te kijken naar wat wij denken dat het beste is voor een product, maar we werken graag nauw samen met onze klanten en
+                      kijken ook graag naar de cijfers. Op die manier ontstaat het beste product en zie je snel genoeg wat er wel en/of niet goed gaat. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
   </div>
 </section>
 

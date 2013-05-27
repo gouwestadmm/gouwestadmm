@@ -240,7 +240,7 @@ html {
 }
 body {
   font-family: 'Droid Serif', serif;
-  font-size: 1.15em;
+  font-size: 1.1em;
   line-height: 1.55em;
   color: #464a53;
   background-color: #ffffff;
@@ -283,7 +283,7 @@ p {
 }
 .lead {
   margin-bottom: 1em;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   font-weight: 200;
   line-height: 1.4;
 }
@@ -381,7 +381,7 @@ h6 {
 }
 h1,
 .h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 h2,
 .h2 {
@@ -397,7 +397,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 h6,
 .h6 {
@@ -415,7 +415,7 @@ h3 small,
 .h3 small,
 h4 small,
 .h4 small {
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 .page-header {
   padding-bottom: -0.5em;
@@ -520,7 +520,7 @@ blockquote {
   border-left: 5px solid #d7e4f2;
 }
 blockquote p {
-  font-size: 1.4375em;
+  font-size: 1.375em;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -568,7 +568,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: -0.8500000000000001em;
+  font-size: -0.8999999999999999em;
   color: #273546;
   border-radius: 4px;
 }
@@ -583,7 +583,7 @@ pre {
   display: block;
   padding: 0em;
   margin: 0 0 0.5em;
-  font-size: 0.1499999999999999em;
+  font-size: 0.10000000000000009em;
   line-height: 1.55em;
   word-break: break-all;
   word-wrap: break-word;
@@ -1051,7 +1051,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 1em;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   line-height: inherit;
   color: #273546;
   border: 0;
@@ -1081,7 +1081,7 @@ input[type="color"] {
   display: block;
   min-height: 17em;
   padding: 8px 12px;
-  font-size: 1.15em;
+  font-size: 1.1em;
   line-height: 1.55em;
   color: #464a53;
   vertical-align: middle;
@@ -1245,7 +1245,7 @@ input[type="search"].input-large,
 input[type="tel"].input-large,
 input[type="color"].input-large {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   border-radius: 6px;
 }
 select.input-small,
@@ -1266,7 +1266,7 @@ input[type="tel"].input-small,
 input[type="color"].input-small {
   min-height: 11em;
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   border-radius: 3px;
 }
 input[disabled],
@@ -1414,7 +1414,7 @@ select:focus:invalid:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 6px 8px;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   line-height: 1.55em;
   text-align: center;
@@ -1425,12 +1425,12 @@ select:focus:invalid:focus {
 }
 .input-group-addon.input-small {
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   border-radius: 3px;
 }
 .input-group-addon.input-large {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   border-radius: 6px;
 }
 .input-group input:first-child,
@@ -1497,7 +1497,7 @@ select:focus:invalid:focus {
   display: inline-block;
   padding: 8px 12px;
   margin-bottom: 0;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: 500;
   line-height: 1.55em;
   text-align: center;
@@ -1732,12 +1732,12 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-large {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   border-radius: 6px;
 }
 .btn-small {
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3065,7 +3065,7 @@ a.list-group-item.active .list-group-item-text {
 .panel-heading {
   margin: -15px -15px 15px;
   padding: 10px 15px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   font-weight: 500;
   background-color: #f5f5f5;
   border-bottom: 1px solid #dddddd;
@@ -3157,7 +3157,7 @@ a.list-group-item.active .list-group-item-text {
 }
 .close {
   float: right;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -3340,7 +3340,7 @@ button.close {
 .nav-header {
   display: block;
   padding: 3px 15px;
-  font-size: 0.8624999999999999em;
+  font-size: 0.8250000000000001em;
   font-weight: bold;
   line-height: 1.55em;
   color: #566d87;
@@ -3476,7 +3476,7 @@ button.close {
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   font-weight: 500;
   line-height: 1em;
   color: #777777;
@@ -3901,7 +3901,7 @@ button.close {
 .pagination-large > li > a,
 .pagination-large > li > span {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
 }
 .pagination-large > li:first-child > a,
 .pagination-large > li:first-child > span {
@@ -3916,7 +3916,7 @@ button.close {
 .pagination-small > li > a,
 .pagination-small > li > span {
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
 }
 .pagination-small > li:first-child > a,
 .pagination-small > li:first-child > span {
@@ -4128,7 +4128,7 @@ button.close {
   z-index: 1030;
   display: block;
   visibility: visible;
-  font-size: 0.8624999999999999em;
+  font-size: 0.8250000000000001em;
   line-height: 1.4;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -4232,7 +4232,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -4502,7 +4502,7 @@ a.thumbnail:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   font-weight: bold;
   color: #fff;
   line-height: 1;
@@ -4589,7 +4589,7 @@ a.list-group-item.active > .badge,
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   color: #fff;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -4841,7 +4841,7 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   font-weight: 200;
   line-height: 2.325em;
   color: inherit;
@@ -4860,7 +4860,7 @@ a.list-group-item.active > .badge,
     border-radius: 6px;
   }
   .jumbotron h1 {
-    font-size: 5.175em;
+    font-size: 4.95em;
   }
 }
 .clearfix:before,
@@ -5001,7 +5001,7 @@ html {
   font-size: 100%;
 }
 body {
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   line-height: 1.65em;
 }
@@ -5387,7 +5387,7 @@ h6,
   font-family: "fontAwesome";
   font-size: 1.5em;
   float: left;
-  background: #002E46;
+  background: #428bca;
   margin: -0.32em -0.8em;
   padding: 0.32em 0.5em;
   color: #fff;
@@ -5764,7 +5764,7 @@ blockquote .cite {
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
-  padding: 8% 0;
+  padding: 8em 0;
   position: relative;
   color: #fff;
 }
@@ -5800,6 +5800,9 @@ blockquote .cite {
   background: #fcaf17;
   color: #fff;
   text-shadow: none;
+}
+.info-project.gouwestad .yellow h1 {
+  color: #fff;
 }
 .info-project.gouwestad .nieuw {
   background: #ffffff url("../img/gwstd-ipad.png") no-repeat -300px center fixed;
@@ -5894,7 +5897,7 @@ header h1,
   color: #fff;
 }
 #over-ons header {
-  padding: 8% 0;
+  padding: 8em 0;
   background: #007EC3;
   color: #fff;
 }
@@ -6080,31 +6083,36 @@ footer .footer-bg {
   background-size: cover;
 }
 footer .footer-bg.gouwestadmakelaardij {
-  background: url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") right center;
-  opacity: 0.05;
-  filter: alpha(opacity=5);
+  background: url("http://gouwestad.com/img/anders.jpg") right center;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 footer .copy {
   padding: 0.5em 0;
   font-size: 0.8em;
-  text-align: center;
 }
 footer .copy p {
   margin: 0;
   color: #566d87;
 }
-footer .btn-group {
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
-}
 footer .btn {
   font-weight: 300;
 }
-footer .btn.icon {
-  background: #fff;
-}
-footer .btn.icon i {
-  color: #428bca;
+footer .btn:before {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.03);
+  content: "\f0e0";
+  display: block;
+  float: left;
+  font-family: "FontAwesome";
+  font-size: 1em;
+  height: 100%;
+  margin: -0.5em 1em -0.5em -1.2em;
+  padding: 0.5em 1.2em;
 }
 /* ==========================================================================
   Responsive styles | Main site
@@ -6153,6 +6161,9 @@ footer .btn.icon i {
   .story-width {
     width: 100%;
   }
+  .page-container {
+    margin-bottom: 0;
+  }
   footer {
     position: relative;
     min-height: none;
@@ -6192,6 +6203,16 @@ footer .btn.icon i {
     position: absolute;
     bottom: 0;
   }
+}
+#fb-root {
+  display: none;
+}
+/* To fill the container and nothing else */
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  height: 25px;
 }
 .info-project.zuidplashof header {
   background: url("../img/zuidplashof-story-header.jpg") center center no-repeat fixed;
@@ -6235,4 +6256,14 @@ footer .btn.icon i {
   .info-project.zuidplashof header h1 {
     font-size: 2.3em;
   }
+}
+#doen header {
+  background: #d7e4f2;
+  padding: 8em 0;
+}
+#doen header h1 {
+  color: #464a53;
+}
+#doen header h4 {
+  font-weight: lighter;
 }

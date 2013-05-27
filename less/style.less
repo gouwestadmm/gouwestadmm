@@ -172,7 +172,7 @@ blockquote{
 		background: #fcaf17 url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") no-repeat top center fixed;
 		.background-size(cover);
 		min-height: 100%;
-		padding: 8% 0;
+		padding: 8em 0;
 		position: relative;
 		color: #fff;
 		h1, h4{
@@ -206,6 +206,9 @@ blockquote{
 		background: #fcaf17;
 		color: #fff;
 		text-shadow: none;
+		h1{
+			color: #fff;
+		}
 	}
 	.nieuw{
 		background: #fff url("../img/gwstd-ipad.png") no-repeat -300px center fixed;
@@ -300,7 +303,7 @@ header, #slider{
 
 #over-ons{
 	header{
-		padding: 8% 0;
+		padding: 8em 0;
 		background: #007EC3;
 		color: #fff;
 		h1{
@@ -465,32 +468,34 @@ address{
  		.background-size(cover);
  		// hier de achtergronden toevoegen
 	 	&.gouwestadmakelaardij{
-	 		background: url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") right center;
-	 		.opacity(0.05);
+	 		background: url("http://gouwestad.com/img/anders.jpg") right center;
+	 		.opacity(0.85);
+	 		.background-size(cover);
 	 	}
 	 }
 	 .copy{
 	 	padding: 0.5em 0;
 	 	font-size: 0.8em;
-	 	text-align: center;
 	 	p{
 	 		margin: 0;
 	 		color: @gray-light;
 	 	}
 	 }
- 	.btn-group {
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
-	}
 	.btn{
 		font-weight: 300;
+		&:before{
+			 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+		    border-right: 1px solid rgba(0, 0, 0, 0.03);
+		    content: "\f0e0";
+		    display: block;
+		    float: left;
+		    font-family: "FontAwesome";
+		    font-size: 1em;
+		    height: 100%;
+		    margin: -0.5em 1em -0.5em -1.2em;
+    		padding: 0.5em 1.2em;
+		}
 	}
- 	.btn.icon{
- 		background: #fff;
- 		i{
- 			color: @brand-primary;
- 		}
- 	}
  }
 
 
@@ -548,6 +553,10 @@ address{
 	//Story styles small screens
 	.story-width{
 		width: 100%;
+	}
+
+	.page-container{
+		margin-bottom: 0;
 	}
 
 	footer{
@@ -611,5 +620,17 @@ address{
 
 }
 
-@import "site/zuidplashof.less";	// Zuidplashof project pagina
 
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  height: 25px;
+}
+
+
+@import "site/zuidplashof.less";	// Zuidplashof project pagina
+@import "site/doen.less";
