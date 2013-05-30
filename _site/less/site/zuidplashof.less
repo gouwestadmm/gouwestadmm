@@ -13,6 +13,17 @@
 		color: #fff;
 		text-align: center;
 		text-transform: uppercase;
+		position: relative;
+		.overlay{
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.4);
+		}
+		.container{
+			position: relative;
+		}
 		h1{
 			font-size: 5.5em;
 			font-weight: 700;
@@ -27,6 +38,34 @@
 			margin: 0 0 0.1em;
 		}
 	}//Einde header
+
+	.banner{
+		h5{
+			font-weight: lighter;
+			font-size: 1.1em;
+			color: @brand-primary;
+		}
+	}
+	.verhuren{
+		background: #f0f0f0;
+		.container{
+			background: #f0f0f0 url("http://www.welikesmall.com/static/images/work/snowbird/full_rendering.jpg") right bottom no-repeat;
+		}
+		h1{
+			max-width: 90%;
+			margin: 0.4em 0;
+		}
+		p{
+			max-width: 70%;
+			margin-bottom: 5em;
+		}
+		.btn{
+			margin-bottom: 1em;
+		}
+		.bottom-spacer{
+			margin-bottom: 8em;
+		}
+	}
 
 	.intro-padding{
 		padding: 3% 0;

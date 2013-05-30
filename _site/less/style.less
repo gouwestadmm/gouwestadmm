@@ -95,6 +95,18 @@ blockquote{
 	font-family: @font-family-serif;
 }
 
+.banner{
+	padding: 1em 0;
+}
+
+#hidden-story{
+	display: none;
+}
+
+.hidden-story-link{
+	padding: 0.1em 0;
+}
+
 /* ==========================================================================
   Colors
 ========================================================================== */
@@ -401,6 +413,7 @@ address{
 
 
 
+
 //contact pagina
 
 #contact{
@@ -634,3 +647,48 @@ address{
 
 @import "site/zuidplashof.less";	// Zuidplashof project pagina
 @import "site/doen.less";
+
+
+//mail signature
+#mail-sig{
+	font-family: @font-family-sans-serif;
+	font-size: 85%;
+	strong{
+		color: @brand-primary;
+	}
+	p{
+		margin-bottom: 5px;
+	}
+	h4{
+		font-weight: 300;
+		small{
+			font-size: 50%;
+		}
+	}
+	.phone{
+		padding-right: 5px;
+		vertical-align: text-top;
+		max-width: 20px;
+	}
+	img{
+		max-width: 200px;
+		margin-bottom: 1em;
+		margin-top: 0;
+	}
+	address{
+		text-align: left;
+	}
+	.slogan{
+		background: @brand-primary;
+		padding: 2em;
+		max-width: 80%;
+	}
+	.btn{
+		font-size: 105%;
+		margin: 1em 0;
+		font-weight: 300;
+	}
+	.icons img{
+		max-width: 30px;
+	}
+}

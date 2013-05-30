@@ -7,6 +7,13 @@ $("#nav-btn").click(function (e) {
   $("#nav-btn").toggleClass("closing");
 });
 
+// Show and hide hidden story's
+$("#story-open").click(function (e) {
+   e.preventDefault();
+  $("#hidden-story").toggle("slow");
+  $("#story-close").toggle("slow");
+});
+
 
 
 $('.close-button').click(function(e){

@@ -5280,7 +5280,9 @@ h6,
 }
 .navbar {
   margin-bottom: 0;
-  background: #fff;
+  background: #FEFEFE;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.02);
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
 }
@@ -5686,6 +5688,15 @@ blockquote .cite {
 }
 .alt {
   font-family: 'Droid Serif', serif;
+}
+.banner {
+  padding: 1em 0;
+}
+#hidden-story {
+  display: none;
+}
+.hidden-story-link {
+  padding: 0.1em 0;
 }
 /* ==========================================================================
   Colors
@@ -6224,6 +6235,17 @@ footer .btn:before {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+}
+.info-project.zuidplashof header .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.info-project.zuidplashof header .container {
+  position: relative;
 }
 .info-project.zuidplashof header h1 {
   font-size: 5.5em;
@@ -6237,6 +6259,31 @@ footer .btn:before {
 }
 .info-project.zuidplashof header p {
   margin: 0 0 0.1em;
+}
+.info-project.zuidplashof .banner h5 {
+  font-weight: lighter;
+  font-size: 1.1em;
+  color: #428bca;
+}
+.info-project.zuidplashof .verhuren {
+  background: #f0f0f0;
+}
+.info-project.zuidplashof .verhuren .container {
+  background: #f0f0f0 url("http://www.welikesmall.com/static/images/work/snowbird/full_rendering.jpg") right bottom no-repeat;
+}
+.info-project.zuidplashof .verhuren h1 {
+  max-width: 90%;
+  margin: 0.4em 0;
+}
+.info-project.zuidplashof .verhuren p {
+  max-width: 70%;
+  margin-bottom: 5em;
+}
+.info-project.zuidplashof .verhuren .btn {
+  margin-bottom: 1em;
+}
+.info-project.zuidplashof .verhuren .bottom-spacer {
+  margin-bottom: 8em;
 }
 .info-project.zuidplashof .intro-padding {
   padding: 3% 0;
@@ -6258,12 +6305,101 @@ footer .btn:before {
   }
 }
 #doen header {
-  background: #d7e4f2;
-  padding: 8em 0;
+  background: #428bca;
+  padding: 12em 0;
+  position: relative;
+  text-align: center;
+}
+#doen header .overlay {
+  background: url("../img/temp-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#doen header .container {
+  position: relative;
 }
 #doen header h1 {
-  color: #464a53;
+  color: #fff;
+  position: relative;
+  z-index: 30;
 }
 #doen header h4 {
   font-weight: lighter;
+  position: relative;
+  z-index: 20;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+#doen header h4 .amp {
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  font-size: 5em;
+  position: absolute;
+  top: -0.5em;
+  z-index: -1;
+  margin-left: -0.2em;
+}
+#doen header h4 .focus {
+  margin-left: 2em;
+}
+#doen .graylighter h5 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+#doen .elements .col-lg-3 .well {
+  background: #fff;
+}
+#doen .elements .col-lg-3 .well h6 {
+  color: #fff;
+}
+#mail-sig {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 85%;
+}
+#mail-sig strong {
+  color: #428bca;
+}
+#mail-sig p {
+  margin-bottom: 5px;
+}
+#mail-sig h4 {
+  font-weight: 300;
+}
+#mail-sig h4 small {
+  font-size: 50%;
+}
+#mail-sig .phone {
+  padding-right: 5px;
+  vertical-align: text-top;
+  max-width: 20px;
+}
+#mail-sig img {
+  max-width: 200px;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+#mail-sig address {
+  text-align: left;
+}
+#mail-sig .slogan {
+  background: #428bca;
+  padding: 2em;
+  max-width: 80%;
+}
+#mail-sig .btn {
+  font-size: 105%;
+  margin: 1em 0;
+  font-weight: 300;
+}
+#mail-sig .icons img {
+  max-width: 30px;
 }

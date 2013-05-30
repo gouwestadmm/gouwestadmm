@@ -146,7 +146,7 @@ body-id: contact
               Telefoon: (0182) 63 95 85
               <br>
               Email:
-              <a href="mailto:us@teehanlax.com">info@gouwestad.com</a>
+              <a href="mailto:info@gouwestad.com">info@gouwestad.com</a>
               <br>
               Twitter:
               <a href="http://www.twitter.com/gouwestadmm">@gouwestadmm</a>
