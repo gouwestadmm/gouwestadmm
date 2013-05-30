@@ -6361,6 +6361,49 @@ footer .btn:before {
 #doen .elements .col-lg-3 .well h6 {
   color: #fff;
 }
+#doen .meer-weten {
+  padding: 2em 0 0;
+}
+#doen .meer-weten .container {
+  background: url("../img/blue-eyes.png") no-repeat right center;
+}
+#doen .meer-weten h3 {
+  margin-top: 3em;
+}
+#doen .meer-weten p {
+  margin-bottom: 10em;
+}
+@media (max-width: 979px) {
+  #doen .meer-weten .container {
+    background: none;
+  }
+  #doen .meer-weten .frank-ipad {
+    background: url("../img/blue-eyes.png") no-repeat center center;
+    height: 600px;
+    margin-top: 3em;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+@media (max-width: 767px) {
+  #doen .meer-weten {
+    padding-bottom: 0;
+  }
+  #doen .meer-weten header {
+    padding: 5em 0;
+  }
+  #doen .meer-weten h3 {
+    margin-top: 0;
+  }
+  #doen .meer-weten p {
+    margin-bottom: 0.5em;
+  }
+  #doen .meer-weten .frank-ipad {
+    margin-top: -6em;
+  }
+}
 #mail-sig {
   font-family: 'Open Sans', sans-serif;
   font-size: 85%;

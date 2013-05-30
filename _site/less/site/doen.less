@@ -58,4 +58,47 @@
 			}
 		}
 	}
+	.meer-weten{
+		padding: 2em 0 0;
+		.container{
+			background: url("../img/blue-eyes.png") no-repeat right center;
+			}
+			h3{
+				margin-top: 3em;
+			}
+			p{
+				margin-bottom: 10em;
+			}
+	}
+
+	@media (max-width: 979px) {
+		.meer-weten{
+			.container{
+				background: none;
+			}
+			.frank-ipad{
+				background: url("../img/blue-eyes.png") no-repeat center center;
+				height: 600px;
+				margin-top: 3em;
+				.background-size(contain);
+			}
+		}
+	}
+		@media (max-width: 767px) {
+		.meer-weten{
+			header{
+				padding: 5em 0;
+			}
+			padding-bottom: 0;
+			h3{
+				margin-top: 0;
+			}
+			p{
+				margin-bottom: 0.5em;
+			}
+			.frank-ipad{
+				margin-top: -6em;
+			}
+		}
+	}
 }
