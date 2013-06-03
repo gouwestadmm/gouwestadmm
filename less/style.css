@@ -4998,7 +4998,7 @@ section {
   Typography
 ========================================================================== */
 html {
-  font-size: 100%;
+  font-size: 110%;
 }
 body {
   font-size: 1.1em;
@@ -5142,12 +5142,7 @@ nav.main .navbar .navbar-inner {
 /* ==========================================================================
   Responsive styles
 ========================================================================== */
-@media screen and (min-width: 480px) {
-  p {
-    line-height: 1.55em;
-  }
-}
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 125%;
   }
@@ -5340,7 +5335,7 @@ h6,
   transition: all 0.3s;
 }
 .full-nav {
-  background: #D7E4F2;
+  background: #428bca;
   background-attachment: fixed;
   height: 100%;
   top: -100%;
@@ -5360,10 +5355,10 @@ h6,
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .full-nav .row {
   max-width: 75%;
@@ -5381,18 +5376,27 @@ h6,
   border: none;
   border-radius: 0;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.04);
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .full-nav .fast-links .btn:hover {
-  color: #245682;
+  background: #273546;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .full-nav .fast-links .btn:before {
   font-family: "fontAwesome";
-  font-size: 1.5em;
+  font-size: 1.2em;
   float: left;
-  background: #428bca;
   margin: -0.32em -0.8em;
   padding: 0.32em 0.5em;
-  color: #fff;
 }
 .full-nav .fast-links .btn.home:before {
   content: '';
@@ -5410,10 +5414,10 @@ h6,
 .full-nav h5,
 .full-nav h6,
 .full-nav p {
-  color: #428bca;
+  color: #fff;
 }
 .full-nav ul li a {
-  color: #428bca;
+  color: #fff;
 }
 .full-nav ul li a:hover {
   background: none;
@@ -5632,6 +5636,11 @@ section#slider .flex-viewport ul li .main-img {
   margin: 0;
   line-height: 1.2em;
 }
+@media screen and (min-width: 768px) {
+  section#slider {
+    font-size: 1.1em;
+  }
+}
 /* ==========================================================================
   Elementen voor positionering
 ========================================================================== */
@@ -5664,7 +5673,6 @@ html body {
 .page-container {
   height: 100%;
   position: relative;
-  margin-bottom: 10em;
   z-index: 50;
   background: #fff;
 }
@@ -5707,9 +5715,32 @@ blockquote .cite {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+.graydark {
+  background: #273546;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.graydark h1,
+.graydark h2,
+.graydark h3,
+.graydark h4,
+.graydark h5,
+.graydark h6 {
+  color: #fff;
+}
 /* ==========================================================================
   Visual effects over images
 ========================================================================== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
 .img-overlay {
   position: absolute;
   top: 0;
@@ -5762,7 +5793,7 @@ blockquote .cite {
   font-family: 'Droid Serif', serif;
 }
 .story-width {
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
 }
 .info-project.gouwestad h1 {
@@ -6075,12 +6106,10 @@ address.color-alt {
   max-width: none;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  position: relative;
   display: block;
   z-index: 1;
   width: 100%;
-  min-height: 10em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) inset;
 }
 footer .footer-bg {
@@ -6128,7 +6157,7 @@ footer .btn:before {
 /* ==========================================================================
   Responsive styles | Main site
 ========================================================================== */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   html body {
     margin-top: 0;
     padding-top: 0px;
@@ -6151,6 +6180,7 @@ footer .btn:before {
   #slider .vert-center {
     top: 20%;
     text-align: center;
+    width: 100%;
   }
   #slider h1 {
     font-size: 2.6em;
@@ -6169,15 +6199,8 @@ footer .btn:before {
   #slider .btn:hover {
     border: 1px solid rgba(255, 255, 255, 0.8);
   }
-  .story-width {
-    width: 100%;
-  }
   .page-container {
     margin-bottom: 0;
-  }
-  footer {
-    position: relative;
-    min-height: none;
   }
   .btn-group {
     font-size: 0.8em;
@@ -6215,6 +6238,49 @@ footer .btn:before {
     bottom: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .story-width {
+    max-width: 85%;
+  }
+  .full-nav .row {
+    max-width: 85%;
+  }
+  #slider {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 992px) {
+  #slider {
+    font-size: 1em;
+  }
+  .page-container {
+    margin-bottom: 10em;
+  }
+  .story-width {
+    max-width: 80%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    min-height: 10em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .story-width {
+    max-width: 70%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    min-height: 10em;
+  }
+}
 #fb-root {
   display: none;
 }
@@ -6225,13 +6291,42 @@ footer .btn:before {
   width: 100% !important;
   height: 25px;
 }
+#zuidplashof-story .verhuren p {
+  margin-bottom: 1em;
+}
+#zuidplashof-story .verhuren .bottom-spacer {
+  margin-bottom: 18em;
+  display: block;
+}
+#zuidplashof-story .geleerd {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  #zuidplashof-story .verhuren .bottom-spacer {
+    margin-bottom: 18em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #zuidplashof-story header h1 {
+    font-size: 5.5em;
+  }
+  #zuidplashof-story .verhuren .container {
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+  #zuidplashof-story .verhuren .bottom-spacer {
+    margin-bottom: 14em;
+  }
+}
 .info-project.zuidplashof header {
   background: url("../img/zuidplashof-story-header.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 7em 0;
+  padding: 8em 0 5em;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -6242,13 +6337,13 @@ footer .btn:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 .info-project.zuidplashof header .container {
   position: relative;
 }
 .info-project.zuidplashof header h1 {
-  font-size: 5.5em;
+  font-size: 4.5em;
   font-weight: 700;
   letter-spacing: -0.01em;
   margin: 0 auto 0.1em;
@@ -6258,32 +6353,76 @@ footer .btn:before {
   color: #fff;
 }
 .info-project.zuidplashof header p {
+  font-family: 'Open Sans', sans-serif;
   margin: 0 0 0.1em;
+}
+.info-project.zuidplashof .banner {
+  margin-top: -3em;
+  margin-bottom: 0.2em;
+  padding: 0;
+  background: none;
 }
 .info-project.zuidplashof .banner h5 {
   font-weight: lighter;
   font-size: 1.1em;
-  color: #428bca;
+  color: #fff;
 }
 .info-project.zuidplashof .verhuren {
-  background: #f0f0f0;
+  background: #fcfcfc;
+  min-height: 800px;
 }
 .info-project.zuidplashof .verhuren .container {
-  background: #f0f0f0 url("http://www.welikesmall.com/static/images/work/snowbird/full_rendering.jpg") right bottom no-repeat;
+  background: #fcfcfc url("../img/zuidplashof-intro.jpg") right bottom no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 .info-project.zuidplashof .verhuren h1 {
   max-width: 90%;
   margin: 0.4em 0;
 }
 .info-project.zuidplashof .verhuren p {
-  max-width: 70%;
+  margin-top: 2em;
   margin-bottom: 5em;
 }
 .info-project.zuidplashof .verhuren .btn {
   margin-bottom: 1em;
 }
-.info-project.zuidplashof .verhuren .bottom-spacer {
-  margin-bottom: 8em;
+.info-project.zuidplashof .hidden-story-link {
+  padding: 1em 0;
+}
+.info-project.zuidplashof .hidden-story-link a {
+  color: #eee;
+}
+.info-project.zuidplashof .hidden-story-link a i {
+  margin-right: 1em;
+  padding: 0.75em;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  text-shadow: none;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.info-project.zuidplashof .hidden-story-link a:hover,
+.info-project.zuidplashof .hidden-story-link a:active,
+.info-project.zuidplashof .hidden-story-link a:focus {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.info-project.zuidplashof .hidden-story-link a:hover i,
+.info-project.zuidplashof .hidden-story-link a:active i,
+.info-project.zuidplashof .hidden-story-link a:focus i {
+  background: #fff;
+  color: #273546;
 }
 .info-project.zuidplashof .intro-padding {
   padding: 3% 0;
@@ -6295,9 +6434,11 @@ footer .btn:before {
   -o-background-size: cover;
   background-size: cover;
   padding: 6em;
+  position: relative;
 }
 .info-project.zuidplashof .img-one h1 {
   color: #fff;
+  position: relative;
 }
 @media (max-width: 767px) {
   .info-project.zuidplashof header h1 {

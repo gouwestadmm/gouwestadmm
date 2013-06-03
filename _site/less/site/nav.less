@@ -82,7 +82,7 @@
 
 // Full screen navigatie
 .full-nav{
-	background:	#D7E4F2;
+	background:	@brand-primary;
 	background-attachment: fixed;
     height: 100%;
     top: -100%;
@@ -99,7 +99,7 @@
 
     //Animation
     .scale(1);
-    .transition(all 0.3s ease 0s);
+    .transition(all 0.4s ease 0s);
 
     .row{
         max-width: 75%;
@@ -116,17 +116,26 @@
         border: none;
         border-radius: 0;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.04);
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        transition: 0.3s all;
         &:hover{
-            color: darken(@brand-primary, 20%);
+            background: @gray-dark;
+            color: #fff;
+            -webkit-transition: 0.3s all;
+            -moz-transition: 0.3s all;
+            -o-transition: 0.3s all;
+            -ms-transition: 0.3s all;
+            transition: 0.3s all;
         }
         &:before{
                 font-family: "fontAwesome";
-                font-size: 1.5em;
+                font-size: 1.2em;
                 float: left;
-                background: @brand-primary;
                 margin: -0.32em -0.8em;
                 padding: 0.32em 0.5em;
-                color: #fff;
                 }
             &.home:before{
                 content:'';
@@ -140,10 +149,10 @@
         }
     }
     h1, h2, h3, h4, h5, h6, p{
-    	color: @brand-primary;
+    	color: #fff;
     }
     ul li a{
-    	color: @brand-primary;
+    	color: #fff;
     	&:hover{
     		background: none;
     		.scale(1.05);

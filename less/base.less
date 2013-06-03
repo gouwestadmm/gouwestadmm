@@ -26,7 +26,7 @@ section{
 ========================================================================== */
 
 html{
-   font-size: 100%;
+   font-size: 110%;
 }
 
 body{
@@ -212,15 +212,8 @@ nav.main{
 ========================================================================== */
 
 
-@media screen and (min-width: 480px) {
 
-    p{
-      line-height: 1.55em;
-    }
-}
-
-
-@media screen and (min-width: 780px) {
+@media screen and (min-width: @screen-tablet) {
   body {
     font-size: 125%;
   }
@@ -254,7 +247,7 @@ nav.main{
   }
 
   .project-info .container{
-     padding-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
   }
   .center{
