@@ -128,12 +128,12 @@ body-id: contact
 
   <section>
     <div class="container">
-      <div class="row story-width center">
+      <div class="row center">
         <div class="col col-lg-12">
           <h5>andere vragen?</h5>
         </div>
       </div>
-      <div class="row story-width">
+      <div class="row">
         <div class="col col-lg-6">
             <address>
               <strong>Gouwestad Marketing & Media</strong><br>
