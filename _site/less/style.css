@@ -5685,6 +5685,12 @@ header {
 /* ==========================================================================
   Typografie
 ========================================================================== */
+.chromeframe {
+  display: block;
+  width: 100%;
+  margin-top: 10%;
+  z-index: 999;
+}
 blockquote p {
   font-size: 1em;
 }
@@ -6036,6 +6042,10 @@ input[type="color"] {
 #errors,
 #success {
   display: none;
+}
+#errors.visible,
+#success.visible {
+  display: block;
 }
 address {
   text-align: right;

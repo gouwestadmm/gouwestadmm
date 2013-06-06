@@ -77,6 +77,13 @@ section, header{
   Typografie
 ========================================================================== */
 
+.chromeframe{
+	display: block;
+	width: 100%;
+	margin-top: 10%;
+	z-index: 999;
+}
+
 blockquote{
 	p{
 	font-size: 1em;
@@ -418,6 +425,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 #errors, #success{
 	display: none;
+	&.visible{
+		display: block;
+	}
 }
 
 address{

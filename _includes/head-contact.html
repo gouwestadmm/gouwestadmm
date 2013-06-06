@@ -1,4 +1,4 @@
-<?php session_start(); ?> <!-- This is needed for the form to work -->
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="nl" itemscope itemtype="http://schema.org/Article">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -69,3 +69,7 @@
 </head>
 
 <body id="{{ page.body-id }}">
+
+<!--[if lt IE 9]>
+    <p class="chromeframe">De browser die je gebruikt is erg <strong>verouderd</strong> en daar werkt onze website niet goed op. Alsjeblieft, <a href="http://browsehappy.com/">upgrade je browser</a> of <a href="http://www.google.com/chromeframe/?redirect=true">activeer Google Chrome Frame</a> voor een betere gebruikservaring en een veiliger en sneller internet!</p>
+  <![endif]-->
