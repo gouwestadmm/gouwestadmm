@@ -1,0 +1,104 @@
+//Wat wij doen stijlen
+
+#doen{
+	header{
+		background: @brand-primary;
+		padding: 12em 0;
+		position: relative;
+		text-align: center;
+		.overlay{
+			background: url("../img/temp-background.jpg") no-repeat center center fixed;
+			.background-size(cover);
+			.opacity(0.3);
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.container{
+			position: relative;
+		}
+		h1{
+			color: #fff;
+			position: relative;
+			z-index: 30;
+		}
+		h4{
+			font-weight: lighter;
+			position: relative;
+			z-index: 20;
+			color: #fff;
+			letter-spacing: -0.03em;
+			.amp{
+			color: rgba(0,0,0,0.5);
+		    display: inline-block;
+		    font-size: 5em;
+		    position: absolute;
+		    top: -0.5em;
+		    z-index: -1;
+		    margin-left: -0.2em;
+			}
+			.focus{
+				margin-left: 2em;
+			}
+		}
+	}
+	.graylighter{
+		h5{
+			font-weight: 300;
+			font-size: 1.4em;
+			line-height: 1.5em;
+		}
+	}
+	.elements{
+		.col-lg-3 .well{
+			background: #fff;
+			h6{
+				color: #fff;
+			}
+		}
+	}
+	.meer-weten{
+		padding: 2em 0 0;
+		.container{
+			background: url("../img/blue-eyes.png") no-repeat right center;
+			}
+			h3{
+				margin-top: 3em;
+			}
+			p{
+				margin-bottom: 10em;
+			}
+	}
+
+	@media (max-width: 979px) {
+		.meer-weten{
+			.container{
+				background: none;
+			}
+			.frank-ipad{
+				background: url("../img/blue-eyes.png") no-repeat center center;
+				height: 600px;
+				margin-top: 3em;
+				.background-size(contain);
+			}
+		}
+	}
+		@media (max-width: 767px) {
+		.meer-weten{
+			header{
+				padding: 5em 0;
+			}
+			padding-bottom: 0;
+			h3{
+				margin-top: 0;
+			}
+			p{
+				margin-bottom: 0.5em;
+			}
+			.frank-ipad{
+				margin-top: -6em;
+			}
+		}
+	}
+}
