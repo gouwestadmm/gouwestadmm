@@ -240,7 +240,7 @@ html {
 }
 body {
   font-family: 'Droid Serif', serif;
-  font-size: 1.15em;
+  font-size: 1.1em;
   line-height: 1.55em;
   color: #464a53;
   background-color: #ffffff;
@@ -283,7 +283,7 @@ p {
 }
 .lead {
   margin-bottom: 1em;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   font-weight: 200;
   line-height: 1.4;
 }
@@ -381,7 +381,7 @@ h6 {
 }
 h1,
 .h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 h2,
 .h2 {
@@ -397,7 +397,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 h6,
 .h6 {
@@ -415,7 +415,7 @@ h3 small,
 .h3 small,
 h4 small,
 .h4 small {
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 .page-header {
   padding-bottom: -0.5em;
@@ -520,7 +520,7 @@ blockquote {
   border-left: 5px solid #d7e4f2;
 }
 blockquote p {
-  font-size: 1.4375em;
+  font-size: 1.375em;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -568,7 +568,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: -0.8500000000000001em;
+  font-size: -0.8999999999999999em;
   color: #273546;
   border-radius: 4px;
 }
@@ -583,7 +583,7 @@ pre {
   display: block;
   padding: 0em;
   margin: 0 0 0.5em;
-  font-size: 0.1499999999999999em;
+  font-size: 0.10000000000000009em;
   line-height: 1.55em;
   word-break: break-all;
   word-wrap: break-word;
@@ -1051,7 +1051,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 1em;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   line-height: inherit;
   color: #273546;
   border: 0;
@@ -1081,7 +1081,7 @@ input[type="color"] {
   display: block;
   min-height: 17em;
   padding: 8px 12px;
-  font-size: 1.15em;
+  font-size: 1.1em;
   line-height: 1.55em;
   color: #464a53;
   vertical-align: middle;
@@ -1245,7 +1245,7 @@ input[type="search"].input-large,
 input[type="tel"].input-large,
 input[type="color"].input-large {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   border-radius: 6px;
 }
 select.input-small,
@@ -1266,7 +1266,7 @@ input[type="tel"].input-small,
 input[type="color"].input-small {
   min-height: 11em;
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   border-radius: 3px;
 }
 input[disabled],
@@ -1414,7 +1414,7 @@ select:focus:invalid:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 6px 8px;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   line-height: 1.55em;
   text-align: center;
@@ -1425,12 +1425,12 @@ select:focus:invalid:focus {
 }
 .input-group-addon.input-small {
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   border-radius: 3px;
 }
 .input-group-addon.input-large {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   border-radius: 6px;
 }
 .input-group input:first-child,
@@ -1497,7 +1497,7 @@ select:focus:invalid:focus {
   display: inline-block;
   padding: 8px 12px;
   margin-bottom: 0;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: 500;
   line-height: 1.55em;
   text-align: center;
@@ -1732,12 +1732,12 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-large {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   border-radius: 6px;
 }
 .btn-small {
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3065,7 +3065,7 @@ a.list-group-item.active .list-group-item-text {
 .panel-heading {
   margin: -15px -15px 15px;
   padding: 10px 15px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   font-weight: 500;
   background-color: #f5f5f5;
   border-bottom: 1px solid #dddddd;
@@ -3157,7 +3157,7 @@ a.list-group-item.active .list-group-item-text {
 }
 .close {
   float: right;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -3340,7 +3340,7 @@ button.close {
 .nav-header {
   display: block;
   padding: 3px 15px;
-  font-size: 0.8624999999999999em;
+  font-size: 0.8250000000000001em;
   font-weight: bold;
   line-height: 1.55em;
   color: #566d87;
@@ -3476,7 +3476,7 @@ button.close {
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
   font-weight: 500;
   line-height: 1em;
   color: #777777;
@@ -3901,7 +3901,7 @@ button.close {
 .pagination-large > li > a,
 .pagination-large > li > span {
   padding: 14px 16px;
-  font-size: 1.4375em;
+  font-size: 1.375em;
 }
 .pagination-large > li:first-child > a,
 .pagination-large > li:first-child > span {
@@ -3916,7 +3916,7 @@ button.close {
 .pagination-small > li > a,
 .pagination-small > li > span {
   padding: 5px 10px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
 }
 .pagination-small > li:first-child > a,
 .pagination-small > li:first-child > span {
@@ -4128,7 +4128,7 @@ button.close {
   z-index: 1030;
   display: block;
   visibility: visible;
-  font-size: 0.8624999999999999em;
+  font-size: 0.8250000000000001em;
   line-height: 1.4;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -4232,7 +4232,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -4502,7 +4502,7 @@ a.thumbnail:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   font-weight: bold;
   color: #fff;
   line-height: 1;
@@ -4589,7 +4589,7 @@ a.list-group-item.active > .badge,
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 0.9774999999999999em;
+  font-size: 0.935em;
   color: #fff;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -4841,7 +4841,7 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
-  font-size: 1.7249999999999999em;
+  font-size: 1.6500000000000001em;
   font-weight: 200;
   line-height: 2.325em;
   color: inherit;
@@ -4860,7 +4860,7 @@ a.list-group-item.active > .badge,
     border-radius: 6px;
   }
   .jumbotron h1 {
-    font-size: 5.175em;
+    font-size: 4.95em;
   }
 }
 .clearfix:before,
@@ -4998,10 +4998,10 @@ section {
   Typography
 ========================================================================== */
 html {
-  font-size: 100%;
+  font-size: 110%;
 }
 body {
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   line-height: 1.65em;
 }
@@ -5142,12 +5142,7 @@ nav.main .navbar .navbar-inner {
 /* ==========================================================================
   Responsive styles
 ========================================================================== */
-@media screen and (min-width: 480px) {
-  p {
-    line-height: 1.55em;
-  }
-}
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 125%;
   }
@@ -5280,7 +5275,9 @@ h6,
 }
 .navbar {
   margin-bottom: 0;
-  background: #fff;
+  background: #FEFEFE;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.02);
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
 }
@@ -5338,7 +5335,7 @@ h6,
   transition: all 0.3s;
 }
 .full-nav {
-  background: #D7E4F2;
+  background: #428bca;
   background-attachment: fixed;
   height: 100%;
   top: -100%;
@@ -5351,14 +5348,64 @@ h6,
   width: 100%;
   z-index: 800;
   text-align: center;
-  color: #0082C6;
+  color: #428bca;
+  text-shadow: none;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1);
-  transition: all 0.3s ease 0s;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .full-nav .row {
-  max-width: 65%;
+  max-width: 75%;
   margin: 0 auto;
+}
+.full-nav .fast-links {
+  margin-bottom: 2em;
+}
+.full-nav .fast-links .btn {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  text-shadow: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.04);
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.full-nav .fast-links .btn:hover {
+  background: #273546;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.full-nav .fast-links .btn:before {
+  font-family: "fontAwesome";
+  font-size: 1.2em;
+  float: left;
+  margin: -0.32em -0.8em;
+  padding: 0.32em 0.5em;
+}
+.full-nav .fast-links .btn.home:before {
+  content: '';
+}
+.full-nav .fast-links .btn.us:before {
+  content: '';
+}
+.full-nav .fast-links .btn.contact:before {
+  content: '';
 }
 .full-nav h1,
 .full-nav h2,
@@ -5367,14 +5414,21 @@ h6,
 .full-nav h5,
 .full-nav h6,
 .full-nav p {
-  color: #0082C6;
+  color: #fff;
 }
 .full-nav ul li a {
-  color: #0082C6;
+  color: #fff;
 }
 .full-nav ul li a:hover {
   background: none;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transform: scale(1.05);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .full-nav ul li a:focus {
@@ -5421,8 +5475,7 @@ h6,
     max-width: 90%;
   }
   .full-nav .fast-links a {
-    margin-bottom: 0.6em;
-    border-bottom: 1px dashed;
+    margin-bottom: 0.8em;
   }
 }
 /* ==========================================================================
@@ -5583,6 +5636,11 @@ section#slider .flex-viewport ul li .main-img {
   margin: 0;
   line-height: 1.2em;
 }
+@media screen and (min-width: 768px) {
+  section#slider {
+    font-size: 1.1em;
+  }
+}
 /* ==========================================================================
   Elementen voor positionering
 ========================================================================== */
@@ -5615,7 +5673,6 @@ html body {
 .page-container {
   height: 100%;
   position: relative;
-  margin-bottom: 10em;
   z-index: 50;
   background: #fff;
 }
@@ -5628,6 +5685,12 @@ header {
 /* ==========================================================================
   Typografie
 ========================================================================== */
+.chromeframe {
+  display: block;
+  width: 100%;
+  margin-top: 10%;
+  z-index: 999;
+}
 blockquote p {
   font-size: 1em;
 }
@@ -5640,6 +5703,15 @@ blockquote .cite {
 .alt {
   font-family: 'Droid Serif', serif;
 }
+.banner {
+  padding: 1em 0;
+}
+#hidden-story {
+  display: none;
+}
+.hidden-story-link {
+  padding: 0.1em 0;
+}
 /* ==========================================================================
   Colors
 ========================================================================== */
@@ -5649,9 +5721,32 @@ blockquote .cite {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+.graydark {
+  background: #273546;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.graydark h1,
+.graydark h2,
+.graydark h3,
+.graydark h4,
+.graydark h5,
+.graydark h6 {
+  color: #fff;
+}
 /* ==========================================================================
   Visual effects over images
 ========================================================================== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
 .img-overlay {
   position: absolute;
   top: 0;
@@ -5704,7 +5799,7 @@ blockquote .cite {
   font-family: 'Droid Serif', serif;
 }
 .story-width {
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
 }
 .info-project.gouwestad h1 {
@@ -5717,7 +5812,7 @@ blockquote .cite {
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
-  padding: 8% 0;
+  padding: 8em 0;
   position: relative;
   color: #fff;
 }
@@ -5753,6 +5848,9 @@ blockquote .cite {
   background: #fcaf17;
   color: #fff;
   text-shadow: none;
+}
+.info-project.gouwestad .yellow h1 {
+  color: #fff;
 }
 .info-project.gouwestad .nieuw {
   background: #ffffff url("../img/gwstd-ipad.png") no-repeat -300px center fixed;
@@ -5847,7 +5945,7 @@ header h1,
   color: #fff;
 }
 #over-ons header {
-  padding: 8% 0;
+  padding: 8em 0;
   background: #007EC3;
   color: #fff;
 }
@@ -5945,6 +6043,10 @@ input[type="color"] {
 #success {
   display: none;
 }
+#errors.visible,
+#success.visible {
+  display: block;
+}
 address {
   text-align: right;
 }
@@ -6014,12 +6116,10 @@ address.color-alt {
   max-width: none;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  position: relative;
   display: block;
   z-index: 1;
   width: 100%;
-  min-height: 10em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) inset;
 }
 footer .footer-bg {
@@ -6033,36 +6133,41 @@ footer .footer-bg {
   background-size: cover;
 }
 footer .footer-bg.gouwestadmakelaardij {
-  background: url("http://gouwestadmakelaardij.nl/wp-content/themes/gouwestadmakelaardij/assets/css/less/../../img/header.jpg") right center;
-  opacity: 0.05;
-  filter: alpha(opacity=5);
+  background: url("http://gouwestad.com/img/anders.jpg") right center;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 footer .copy {
   padding: 0.5em 0;
   font-size: 0.8em;
-  text-align: center;
 }
 footer .copy p {
   margin: 0;
   color: #566d87;
 }
-footer .btn-group {
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
-}
 footer .btn {
   font-weight: 300;
 }
-footer .btn.icon {
-  background: #fff;
-}
-footer .btn.icon i {
-  color: #428bca;
+footer .btn:before {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.03);
+  content: "\f0e0";
+  display: block;
+  float: left;
+  font-family: "FontAwesome";
+  font-size: 1em;
+  height: 100%;
+  margin: -0.5em 1em -0.5em -1.2em;
+  padding: 0.5em 1.2em;
 }
 /* ==========================================================================
   Responsive styles | Main site
 ========================================================================== */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   html body {
     margin-top: 0;
     padding-top: 0px;
@@ -6085,6 +6190,7 @@ footer .btn.icon i {
   #slider .vert-center {
     top: 20%;
     text-align: center;
+    width: 100%;
   }
   #slider h1 {
     font-size: 2.6em;
@@ -6103,12 +6209,8 @@ footer .btn.icon i {
   #slider .btn:hover {
     border: 1px solid rgba(255, 255, 255, 0.8);
   }
-  .story-width {
-    width: 100%;
-  }
-  footer {
-    position: relative;
-    min-height: none;
+  .page-container {
+    margin-bottom: 0;
   }
   .btn-group {
     font-size: 0.8em;
@@ -6146,19 +6248,112 @@ footer .btn.icon i {
     bottom: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .story-width {
+    max-width: 85%;
+  }
+  .full-nav .row {
+    max-width: 85%;
+  }
+  #slider {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 992px) {
+  #slider {
+    font-size: 1em;
+  }
+  .page-container {
+    margin-bottom: 10em;
+  }
+  .story-width {
+    max-width: 80%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    min-height: 10em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .story-width {
+    max-width: 70%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    min-height: 10em;
+  }
+}
+#fb-root {
+  display: none;
+}
+/* To fill the container and nothing else */
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  height: 25px;
+}
+#zuidplashof-story .verhuren p {
+  margin-bottom: 1em;
+}
+#zuidplashof-story .verhuren .bottom-spacer {
+  margin-bottom: 18em;
+  display: block;
+}
+#zuidplashof-story .geleerd {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  #zuidplashof-story .verhuren .bottom-spacer {
+    margin-bottom: 18em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #zuidplashof-story header h1 {
+    font-size: 5.5em;
+  }
+  #zuidplashof-story .verhuren .container {
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+  #zuidplashof-story .verhuren .bottom-spacer {
+    margin-bottom: 14em;
+  }
+}
 .info-project.zuidplashof header {
   background: url("../img/zuidplashof-story-header.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 7em 0;
+  padding: 8em 0 5em;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+}
+.info-project.zuidplashof header .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.info-project.zuidplashof header .container {
+  position: relative;
 }
 .info-project.zuidplashof header h1 {
-  font-size: 5.5em;
+  font-size: 4.5em;
   font-weight: 700;
   letter-spacing: -0.01em;
   margin: 0 auto 0.1em;
@@ -6168,7 +6363,76 @@ footer .btn.icon i {
   color: #fff;
 }
 .info-project.zuidplashof header p {
+  font-family: 'Open Sans', sans-serif;
   margin: 0 0 0.1em;
+}
+.info-project.zuidplashof .banner {
+  margin-top: -3em;
+  margin-bottom: 0.2em;
+  padding: 0;
+  background: none;
+}
+.info-project.zuidplashof .banner h5 {
+  font-weight: lighter;
+  font-size: 1.1em;
+  color: #fff;
+}
+.info-project.zuidplashof .verhuren {
+  background: #fcfcfc;
+  min-height: 800px;
+}
+.info-project.zuidplashof .verhuren .container {
+  background: #fcfcfc url("../img/zuidplashof-intro.jpg") right bottom no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.info-project.zuidplashof .verhuren h1 {
+  max-width: 90%;
+  margin: 0.4em 0;
+}
+.info-project.zuidplashof .verhuren p {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.info-project.zuidplashof .verhuren .btn {
+  margin-bottom: 1em;
+}
+.info-project.zuidplashof .hidden-story-link {
+  padding: 1em 0;
+}
+.info-project.zuidplashof .hidden-story-link a {
+  color: #eee;
+}
+.info-project.zuidplashof .hidden-story-link a i {
+  margin-right: 1em;
+  padding: 0.75em;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  text-shadow: none;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.info-project.zuidplashof .hidden-story-link a:hover,
+.info-project.zuidplashof .hidden-story-link a:active,
+.info-project.zuidplashof .hidden-story-link a:focus {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.info-project.zuidplashof .hidden-story-link a:hover i,
+.info-project.zuidplashof .hidden-story-link a:active i,
+.info-project.zuidplashof .hidden-story-link a:focus i {
+  background: #fff;
+  color: #273546;
 }
 .info-project.zuidplashof .intro-padding {
   padding: 3% 0;
@@ -6180,12 +6444,156 @@ footer .btn.icon i {
   -o-background-size: cover;
   background-size: cover;
   padding: 6em;
+  position: relative;
 }
 .info-project.zuidplashof .img-one h1 {
   color: #fff;
+  position: relative;
 }
 @media (max-width: 767px) {
   .info-project.zuidplashof header h1 {
     font-size: 2.3em;
   }
+}
+#doen header {
+  background: #428bca;
+  padding: 12em 0;
+  position: relative;
+  text-align: center;
+}
+#doen header .overlay {
+  background: url("../img/temp-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#doen header .container {
+  position: relative;
+}
+#doen header h1 {
+  color: #fff;
+  position: relative;
+  z-index: 30;
+}
+#doen header h4 {
+  font-weight: lighter;
+  position: relative;
+  z-index: 20;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+#doen header h4 .amp {
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  font-size: 5em;
+  position: absolute;
+  top: -0.5em;
+  z-index: -1;
+  margin-left: -0.2em;
+}
+#doen header h4 .focus {
+  margin-left: 2em;
+}
+#doen .graylighter h5 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+#doen .elements .col-lg-3 .well {
+  background: #fff;
+}
+#doen .elements .col-lg-3 .well h6 {
+  color: #fff;
+}
+#doen .meer-weten {
+  padding: 2em 0 0;
+}
+#doen .meer-weten .container {
+  background: url("../img/blue-eyes.png") no-repeat right center;
+}
+#doen .meer-weten h3 {
+  margin-top: 3em;
+}
+#doen .meer-weten p {
+  margin-bottom: 10em;
+}
+@media (max-width: 979px) {
+  #doen .meer-weten .container {
+    background: none;
+  }
+  #doen .meer-weten .frank-ipad {
+    background: url("../img/blue-eyes.png") no-repeat center center;
+    height: 600px;
+    margin-top: 3em;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+@media (max-width: 767px) {
+  #doen .meer-weten {
+    padding-bottom: 0;
+  }
+  #doen .meer-weten header {
+    padding: 5em 0;
+  }
+  #doen .meer-weten h3 {
+    margin-top: 0;
+  }
+  #doen .meer-weten p {
+    margin-bottom: 0.5em;
+  }
+  #doen .meer-weten .frank-ipad {
+    margin-top: -6em;
+  }
+}
+#mail-sig {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 85%;
+}
+#mail-sig strong {
+  color: #428bca;
+}
+#mail-sig p {
+  margin-bottom: 5px;
+}
+#mail-sig h4 {
+  font-weight: 300;
+}
+#mail-sig h4 small {
+  font-size: 50%;
+}
+#mail-sig .phone {
+  padding-right: 5px;
+  vertical-align: text-top;
+  max-width: 20px;
+}
+#mail-sig img {
+  max-width: 200px;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+#mail-sig address {
+  text-align: left;
+}
+#mail-sig .slogan {
+  background: #428bca;
+  padding: 2em;
+  max-width: 80%;
+}
+#mail-sig .btn {
+  font-size: 105%;
+  margin: 1em 0;
+  font-weight: 300;
+}
+#mail-sig .icons img {
+  max-width: 30px;
 }
